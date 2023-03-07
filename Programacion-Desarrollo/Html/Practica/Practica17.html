@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 17</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <!--Ahora lo que se vera seran algunos atributos para formularios , los cuales son usados , aunque es preferible hacer uso de javascript para mejorarlos-->
+        <form>
+            <label for="nombre">Nombre</label>
+            <!--Empezando por placeholder, este mismo lo que hace es darle un nombre a el input al que pedira informacion-->
+            <input type="text" placeholder="Introduzca su nombre" id="nombre">
+            <br>
+            <!--El siguiente es required el cual hace que un input sea requerido y que sea obligatorio llenarlo-->
+            <label for="obligatorio">obligatorio</label>
+            <input type="text" id="obligatorio" required>
+            <br>
+            <!--El siguiente es readonly el cual , hace que lo que se encuentre en el input sea solo leible y que no pueda ser modificado-->
+            <label for="leible">Solo leible</label>
+            <input type="text" placeholder="Solo leible" id="leible" readonly>
+            <br>
+            <!--El siguiente es disabled el cual hace que el elemento solo pueda ser visto , no puede ser copiado ni seleccionado-->
+            <label for="visto">Solo visto</label>
+            <input type="text" placeholder="Elemento solo visto" id="visto" disabled>
+            <br>
+            <!--El siguiente es min y max el cual solo puede ser usado en un input number , este establece un maximo y un minimo de tamaño de un numero-->
+            <label for="maximoMinimo">Maximo y Minimo</label>
+            <input type="number" min="10" max="20" id="maximoMinimo">
+            <br>
+            <!--El siguiente es minlenght y maxlenght los cuales hacen lo mismo que min y max de los input number pero con texto-->
+            <label for="textoMinimoMaximo">Texto Minimo y Maximo</label>
+            <input type="text" id="textoMinimoMaximo" minlength="20" maxlength="30">
+            <br>
+            <!--El siguiente atributo es autofocus este tiene como finalidad que al entrar a una pagina se seleccione automaticamente-->
+            <label for="focus">Se autofocusea</label>
+            <input type="text" id="focus" autofocus>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

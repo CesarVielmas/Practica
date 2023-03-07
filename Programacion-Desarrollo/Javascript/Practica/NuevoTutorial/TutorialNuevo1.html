@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+</head>
+<script>
+    /* Primera sesion
+
+    //Primero hay que empezar separando el valor var de el valor let , ya que var es lo mismo que let per peor ya que los bloques de los salta o sale de ellos haciendose una variable global
+    //Ejemplo diferencias let y var
+    var hola = "Hola amigos";
+    let hola2 = "Hola amiguitos";
+    console.log("Lo que se imprime antes del bloque con var es: ",hola);
+    console.log("Lo que se imprime antes del bloque con let es: ",hola2);
+    {
+        var hola = "Hola como estan amigos";
+        let hola2 = "Hola como estan amiguitos";
+        console.log("Lo que se imprime dentro del bloque con var es: ",hola);
+        console.log("Lo que se imprime dentro del bloque con let es: ",hola2);
+    }
+    console.log("Lo que se imprime despues del bloque con var es: ",hola);
+    console.log("Lo que se imprime despues del bloque con let es: ",hola2);
+    //Como se aprecia var lo tomo como variable global y sale del bloque ,es muy poco recomendable usarlo
+    //Mientras con let sigue su orden y lo que esta dentro del bloque no lo saca como variable global
+    */
+    /* Segunda Sesion
+   //**************************************************************************************
+   //Ahora siguen las constantes las cuales tambien son bastante importantes
+   //Las constantees son variables que cuando se definen ya no se podran cambiar y se vera como se usan con los objetos
+   //Ejemplo
+   //Valores primitivos
+   const PI = 3.14164819; //No se puede cambiar
+   let perimetro = 3.123523; //Puede cambiar
+   console.log(PI,perimetro);
+    //Objetos
+    const objeto1 = {
+        nombre:"Julio",
+        edad:19,
+        numero:"2035665"
+    }
+    let objeto2 = {
+        nombre:"pablo",
+        edad:22,
+        numero:"193565"
+    }
+    objeto1.altura = 1.82;
+    objeto2.altura = 1.75;
+    objeto1.nombre = "Cesar";
+    console.log(objeto1);
+    console.log(objeto2);
+    //Como se puede observar la constante no interactua directamente con las propiedades
+    //De los objetos si no con el objeto , ya que al objeto no lo hace variable
+    //Comi en cambio con let el objeto puede ser variable y convertido en un array si se desea
+    */
+
+    /* Sesion 3
+   //*************************************************************************************
+   //Ahora lo que sigue son los strings y su nueva variante de la actualizacion las templates strings
+   //Maneras de declarar un string
+   let nombre = "Cesar";
+   let apellido = 'Alejandro';
+   let saludo = new String("Hola amigos");
+   //Concatenando
+    console.log(nombre+" "+apellido+": "+saludo);
+    //Funciones de string
+    console.log(nombre.length,apellido.toLowerCase(),saludo.toUpperCase());
+    //Funcion include la cual dice si hay o no hay una palabra en un texto y manda falso o true
+    console.log(saludo.includes("Hola"));
+    //Funcion trim la cual hace que no haya espacios en blanco al principio y al final de una cadena
+    let saluditos = new String("  Hola  ");
+    console.log(saluditos.trim());
+    //El ultimo es split el cual hace un arreglo separando las palabras por el parametro que le des y encuentre
+
+    //Template strings
+    //Estos se usan con el acento invertido y sirven demasiado para concatenar con espacios entre otras
+    //Ejemplo    let pablo = "Pablo";
+    let juan = "Juan";
+    //Template string
+    let saludoCompleto = `Hola mi nombre es ${pablo} y conozco a ${juan}`;
+
+    console.log(saludo);
+    */
+
+
+    /* Sesion 4
+    //***************************************************************************+
+    //Ahora lo que se vera son los numeros en javascript
+    //Maneras de declararlos
+    let a = 4;
+    let b = new Number(19);
+    let c = 7.36829;
+    let d = "8";
+    console.log(a,b);
+    console.log(a+b);
+    //to fixed lo que hace es que señala cuantos decimales imprimira en pantalla
+    console.log(c.toFixed(2));
+    //Parse int lo que hace es que devuelve solo el entero sin decimales o lo combierte a entero
+    console.log(parseInt(c));
+    */
+    /* Sesion 5
+    //*****************************************************
+    //Ahora lo que se vera son los valores booleanos , los valores null , undefined y Nan y la diferencia entre
+    //Null y undefined 
+    //Empezando por los booleanos
+    let valorBooleano = true;
+    let valorBooleano2 = new Boolean(false);
+    console.log("Valor1 = ",valorBooleano,"\nValor2 = ",valorBooleano2);
+    //Tambien hay valores aproximados a false y true , los cuales se encuentran en la truelist o falselist
+    //Ejemplo
+    let valorBoleano3 = new Boolean(0);
+    console.log("Valor3 = ",valorBoleano3);
+    console.log("Valor4 = ",Boolean(10));
+    //Ahora seguiran los valores null undefined y Nan
+    //Null es la expresion de una variable que la somete a estar vacia y el programador es el que se encarga
+    //De darle esevalor si quiere que esa variable este vacia 
+    let variableVacia = null;
+    console.log("Variable Vacia = ",variableVacia);
+    //Mientras que undefined es el compilador o javascript quien la asigna al no encontrar un valor osease
+    //Que este vacia la variable
+    let variableIndefinida;
+    console.log("Variable indefinida = ",variableIndefinida);
+    //Y por ultima el Nan , este tambien lo asigna javascript y es cuando detecta que se hace una operacion
+    //O movimiento matematico invalido
+    //Ejemplo
+    let variableNan = "alberto" * 90;
+    console.log("Variable Nan = ",variableNan);
+    */
+</script>
+<body>
+    
+
+
+
+</body>
+</html>

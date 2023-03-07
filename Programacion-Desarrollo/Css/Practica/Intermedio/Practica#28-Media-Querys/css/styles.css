@@ -1,0 +1,37 @@
+/*
+Ahora lo que se veran seran las diferentes medias queries para poder hacer mas responsive la pagina con dichas caracteristicas implementadas la cual se usa "@media" para mandar a llamar sus diferentes propiedades
+@media print = aqui iran todos los elementos diferentes que se imprimiran respecto a la pagina original
+*/
+body{
+    background-color:grey;
+}
+@media print{ /*Con print como se dijo al momento de imprimir la pagina aparecera en formato diferente segun lo que se indique, es importante usar los graficos en pantalla en opciones de la pagina*/
+    body{
+        background-color:blue;
+    }
+}
+/*media screen and (medidas) se usa para que cuando tenga esas medidas minimas entonces efectuara el diseño que se le de , es importante buscar la manera en que no se usen ya que mientras mas se usen , mas se rompe la pagina
+Ejemplos*/
+@media screen and (min-width:750px) {
+    body{
+        background-color: aqua;
+    }
+}
+@media screen and (min-width:1250px){
+    body{
+        background-color: brown;
+    }
+}
+/*media screen and (prefers-color-scheme:light or dark) este lo que hace es tomar las prioridades del usuario de su configuracion de windows y este mismo si detecta que elige el modo brillante , entonces hara lo que este dentro de esa dicha media , si no y escoje otro como oscuro entonces entrara al dark y etc*/
+
+@media screen and (prefers-color-scheme: light) {/*Si detecta que es modo brillante*/
+    body{
+        background-color: aliceblue;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {/*Si detecta que es modo oscuro*/
+    body{
+        background-color:darkgray;
+    }
+}

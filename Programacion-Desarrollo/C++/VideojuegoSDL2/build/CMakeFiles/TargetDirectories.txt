@@ -1,0 +1,5 @@
+/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build/CMakeFiles/edit_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build/CMakeFiles/package_source.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build/CMakeFiles/rebuild_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build/CMakeFiles/package.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build/CMakeFiles/VideojuegoSDL2.dir

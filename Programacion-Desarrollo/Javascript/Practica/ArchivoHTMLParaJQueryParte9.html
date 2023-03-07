@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="JQuery.js"></script>
+    <script>
+$(document).ready(function(){
+//Ahora lo que se vera es la funcion next la cual es bastante util para apuntar a un elemento en especifico que se encuentre en un contenedor
+//Para poder modificarlo o hacer lo que se requiera de este mismo
+//Ejemplo
+$("#Respuesta Button").hide();
+//En teoria se tienen ambas imagenes en el hover lo cual hace con funciones anonimas que tome la primera imagen y que despues en el next
+//Se muestre el boton de respuesta y como hay 2 ids llamados respuestas por eso se usa next porque apunta unicamente a el boton de
+//Respuesta de la primera imagen y igual al esconderla hace lo mismo
+$("#Contenedor img").hover(function(){
+    $(this).next("#Respuesta Button").show()
+}
+    ,function(){
+        $(this).next("#Respuesta Button").hide()
+    });
+});
+
+    </script>
+</head>
+<body>
+    <h1>Usando Next</h1>
+    <div id="Contenedor">
+        <img id="pregunta1" width="300px" height="300px" src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294998919_141746305198031_3768189234861251686_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=ZmzlHKR-Jw0AX8JPxhC&_nc_ht=scontent.fntr5-1.fna&oh=00_AT_5tdFut0f0AHfwkGWQ610dZ0Vu4hNEJvPf-R_OtYV9tg&oe=62DCE2AA"/>
+
+        <div id="Respuesta"> <Button>Respuesta</Button></div>
+
+        <img id="pregunta2" width="300px" height="300px" src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294998919_141746305198031_3768189234861251686_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=ZmzlHKR-Jw0AX8JPxhC&_nc_ht=scontent.fntr5-1.fna&oh=00_AT_5tdFut0f0AHfwkGWQ610dZ0Vu4hNEJvPf-R_OtYV9tg&oe=62DCE2AA"/>
+
+        <div id="Respuesta"> <Button>Respuesta2</Button></div>
+    </div>
+</body>
+</html>

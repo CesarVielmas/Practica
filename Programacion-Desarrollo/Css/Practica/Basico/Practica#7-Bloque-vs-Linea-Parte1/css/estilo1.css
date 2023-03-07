@@ -1,0 +1,54 @@
+/*Ahora se veran las diferencias entre los elementos de bloque y los elementos de linea 
+ La diferencia mas notable es que los elementos de bloque son como una caja y las propiedades
+ padding, width , height , margin y algunas otras propiedades funcionan diferente que los elementos de linea , pues los elementos de bloque como se dijo son como si fuera una caja
+ Ejemplo*/
+
+ .bloque{
+     background-color: blueviolet;
+     width: 400px;
+     height: 400px;
+     margin-top: 200px;
+     margin-bottom: 300px;
+     margin-right: 200px;
+     margin-left: 300px;
+     margin: 200px 200px 200px 200px;/*Cuando se usan 4 valores afectan a los 4 valores vistos anteriormente*/
+     margin: 500px;/*Cuando se usa un solo valor se alteran los valores top y bottom*/
+     margin: 800px 500px ;/*Cuando se usan 2 valores se alteran los valores top/bottom y left/right*/
+     margin: 100px 200px 100px;/*Cuando se usan los 3 valores alteran los valores top , left/right y bottom*/
+     /*padding es igual que margin que incluye los 4 tipos y funciona como se mostro con margin anteriormente cuando se usa su propiedad general*/
+     padding: 200px 0px 0px 200px;
+ }
+
+ .linea{
+     
+    background-color: lawngreen;
+    width: 20px;
+    height: 30px; 
+    /*Tambien existe el valor auto el cual toma los valores del navegador para darselo y ponerlo lo mayor posible que se puede al elemento*/
+    margin-bottom: 90px;/*Como se puede apreciar no funciona pues no contiene altura los elementos en linea*/
+    margin-left: 200px;
+    /*a diferencia de margin los elementos de linea si contienen los 4 padding y funciona igual que los elementos de bloque , solo que los elementos de linea no empujan a otros elementos*/
+    padding: 100px 300px 100px 300px;
+ }
+ h1{
+     margin-bottom:200px ;
+ }
+ /*width y height en los elementos de linea no causan absolutamente nada pues no es una caja y no tiene dimensiones como altura y anchura*/
+
+ /*Ahora con el atributo margin, el cual da margen o da espacios a un margen en especifico para ello existen 4 tipos de margen:
+    margin-top= margen de arriba
+    margin-bottom= margen de abajo
+    margin-left = margen del lado izquierdo
+    margin-right= margen del lado derecho
+    margin = incluye todos los margenes anteriores dependiendo de la cantidad de datos dados
+    
+Ahora es importante decir que los elementos de bloque contienen los margenes , pero los elementos de linea solo contienen los margenes left y right los cuales son izquierda y derecha , ya que no contienen altura */
+
+/*La propiedad padding , esta propiedad al igual que margin  tiene 4 tipos de padding , los cuales son:
+   padding-top= padding de arriba
+    padding-bottom= padding de abajo
+    padding-left = padding del lado izquierdo
+    padding-right= padding del lado derecho
+    padding = incluye todos los padding anteriores dependiendo de la cantidad de datos dados 
+    
+    Ahora padding es como margin pero lo que hace padding es que aumenta la caja de cualquier elemento ya sea de linea o de bloque mientras que margin lo que hace es que su contenido lo empuja y padding mantiene su contenido y lo que hace es expandir la caja*/

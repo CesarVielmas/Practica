@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+    <script>
+        /*Sesion 34
+        //**************************************************************************************************************************
+        //Ahora lo que se vera es el nuevo tipo de dato que fue añadido desde esgmascript 6 el tipo simbol
+        //Este nuevo tipo sirve mas que todo para darle a un objeto una propiedad privada o no visible para el programador
+        //Este mismo tambien puede servir para comparar valores del mismo tipo y que no sean iguales
+        //Ejemplo
+        //Declarar una variable de tipo simbol
+        const simbolo = Symbol("simbolo1"),
+        simbolo2 = Symbol("simbolo2");
+        console.info(simbolo === simbolo2);
+        //Dara falso ya que aunque sean del mismo tipo symbol , no son iguales
+        //Ahora para darle una propiedad privada a un objeto es la siguiente
+        const contraseniaJuan = Symbol("valor privado");
+        const objeto1 = {
+            [contraseniaJuan]:"91ASL237FA",
+            valor:2
+        }
+        console.info(objeto1);
+        //Y como se puede apreciar no sale el nombre de quien es la contraseña tal vez esa sea una utilidad , para ello sirven las propieades
+        //Simbol para darle propiedades privadas a objetos
+        //Tambien se puede cambiar una propiedad privada de un objeto si claro , se sabe el nombre de dicha propiedad
+        objeto1[contraseniaJuan] = "6VU7c3nU56";
+        console.info(objeto1);
+        //No solo se pueden guardar datos primitivos en los symbols tambien pueden guardar funciones,objetos,arrays etc
+        //Ejemplo funcion
+        objeto1[contraseniaJuan] = ()=>
+        {
+            console.info("contraseña = 6VU7c3nU56");
+        }
+        console.info(objeto1[contraseniaJuan]());
+        //Y asi sustantivamente 
+        */
+
+
+
+        /*Sesion 35
+        //**************************************************************************************************************************
+        //Ahora lo que se vera sera el tipo de dato set el cual es muy parecido a un arreglo , pero sin embargo no es un arreglo
+        //Tiene diferentes usos y son importantes 
+        //Declaracion de la instancia de un objeto de tipo Set 
+        const datoSet1 = new Set(),
+        datoSet2 = new Set([1,2,1,4,2,5,6,3]);//Otra manera de instanciarlo
+        datoSet1.add("Hola");
+        datoSet1.add("Hola");
+        console.info(datoSet1,datoSet2);
+        //Como se puede apreciar el objeto o tipo de dato Set lo que hace es tomar un array de valores o instanciarlo y despues con el metodo
+        //add añadir los valores por separado y de estos datos solo regresar un objeto de tipo set que es como un array con los datos
+        //Sin duplicaciones y para mas que todo eso sirve
+        //Algunos metodos importantes del objeto Set
+        datoSet1.add(12);//Añade un valor que se le de en sus parametros ,y lo pone en la siguiente posicion del arreglo
+        datoSet1.delete("Hola");//Lo que hace es que elimina un valor el cual busca en su parametro , si lo encuentra
+        datoSet1.forEach(elemento=> console.info(elemento));//forEach tambien lo tiene , es lo mismo que el metodo de los arreglos
+        console.info(datoSet1.size);//size es casi exactamente lo mismo que la  propiedad lenght de los arreglos o String , devuelve un int con la cantidad de valores que tiene
+        console.info(datoSet1.has(12));//Has es muy importante , ya que busca si existe lo que se escriba en su parametro y si existe manda un true y si no un false
+        console.info(datoSet1.has("Hola"));//Como Hola ya lo elimine con delete ya no existe y devolvera un false
+        console.info(`Antes del clear cantidad= ${datoSet1.size}`);
+        datoSet1.clear();
+        //Clear es un metodo que lo que hace es eliminar todos elementos de un objeto de tipo Set y lo vuelve vacio
+        console.info(`Despues del clear cantidad= ${datoSet1.size}`);
+        //Ahora por ultimo , como se sabe Set no es un Array , son objetos totalmente diferentes y para funcionalidades diferentes
+        //Esto quiere decir que tienen diferentes metodos y diferentes tipos de propiedades pero el objeto Array tiene un metodo 
+        //Estatico para convertir un objeto iterable , osea con varios valores en su interior  , a un array y con ello se puede
+        //Usar un objeto Set con los metodos propiedades y declaracion como un Array , dicho metodo se llama from
+        const arregloConvertido = Array.from(datoSet2);
+        //Ahora que ya una coonstante tomo el objeto convertido a arreglo de un tipo Set
+        console.info(arregloConvertido instanceof Array);//Devuelve true pues es un arreglo lo que regreso
+        */
+
+        /*Sesion 36
+        //*****************************************************************************************************************************
+        //Ahora lo que se vera seran los maps y su funcionalidad , no confundir con el metodo map de los arreglos
+        //Los maps son algo utiles no tanto como se esperaria , pero es bueno saberlos y tenerlos en cuenta 
+        //Ejemplo para instanciar un map
+        const mapa1 = new Map(),
+        //Segundo ejemplo para instanciar y darle valores al objeto tipo Map
+        mapa2 = new Map([
+            ["nombre","Cesar"]
+            ,
+            [20,"veinte"]
+            ,
+            ["Edad",20]
+        ]);
+        console.info(mapa1,mapa2);
+        //Algo peculiar de el objeto Map es que puede guardar tipos primitivos y tipos complejos y darle un valor como descripcion
+        //Esto es algo que los diferencia y que son utiles aunque no es muy recomendables usarlos y no se haya mucha funcionalidad
+        //Metodos de el objeto Map
+        mapa1.set("apellido","Vielmas");//set es un setter que tiene el objeto en cuestion y que sirve para añadir valores al objeto Map en este caso mapa1
+        console.info(mapa1.get("apellido"));//get es un getter que devuelve el valor una propiedad ya dada por setter o dentro del objeto en este caso mapa1
+        mapa1.delete("apellido");//Este es un delete que funciona como el objeto Set y elimina la propiedad y su valor que encuentra entre el parametro del objeto
+        mapa2.forEach((valor,propiedad)=> console.info(`${propiedad} = ${valor}`) );//forEach es el mismo metodo que usa los arrays y los objetos Set
+        console.info(mapa2.size); //size es una propiedad que funciona igual que los arrays y los objetos de tipo Set , sin embargo cuenta cuantas propiedades tiene
+        console.info(mapa2.has("nombre"));//has como el objeto Set verifica que existe eso en el objeto y si existe manda un true y si no un false, aqui verifica las propiedades no valores
+        console.info(`mapa 2 antes de el clear ${mapa2.size}`);
+        mapa2.clear();
+        console.info(`mapa 2 despues de el clear ${mapa2.size}`);
+        //clear hace lo mismo que en el objeto Set borra todo lo que tenga el objeto
+        */
+
+
+        /*Sesion 37
+        //********************************************************************************************************************************
+        //Ahora lo que se vera seran los WeakMap y los WeakSet
+        //Estos son casi exactamente lo mismo que los objetos Map y Set pero en cambio se usan para ahorrar memoria y asi mismo mejorar
+        //El rendimiento de una aplicacion sin embargo estos tienen limitantes en comparacion de sus versiones no debiles 
+        //Ejemplo
+        const mapaDebil = new WeakMap();//En cambio de los Map los WeakMap no pueden recibir valores en su declaracion 
+        mapaDebil.set({},"Cesar");//No se le puede dar ningun nombre a sus keys o sus propiedades y solo puede recibir objetos aunque esta forma no nada aconsejable
+        let apellido = {};
+        let nombre = {};
+        mapaDebil.set(apellido,"Vielmas");//Otra forma de añadir parametros
+        mapaDebil.set(nombre,"Cesar");
+        console.info(mapaDebil);
+        //Para obtener el valor con get de un map
+        console.info(mapaDebil.get(apellido));//En los parametros se le debe dar el objeto que fue añadido con el valor por eso es nada recomendable
+        //poner un objeto vacio como key o propiedad en el set al añadirlo a un WeakMap
+        //Tambien la propiedad delete como el Map pero WeakMap pide el objeto a eliminar
+        mapaDebil.delete(apellido);
+        console.info(mapaDebil);
+        //Tambien tiene el metodo has que compara si existe un tipo de objeto como key o propiedad en el WeakMap y devuelve un true si esta y un false si no
+        console.info(mapaDebil.has(nombre));//Mandara true
+        console.info(mapaDebil.has(apellido));//Mandara false ya que apellido se elimino
+        //Hasta ahi son todos los metodos que puede tener un WeakMap y por eso ahi sus limitantes
+        //Pero algo especial de esto y que se dice que elimina memoria y es usado es que cuando los objetos que tomo como propiedad se vuelvan
+        //Null o undefined etc , el WeakMap automaticamente eliminara de sus parametros estos elementos que sean nulos o undefined 
+        //Ejemplo
+       
+        const intervaloMap = setInterval(()=>
+        {
+            console.info(mapaDebil);
+        },1000);
+        
+       //Como se puede ver en lo anterior como los valores que habia tomado como objetos pasaron a nulo se vaciaron y se quedo vacio el 
+       //WeakMap
+
+       //Ahora el WeakSet que es casi lo mismo que WeakMap
+       const setDebil = new WeakSet();//Igual que el WeakMap no puede recibir parametros deben ponerse despues de haberse declarado con add
+        //Metodo add que igual que WeakMap recibe puros objetos como parametro y su respectivo valor
+        let hora = {hora:"4:24"},
+        padre ={padre:"Padre"},
+        hijo = {hijo:"Hijo"};
+       setDebil.add(hora);
+       setDebil.add(padre);
+       setDebil.add(hijo);
+       console.info(setDebil);
+       //Metodo delete para eliminar que igual que WeakMap busca en forma de objeto y lo elimina si lo encuentra
+       setDebil.delete(hora);
+       //Metodo has el cual igual que WeakMap hace lo mismo busca ese objeto y si lo encuentra manda true o false si no
+       console.info(setDebil.has(padre));//Devolvera true ya que si se encuentra en el objeto
+       console.info(setDebil.has(hora));//Devolvera false ya que no lo va a encontrar ya que fue eliminado con delete
+
+       //Esos son todos los metodos que tienen los WeakSet ya que pues esas son sus limitaciones y como WeakMap tambien ahorran memoria cuando
+       //Alguno de sus valores sean null o undefined etc 
+       //Ejemplo
+       const intervaloSet = setInterval(()=>
+        {
+            console.info(setDebil);
+        },1000);
+        
+        const tiempo = setTimeout(()=>
+        {   
+           setTimeout(()=>
+           {    
+            apellido = null;
+            nombre = null;
+            hora = null;
+            padre = null;
+            hijo = null;
+            clearInterval(intervaloSet);
+            clearInterval(intervaloMap);
+            setTimeout(()=>
+            {
+               
+            console.info(mapaDebil);
+            console.info(setDebil);
+            },Math.random()*1000)
+           },Math.random()*10000)
+            
+        },Math.random()*1000)
+        //Y como se puede apreciar eliminan los valores cuando sean nulos
+        */
+
+
+        /*Sesion 38
+        //***************************************************************************************************************************
+        //Ahora lo que se vera seran una nueva modalidad de los iteradores en general los cuales si son utiles para poder recorrer
+        //Y detectar cualquier objeto iterable en javascript
+        //Ejemplo
+        const objetoIterable = [1,2,4,2,8,3,6];
+        const elementoIterador = objetoIterable[Symbol.iterator]();//Dandole Symsbol dice que el elemento es de un unico tipo y que sera el iterador original el cual tomara su valor
+        //Metodo next , este metodo next tiene como finalidad pasar los valores y un valor boleano que dira si termino el objeto o no 
+        // como se puede apreciar al quitar el comentario
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        //console.info(elementoIterador.next());
+        
+       console.info(elementoIterador);//Aqui se puede apreciar el tipo de iterable que es
+       //Funcionalidad
+       let elementoTomaValores = elementoIterador.next(),
+       contador = 0;
+       while (elementoTomaValores.done === false) {
+           console.info(`valor de elemento ${contador+1} = ${elementoTomaValores.value}`);
+           elementoTomaValores = elementoIterador.next();
+           contador++;
+       }
+       //Como next da un objeto con el valor y el done el cual dice false si aun no llega al final del arreglo lo toma elementoTomaValores
+       */
+    </script>
+</head>
+<body>
+    <h1>Practica Nueva Javascript #8</h1>
+  
+</body>
+</html>

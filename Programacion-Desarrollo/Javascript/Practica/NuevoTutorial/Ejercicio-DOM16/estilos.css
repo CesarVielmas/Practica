@@ -1,0 +1,115 @@
+:root{
+    --Letra:'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@keyframes animacion {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.bloque1{
+    background-color:  #f0db4f;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+}
+.bloque1 h1{
+    font-family: var(--Letra);
+    font-size: 6vw;
+}
+.bloque2{
+    padding: 15px;
+    text-align: center;
+    background-color:  #f0db4f;
+    position:fixed;
+    width: 80px;
+    left: 84vw;
+    top: 88vh;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+.bloque2 span{
+    font-size: 5vw;
+}
+.principal{
+    text-align: center;
+}
+.principal h2{
+    font-size: 4vw;
+    margin-bottom: 100vh;
+    padding-top: 150px;
+    font-family: var(--Letra);
+}
+
+.menuDesplegable{
+    display: grid;
+    position:fixed;
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(115, 119, 115);
+    text-align: center;
+}
+.menuDesplegable a{
+    display:block;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 11%;
+    color:whitesmoke;
+    border: 1px solid rgb(0, 0, 0);
+}
+.menuDesplegable a:hover{
+    background-color: #f0db4f;
+    color: black;
+}
+.Esconder{
+      visibility:hidden;
+}
+.Transicion{
+   animation-name: animacion;
+   animation-duration: .4s;  
+   }
+.Visible{
+    visibility: visible;
+}
+.menuDesplegable2{
+    display: grid;
+    position: fixed;
+    height: 100vh;
+    width: 30vw;
+    left: 0px;
+    text-align: center;
+    z-index: 2;
+    top: 0px;
+}
+.menuDesplegable2 a{
+    flex-grow: 1;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(255, 0, 0);
+    text-decoration: none;
+    padding-top: 70px;
+}
+.menuDesplegable2 a:hover{
+    background-color: #f0db4f;
+    color: black;
+}
+.menuDesplegable2 .visto{
+    background-color: #f0db4f;
+    color: black;
+}

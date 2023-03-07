@@ -1,0 +1,18 @@
+/*Ahora lo que se vera seran las propiedades 
+text-decoration el cual pone una linea abajo , arriba o en medio de un texto
+text-shadow el cual pone un texto por detras y funciona muy similar a box-shadow
+text-transformation el cual transforma el texto , a mayusculas o minusculas etc*/
+
+/*text-decoration*/
+.texto1{
+    text-decoration: overline;/*Poniendole una linea encima del texto*/
+
+}
+/*text-shadow*/
+.texto2{
+    text-shadow: 5px 5px 5px red;/*Logica: valor de x, valor de y, valor de difuminado y valor del color*/
+}
+/*text-transformation*/
+.texto3{
+    text-transform: uppercase;/*Transformando el texto en mayusculas*/
+}

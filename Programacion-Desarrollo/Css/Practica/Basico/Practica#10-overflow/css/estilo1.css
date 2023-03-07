@@ -1,0 +1,33 @@
+/*Ahora lo que se vera seran los overflow , los cuales tienen importancia para css pues son escenciales para contraer contenido en un bloque
+Los overflow suceden cuando el contenido a mostrarse es demasiado grande o acho para caber en algun bloque y sobrepasa el tamaño que tiene ese bloque , mas que todo bloque padre, por ello son importante usarlos
+en overflow existen 2 tipos importantes:
+overflow-x =Sirve para cuando el contenido dentro de el padre sobrepasa lo debido de lado derecho o izquierdo 
+overflow-y =Sirve para cuando el contenido dentro de el padre sobrepasa lo debido de arriba o abajo*/
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.Padre1,.Padre2{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+/*Ejemplo overflow 1*/
+.Padre1{
+   overflow:hidden scroll;/*Cuando se sobrepase el eje x entonces escondera el contenido y cuando se sobrepase el eje y hara un scroll*/
+}
+.Padre1 p{
+    width: 400px;
+}
+/*Ejemplo overflow 2*/
+.Padre2 p{
+    width: 400px;
+}
+.Padre2{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

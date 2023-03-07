@@ -1,0 +1,43 @@
+/*Lo que hace en css para la metodologia BEM es crear una regla para el objeto en especifico que vaya a englobar a los demas y que sean valores que no se modificaran en el futuro*/
+
+.button{
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border: none;
+    color: azure;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    height: 20vw;
+    width: 20vw;
+    font-size: 3vw;
+}
+.button-red{
+    background-color: red;
+}
+.button-blue{
+    background-color: blue;
+}
+
+.button-ghost{
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border:4px solid currentColor;/*Current color lo que hace es que toma el color que tiene el texto*/
+    background-color: transparent;
+    font-size: 2vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    height: 20vw;
+    width: 20vw;
+}
+.button-ghost-red{
+    color: red;
+}
+.button-ghost-blue{
+    color: blue;
+}

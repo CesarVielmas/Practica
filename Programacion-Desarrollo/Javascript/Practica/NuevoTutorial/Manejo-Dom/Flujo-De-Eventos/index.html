@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de eventos en javascript</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .Principal{
+            height: 400px;
+            width: 500px;
+            position: absolute;
+            background-color: blue;
+            margin: 80px;
+            text-align: center;
+            padding: 40px;
+        }
+        .Principal__Segundo{
+            position: relative;
+            height: 80%;
+            width: 80%;
+            background-color: aqua;
+            text-align: center;
+            padding: 40px;
+        }
+        .Principal__Tercero{
+            height: 80%;
+            width: 80%;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Principal">
+
+        <div class="Principal__Segundo">
+
+            <div class="Principal__Tercero"></div>
+        </div>
+    </div>
+    <!--Ancla el cual fue despojada de sus caracteristicas por defecto-->
+    <a href="www.google.com" target="_blank">¿ir a google?</a>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 1</title>
+    <!--Para esto se vera como y de que maneras conectar css a html las cuales hay 4 formas-->
+    <!--Forma 1 -Recomendada un 90% de las veces , osea casi todas-->
+    <!--Para esta forma se usa la etiqueta link y se le da en el atributo rel osease la relacion , que sera un stylesheet una hoja de estilos de esta manera con href se referencia a que archivo se refiere de la hoja de estilos y ya se pasa la ruta del archivo css-->
+    <link rel="stylesheet" href="css/estilo1.css">
+    <!--Forma 2 -Recomendada un 8% es muy poca la recomendacion pues no seria la mejor forma de poner un estilo , pero si es la unica manera en casos especiales donde no se pueda linkear un archivo css entonces se debe usar pues es la unica manera-->
+    <!--Para esta forma se usa la etiqueta style la cual es exclusiva para poner dentro de ella el codigo css correspondiente-->
+    <style>
+        /* Ejemplo para cambiar el cuerpo del archivo html a un color*/
+        body{
+            background-color: aqua;
+        }
+        /* Forma 3 Recomendada un 1% es muy muy poco recomendable , hacer esta forma pues al momento de ejecutarla se hara de forma asincrona con la pagina , osease no bloqueante*/
+        /*Se usa con el comando @import url() el cual lo que hace es lo mismo que link pero este lo hace de forma asincronica */
+        @import url(css/estilo1.css);
+
+    </style>
+</head>
+<!--Forma 4-Recomendada un 1% al igual que la de importacion esta es muy bajamente recomendada pues poner el estilo en una etiqueta ya no se usa pues es una perdida de tiempo y ademas se tendria que modificar 1 por 1 las etiquetas-->
+<body style="position: absolute;">
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Practica 1</h1>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

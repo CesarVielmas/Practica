@@ -1,0 +1,13 @@
+/*Ahora lo que se vera seran los textos, estos textos por su lado contienen la propiedad de las fuentes ademas del tamaño y la fuente es muy importante para poder lograr un diseño mucho mas bonito y relativamente bueno
+Por defecto css ya contiene fuentes las cuales no son tan llamativas o elegantes , por otro lado tambien contiene fuentes que pueden ser importadas mediante un servidor que pudieran ser mas llamativas , pero el problema de esto es que alenta un poquito la pagina gracias a hacerle una peticion a un servidor*/
+/*Ejemplo usando una fuente por defecto*/
+.porDefecto{
+    font-family: sans-serif;/*sans serif ya viene importada dentro de todos los navegadores por defecto por lo cual puede ser usada*/
+    font-weight: 6;/*La negrita de la fuente*/
+}
+/*Ejemplo usando una fuente importada,mediante google fonts*/
+.importada{
+    font-family: 'Oswald', sans-serif;
+
+}
+/*Es importante decir que si se usara una fuente de algun servidor solo importar 2 o 1 ya que podria alentar mucho la pagina*/

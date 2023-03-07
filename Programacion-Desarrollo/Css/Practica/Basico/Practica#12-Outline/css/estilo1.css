@@ -1,0 +1,35 @@
+/*Ahora lo que se vera sera la propiedad outline , la cual tambien es un shortcut , pero este toma todas las propiedades o valores que tenia la propiedad border oasease toma todo lo que contiene border aunque outline no es lo mismo que border ya que outline es algo que no afecta , ni a los elementos por fuera ni a los elementos dentro , ya que border sus tamaños si afectaba al texto o afectaba a lo que tuviera fuera*/
+/*Ejemplo*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.bloque1,
+.bloque2,
+.bloque3,
+.bloque4,
+.bloque5{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+/*Border*/
+.bloque1,.bloque2{
+    border:30px solid blue;
+}
+/*outline*/
+.bloque3,.bloque4{
+    outline: 30px solid blue;
+}
+.h1Border{
+    margin-bottom: 50px;
+}
+/*Como se puede apreciar outline no afecta ni a su contenido ni a lo que esta por fuera por ello se juntan los 2 bloques , el bloque 3 y 4 y el bloque 1 y 2 no se juntan*/
+/*Tambien existe algo diferente a border el cual es el outline offset el cual lo que hace es que puede mover ese margen x cantidad ya sea negativa o positiva 
+Ejemplo*/
+.bloque5{
+    outline: 30px solid blue;
+    outline-offset: -150px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para las etiquetas p */
+        .tamano
+        {
+            font-size: 18px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <script src="JQuery.js"></script>
+    <script>
+        //Ahora lo que se vera es el metodo css(); de JQuery este mismo ayuda mucho a la hora de cambiar o 
+        //obtener algun valor de CSS es muy util ,  aqui se vera un breve ejemplo
+        var tamañoTexto
+        $(document).ready(function()
+        {
+            //Tomando y guardando en la variable tamañoTexto el tamaño
+            tamañoTexto =parseInt( $(".tamano").css("font-size"));
+            //creando un evento en el boton
+            document.getElementById("Aumentar").addEventListener("click",AumentarTa,false);
+        });
+        //Funcion cambiando el codigo CSS
+        function AumentarTa()
+        {
+            $(".tamano").css("font-size",tamañoTexto * 1.02);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <p class="tamano"> Hola Ejemplo CSS</p>
+        <button id="Aumentar">Aumentar Tamaño</button>
+</body>
+</html>

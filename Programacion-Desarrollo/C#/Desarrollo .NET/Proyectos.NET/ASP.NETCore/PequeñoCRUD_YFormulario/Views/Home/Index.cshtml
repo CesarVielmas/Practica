@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{/*Aqui se llama a el modelo o mejor dicho al namespace con ese nombre para poder tomar el objeto columnasBaseDatos y presentarlo en la pagina*/}
+@using Base.Models; 
+    @{/*Aqui se hace un foreach para recorrer la base de datos y ver su contenido mas que todo para fines practicos con los elementos tomados de el controlador y el modelo*/}
+
+    @foreach (ColumnasBaseDatos Base in ViewBag.Formulario)
+    {
+
+       <p>  @Base.Nombre @Base.Apellido 
+           @Base.IdEdad  
+       </p>
+    }
+

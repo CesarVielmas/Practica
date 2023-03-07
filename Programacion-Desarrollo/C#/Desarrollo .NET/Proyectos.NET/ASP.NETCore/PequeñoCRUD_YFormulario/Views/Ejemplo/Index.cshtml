@@ -1,0 +1,42 @@
+
+@{
+  Layout = ""; //Se quita el layout o la superpage para que solo salga lo que viene en este index o si se requiere se puede añadir otra pagina como layout
+<p>Este es un ejemplo de la pagina si tiene interes comunicarse con mi abogado</p>
+}
+<p>
+@TempData["Lista1"]= "Lista Numero 1: ";
+</p>
+
+<ul>
+@foreach(string Lista in ViewBag.Lista)
+{
+ <li>
+     @Lista
+  </li>   
+}
+</ul>
+
+<p>
+@ViewData["Lista2"] = "Lista Numero 2: ";
+</p>
+
+<ul>
+@foreach (string Lista in (List<string>)ViewData["Lista"])
+{
+ <li>
+     @Lista
+  </li>   
+}
+</ul>
+<p>
+@ViewBag.Lista3 = "Lista Numero 3: ";
+</p>
+
+<ul>
+@foreach (string Lista in (List<string>)TempData["Lista"])
+{
+ <li>
+     @Lista
+  </li>   
+}
+</ul>

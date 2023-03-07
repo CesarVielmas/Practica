@@ -1,0 +1,26 @@
+/*El primero que se vera es el selector agrupado el cual mediante comas ","
+Se le dice al navegador cuales y cuantos clases o id etc tomara para aplicarle un estilo en particular*/
+/*Ejemplo selector agrupado*/
+.texto-1,
+.texto-2,
+.texto-3{
+    color: coral;
+}
+/*Ahora el siguiente es el selector es el selector descendiente , este lo que hace es que cuando una etiqueta se encuentra dentro de otra se puede modificar la etiqueta que esta dentro de esa otra y asi solo modificar esa sin afectar alguna otra etiqueta con el mismo class o siendo la misma etiqueta*/
+/*Ejemplo selector descendiente*/
+div h1{
+    color: blueviolet;
+}
+/*Los siguientes son los selectores hermanos , estos lo que hacen es seleccionar a sus hermanos , los cuales son los que se encuentran en el mismo nivel de la estructura*/
+/*Ejemplo Se selecciona al hermano de h1 mas sercano que sea p*/
+div h1 + p{
+    color: chocolate;
+}
+/*Ejemplo se seleccionan todos los hermanos sercanos que contengan la etiqueta p en h1 de body*/
+h1 + p{
+    color: crimson;
+}
+/*Ejemplo de selector de hijo directo , los cuales excluyen a sus nietos osease solo el bloque en el que se encuentran*/
+div div > p{
+    color: rgb(30, 166, 230);
+}

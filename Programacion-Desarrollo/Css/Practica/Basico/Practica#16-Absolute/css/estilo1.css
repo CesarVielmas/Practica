@@ -1,0 +1,26 @@
+/*Ahora lo que se vera sera sobre position absolute , pues este es diferente del relative , este sin embargo si conserva la misma regla de que si se usa top ya no funcionara bottom o que si se usa left ya no funcionara right y viceversa pero una peculiaridad de este mismo es que toma como contenedor al html , si no encuentra alguno y se vuelve autonomo a ese contenedor no como relative que toma directamente al body , este mismo contenedor necesita ser absolute o relativo , no estatico , como los elementos html por defecto
+Ejemplo*/
+.Bloque1,
+.Bloque2,
+.Bloque3{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+.Bloque1{
+    width: 500px;
+    height: 400px;
+    background-color: brown;
+    position: relative;/*Necesita ser de posicion relativa o absoluta etc para que pueda funcionar y tomarlo*/
+}
+.Bloque2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.Bloque3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+/*Como se puede apreciar los bloques 2 y 3 tienen las mismas caracteristicas de tipo absolute y toman las mismas posiciones , sin embargo uno esta dentro de un contenedor y otro no , entonces esa es la gran diferencia con absolute*/

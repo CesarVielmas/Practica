@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 8</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!--Ahora lo que se vera seran las anclas o enlaces-->
+        <!--Estos enlaces o anclas lo que hacen es redireccionar hacia otra pagina la cual sea referida dentro de este con la etiqueta a-->
+        <!--Ejemplo-->
+        <a href="./Practica8.1.html">Practica 8.1</a>
+        <!--Ahora este mismo tiene 2 formas para formar el atributo href las cuales son Rutas absolutas y las rutas relativas-->
+        <!--Empezando por las rutas relativas las cuales son las que se usan para mostar el contexto actual de una carpeta por ejemplo la de los proyecto-->
+        <!--Ejemplo-->
+        <a href="/Practica7.html">            Practica 7</a>
+        <!--Eso vendria siendo una ruta relativa y tambien es importante considerar que para salir una carpeta es con "../" para ir a la raiz del proyecto es con "/" en este caso es la carpeta Practica tambien es importante saber que cuando se usa "index.html" y al poner una ruta "/" sola sin nada se hace enfasis como si fuera "/index.html" pero solo funciona implicitamente con idex.html-->
+
+        <!--Ahora las rutas absolutas-->
+        <!--Las rutas absolutas son las que utilizan los protocolos http o https , osease toda aquella ruta que busque en la web y que este subida en un protocolo http o https -->
+        <!--Ejemplo-->
+        <a href="https://www.google.com">     Ir a google</a>
+        <!--Es importante tambien recalcar que la etiqueta a es de tipo salto de linea y no salto de bloque-->
+
+        <!--Algunos atributos importantes-->
+        <!--Hay atributos bastante importantes en las anclas los cuales son "target" , "download" los cuales son bastante usados y importantes para la pagina web-->
+        <!--Empezando por target el cual tiene como finalidad que cuando se seleccione una ancla lo redireccione hacia la pagina en la misma pagina que se esta usando o que lo redireccione en otra pagina,quedara mas comprensible con el ejemplo-->
+        <!--Ejemplo-->
+        <br>
+        <a href="https://www.google.com" target="_blank">Este link redireccionara en otra parte de la pagina atributo target con _blank</a>
+        <a href="https://www.google.com" target="_self">Este link redireccionara en la misma parte de la pagina atributo target con _self</a>
+        <!--Ahora el atributo download el cual tiene como finalidad descargar algo a lo que sea redireccionado href algo que tiene de diferencia y que es importante es que download no funcionara con enlaces absolutos osease con href https o http este funcionara solo en lo que encuentre en el servidor que se esta usando-->
+        <!--Ejemplo-->
+        <br>
+        <a href="/Ejercicio1.html" download>Descargar Pagina Ejercicio 1</a>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

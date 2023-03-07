@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+<script>
+    /*Sesion 22
+    //************************************************************************************
+    //Ahora lo que se vera sera el objeto Date el cual es un prototipo para las horas y fechas
+    //Se veran algunas de sus funcionalidades y sus metodos
+    //Empezando por crear la instancia al objeto
+    const fecha = new Date();
+    console.log(fecha.getDate());//Este metodo es para obtener el numero del dia en el que nos encontramos
+    console.log(fecha.getDay());//Este metodo lo que hace es que da el numero del dia en el que estamos por ejemplo lunes seria el numero 1 y domingo 0
+    console.log(fecha.getFullYear());//Este metodo lo que hace es que da el año en el que estamos
+    console.log(fecha.getHours());//Este metodo lo que hace es que da la hora en la que nos encontramos en horario militar
+    console.log(fecha.getMilliseconds());//Este metodo lo que hace es que da los milisegundos que trasncurrieron de un segundo a otro
+    console.log(fecha.getMinutes());//Este metodo lo que hace es que da los minutos en los que nos encontramos
+    console.log(fecha.getMonth());//Este metodo da el numero del mes en el que nos encontramos
+    console.log(fecha.getSeconds());//Este metodo lo que da son los segundos transcurridos de un minuto a otro
+    console.log(fecha.getTime());//Este metodo es en particular bueno pues lo que hace es dar los segundos que han pasado desde 1970 hasta la fecha actual
+    console.log(fecha.getTimezoneOffset());//Este metodo lo que hace es dar los minutos que hay de diferencia del meridiano de grenwich
+    console.log(fecha.getUTCFullYear());//Este metodo y los demas que tienen el UTC significa que pertenecen a la hora de el meridiano de grenwich
+    console.log(fecha.toDateString());//Este metodo lo que hace es que da la fecha pero no en un numero si no en texto sin contar la hora
+    console.log(fecha.toLocaleDateString());//Este metodo hace lo mismo que el anterior dar la fecha del dia de hoy pero sin la hora y con puros numeros
+    console.log(fecha.toLocaleString());//Este metodo hace lo mismo que el anterior pero da tambien la hora y no solo la fecha del dia de hoy
+    console.log(fecha.toLocaleTimeString());//Este metodo arroja solo la hora en la que nos encontramos sin la fecha del dia de hoy
+    console.log(Date.now());//Esto lo que hace es dar la fecha de igual manera del dia de hoy pero contando los segundos que han pasado desde el 1970
+    //Otra cosa muy importante es que pueden usarse esos metodos y convertirlos a string para que no den solo la fecha y hora en numeros
+    */
+
+   /*Sesion 23
+   //****************************************************************************************************
+   //Ahora lo que se vera sera casi todo sobre el objeto Math en javascript
+   //EL objeto math es un objeto math es muy recomendable para cosas matematicas o conversiones y numeros
+   //Aqui se veran algunos de sus metodos
+   //Importante como este objeto es un objeto estatico no es necesario instanciar el objeto en una variable
+   console.log(Math.PI);//Propiedad de el objeto math que da la constante PI
+   console.log(Math.abs(-10));//Metodo que da el valor absoluto de un numero
+   console.log(Math.ceil(7.1));//Metodo que redondea el valor a un numero mas arriba por ejemplo 7.1 a 8 
+   console.log(Math.floor(7.9));//Metodo que baja el redondeo un numero por ejemplo 7.9 a 7
+   console.log(Math.fround(7.2));//Metodo que lo que hace es hacer el valor mas aproximado flotante 
+   console.log(Math.max(7.2,8.2));//Metodo que compara 2 numeros o mas numeros que contiene un parametro REST que manda a consola el valor mas alto 
+   console.log(Math.pow(2,10));//Metodo que hace una elevacion de un numero a una cierta cantidad en este caso fue 2 a la 10 o (2)10
+   console.log(Math.min(2.1,1.0,0.5));//Metodo que hace lo mismo que max pero ahora busca el valor minimo de una infinita cantidad de numeros como parametro
+   console.log(Math.random());//Metodo que manda un numero random del 0 al 1 contando decimales
+   console.log(Math.round(7.5));//Metodo que redondea de manera correcta un numero si esta por debajo de .5 lo baja un numero y si no lo sube
+    */
+
+   /*Sesion 24
+   //*****************************************************************************************************************
+   //Ahora lo que se vera seran los operadores de cortocircuito OR y AND los cuales si son utiles en diferentes
+   //Contextos que se puedan ocupar
+   //Ejemplo                                 <  >
+   const funcion1 = (nombre="Desconocido") => console.log(`¿Como te encuentras ${nombre}?`);
+   funcion1("Cesar");
+   //En este caso se hara vacio por lo cual muchas veces para solucionar esto se da un valor predeterminado a la variable
+   //Para que no sea indefinido
+   funcion1();
+   //Ahora otra forma de hacer el darle un valor predeterminado es haciendo un cortocircuito OR o AND
+   //Ejemplo cortocircuito OR
+   const funcion2 = nombre =>
+   {
+    nombre = nombre || "Desconocido";//Usando el cortocircuito OR el cual si es false el nombre se le dara desconocido como valor
+    console.log(`¿Hola como te encunetras ${nombre}?`);
+   }
+   funcion2("Cesar");
+   //Ahora sabiendo esto , se puede usar en casi cualquier lado nos podemos basar en la tabla de truthy y falsy que se encuentra en internet
+   //Para conocer algunos valores falsos y otros verdaderos predeterminados del lenguaje
+   //Algunos ejemplos
+   //Cortocircuito OR
+   console.log(10 || "Da falso");
+   console.log(0 || "Da falso");
+   console.log(true || "Da falso");
+   //Cortocircuito AND
+   console.log(null && "Da verdadero");
+   console.log(false && "Da verdadero");
+   console.log(10 && "Da verdadero");
+   */
+
+  /*Sesion 25
+  //*********************************************************************************************************
+  //Ahora lo que se vera seran los metodos de alert confirm y prompt
+  //Estos metodos vienen directamente del objeto window y window es un objeto estatico por lo cual no se puede
+  //Instanciar y se tiene que usar con el punto
+  window.alert("Esto es una alerta");//esta es una alerta y no da ningun valor en especial
+  window.prompt("Esto es un aviso y es para llenar valores");//Metodo para dar valores a alguna variable , si se da aceptar y no se pone nada , almacenar un string vacio y si se le da cancelar se le asignara un null
+  window.confirm("Esto es una confirmacion");//Metodo para asignar un valor a alguna variable , solo puede ser true o false
+  const valorDepositado = window.prompt("Dame un valor");
+  const valorConfirmativo = window.confirm("¿Desea continuar?");
+  window.console.log(`Valor Depositado: ${valorDepositado}`);
+  window.console.log(`Valor Confirmativo: ${valorConfirmativo}`);
+  */
+
+ /*Sesion 26
+ //**************************************************************************************************************
+ //Ahora lo que se vera seran las expresiones regulares las cuales son muy importantes para validar datos
+ //Y para hacer varias cosas en javascript
+ //Primero se deben crear una instancia para el objeto
+ const expresion = new RegExp("pepe","g");
+ //O se pueden crear tambien de esta manera
+ const expresion2 = /pepe/g;
+ //Ahora tomamos eso y con los metodos podemos evaluar lo que sea
+ const evaluar = "Hola mi nombre es pepe y soy muy pepe y me gustan los peeps y ademas soy peperito";
+ //Metodos
+ console.log(expresion.exec(evaluar));//Lo que hace este metodo es evaluar si esta la palabra o expresiones en la cadena y si las hay crea un array diciendo sus posiciones donde esta
+ console.log(expresion2.test(evaluar));//Lo que hace este metodo es evaluar si esta la expresion regular en la cadena y si esta mandara un true de lo contrario un false
+ console.log(expresion.compile(evaluar,"g"));//Lo que hace este metodo es crear una expresion regular que contenga las palabras y banderas de una cadena como primer parametro y como segundo parametro la bandera
+ */
+
+/*Sesion 27
+//********************************************************************************************************************
+//Ahora lo que se vera seran las funciones anonimas autoejecutables
+//Las funciones autoejecutables fueron muy buenas en  su momento pues cuando no existian los modulos en javascript
+//Se usaban estas funciones para separar dicha estructura de codigo
+//Ejemplo
+//Creando funcion autoejecutable 1
+(function(d,w,c)
+{
+    c.log("Esta es la version 1");
+})(document,window,console);
+//Estas funciones autoejecutables se autoejecutan en el codigo y se encierra la funcion entre parentesis
+//Despues fuera de esos parentesis se usan otros parentesis para mandarle valores o objetos o lo que sea
+//A la funcion en este caso se le mando document en la d, window en la w y console en la c , asi mismo
+//Toma sus propiedades y metodos por ello se usaban para separar codigo y distinguirlo a lo que hoy en dia
+//Ya se usan las importaciones 
+//Creando funcion autoejecutable 2
+(
+(function(d,w,c)
+{
+    c.log("Esta es la version 2");
+})
+(document,window,console) 
+);
+//Creando funcion autoejecutable 3
++function(d,w,c)
+{
+    c.log("Esta es la version 3");
+}(document,window,console);
+//Creando funcion autoejecutable 4
+!function(d,w,c)
+{
+    c.log("Esta es la version 4");
+}(document,window,console);
+//Estas funciones aun se pueden seguir usando aunque no con tanta frecuencia ya que se implemento las importaciones
+//A javascript y ya no se usan tanto como antes 
+*/
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

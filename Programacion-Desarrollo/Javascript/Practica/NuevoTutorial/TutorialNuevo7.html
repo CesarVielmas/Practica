@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+    <script>
+        /*Sesion 29
+        //*****************************************************************************************
+        //Ahora lo que se vera seran las funciones setTimeout y setinterval 
+        //setTimeout lo que hace es ejecutar algo dentro de la funcion que resive solo 1 vez durante despues de determinado tiempo
+        //Ejemplo
+        setTimeout(()=>
+        {   
+            console.info("Timeout despues de 5 segundos");
+        },5000)//como se ve tomar una funcion como primer parametro para ejecutar y en el segundo parametro el tiempo que tendra que esperar
+        //Para que se ejecute lo que esta dentro de la funcion solo 1 vez importante en milisegundos en este caso 5000 son 5 segundos de espera
+        //Ahora setinterval lo que hace es hacer lo mismo que Timeout pero infinitas veces cada cierto tiempo
+        //Ejemplo
+        setInterval(() => 
+        {
+            console.info("interval iterandose infinitas veces cada 5 segundos");
+        }, 5000);
+        //Ahora otros metodos importantes tambien para esto es el clearTimeout y el clearinterval los cuales lo que hacen
+        //Es parar completamente el timeout para que no se ejecute o el interval
+        //Para esto deben de estar guardados en variables el Timeout o el interval
+        //Ejemplo
+        const tiempo1 = setTimeout(()=>
+        {
+            console.info(new Date().toDateString())
+        },1000);
+        const tiempo2 = setInterval(() => {
+            console.info(new Date().toLocaleTimeString());
+        }, 1000);
+        
+        clearTimeout(tiempo1);
+        clearInterval(tiempo2);
+        */
+
+        /*Sesion 30
+        //*********************************************************************************************************************
+        //Ahora lo que se vera sera la asincronia y la sincronia en javascript
+        //Empezando por lo que es bloqueando y no bloqueante , bloqueante en un lenguaje de programacion son aquellas funciones o tareas
+        //Que ejecuta un lenguaje en tiempo de ejecucion que no le da oportunidad al usuario de actuar hasta que ese proceso termine
+        //Por ejemplo cuando se hace un loop infinito el programa esta bajo funcionamiento y no te deja actuar sobre la pagina hasta que
+        //Cargue lo que esta haciendo 
+        //Ahora no bloqueante es todo lo contrario , el no bloqueante en un lenguaje de programacion es aquellos procesos que se ejecutan
+        //Y que se van a segundo plano , cuando se terminen de realizar dichos procesos se le avisara al usuario o no se avisara 
+        //Y asi mismo no detendra la interaccion del usuario , por ejemplo cuando una pagina web requiere de obtener productos de una API
+        //Entonces en segundo plano se ejecuta para que el usuario este toquetenado la pagina , hasta que se cargue entonces cargaran los productos
+        //Y si no se cargan entonces mandara un error
+        //Entonces eso es bloqueante y no bloqueante , ahora lo que es la concurrencia en los lenguajes de programacion
+        //Para ello existen 2 tipos la concurrencia o las paralelas 
+        //La concurrencia son los procesos que se ejecutan al mismo tiempo , por ejemplo se ejecuta proceso 1 y a su vez se ejecuta proceso 2 
+        //Por lo que proceso 1 la espera y asi se ejecuten proceso 1 y proceso 2 a la vez
+        //Las paralelas son aquellos procesos que al momento de llamarse automaticamente se ejecutan , por ejemplo se ejecuta proceso 1 y poco despues
+        //Proceso 2 entonces proceso 1 ya tuvo una ventaja de ejecucion sobre proceso 2 porque no la espero
+        //Ahora tambien para complementar los tipos de datos
+        //Aqui existen 2 los de CPU y los de I/O (entrada o salida)
+        //Para los de CPU a resumidas cuentas son todos aquellos procesos o datos que utilzan el procesador , por ejemplo el loop infinito 
+        //Que se ejecuta , gasta poca CPU al principio , pero como son muchos procesos despues se traba y se le exige mas a la CPU
+        //Los datos o procesos de I/O (entrada o salida), son aquellos que mandan a llamar datos o procesos a otro lugar , por ejemplo una API
+        //Es un dato o procesos de I/O (entrada y salida), pues se le pide al servidor dar dicho dato y la pagina recibira el dato sin embargo
+        //La CPU no trabajo ahi pues fue el servidor quien interactuo
+
+        //Ahora sabiendo eso , la asincronia en javascript es cuando un proceso no bloqueante interactua con el programa , osease
+        //Se espera dicho proceso para ser ejecutado al final , en javascript 
+        //Por ejemplo
+        //Para ver dicho ejemplo mucho mejor y visualmente , esta la pagina  http://latentflip.com/loupe/?code=!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+        //Para visualizarlo de mucho mejor manera
+        //Asincrona
+        (function (console) {
+            console.info("Inicio");
+            function dos() {
+                //Inicio Timeout
+                setTimeout(function () {
+                    console.info("5 segundos para el Timeout de la funcion dos");
+                },5000)
+                //Fin Timeout
+                console.info("dos");
+            }
+            function uno() {
+                //Inicio Timeout 
+                setTimeout(function () {
+                    console.info("0 segundos para el Timeout de la funcion uno");            
+                },0)
+                //Fin Timeout
+                console.info("uno");
+                dos();
+
+            }
+            uno();
+            console.info("Fin");
+        })(console);
+        //Como se puede apreciar aunque el Timeout de la funcion "uno" tenga 0 segundos para que se ejecute , por logica deberia ejecutarse
+        //Primero el Timeout y luego el c.info pero en cambio se imprime el c.info primero y luego el c.info de la funcion 2
+        //Esto ocurre porque el objeto console tiene prioridad sobre Timeout y Timeout lo deja en segundo plano , como lo deja en segundo plano
+        //Y se va a la funcion "dos",Esperara hasta que termine la funcion 2 y todo lo que contiene, puede apreciarse mejor en la pagina
+        //esto es asincrono ya que no bloquea la interaccion con el usuario , aunque tardara mucho en cargar lo dejara en segundo plano
+        //Hasta que ejecute lo demas y si lo carga y si no seguira cargandolo sin afectar al usuario
+
+        //Ahora el sincrono es cuando se tiene en el presente algo que esta sucediendo y no como asincrono que carga algo a futuro
+        //Como se tiene algo presente se pide eso presente y se esperara hasta que eso que pida para el presente lo tenga 
+        //Por eso se dice que sincrono es bloqueante , aunque algunas veces o pocas veces es no bloqueante
+        //Ejemplo
+        (function (console) {
+            console.info("Inicio");
+            function dos() {
+                console.info("dos");
+                tres();
+            }
+            function tres() {
+                console.info("tres")
+            }
+            function uno() {
+                console.info("uno");
+                dos();
+            }   
+            uno();
+            console.info("Fin");
+        })(console);
+        //Ahora en esta parte de codigo puede verse como es sincrono bloqueante ya que pide algo en la funcion uno la cual es la funcion dos
+        //Entonces hasta que cargue el c.info pasara al siguiente 
+        //Algo muy importante es que javascript funciona con la pila LIFO(Last int, First out)(Ultimo en entrar es el primero en salir)
+        //Si bien puede parecer confuso en la pagina que se dio anteriormente se puede ver como funciona perfectamente esto y es muy importante
+        */
+       
+
+
+
+
+        /*Sesion 31
+        //Ahora lo que se vera seran las callbacks las cuales son muy usadas y son muy buenas para facilitar procesos de mejor manera
+        //U obtener resultados de mejor manera
+        //Ejemplo de las callbacks
+        function elevacionCuadradaCallback(valor,funcionRetornada) { //Como se puede apreciar las funciones no expresadas tienen en su segundo parametro para el callback
+            setTimeout(()=>
+            {
+                //Esta funcion toma los valores de la funcion elevacionCuadradaCallback
+                funcionRetornada(valor,valor*valor);
+                //En este caso toma valor y en el segundo parametro que manda es una multiplicacion de el valor por si mismo
+            },0|Math.random()*1000)
+        }
+        //El segundo parametro de esta funcion como se ve retorna la propia funcion , dentro de la funcion puede mandarse a llamar esta misma
+        //Funcion y lo que se hace aqui con el set Timeout es que despues de cierto tiempo se activara y entrara a la funcion del Timeout
+        //Asi mismo dentro de la funcion del Timeout manda a llamar a "funcion" la cual es la propia funcion principal y esta misma
+        elevacionCuadradaCallback(2,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback 1 Junto");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+        elevacionCuadradaCallback(6,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback Junto 2");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+        elevacionCuadradaCallback(3,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback Junto 3");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+        })
+        })
+        })
+
+        //La explicacion a esto es que el segundo parametro de la funcion no expresada requiere de una funcion en el parametro 
+        //Dicha funcion va a tomar las propiedades de la funcion principal y con dichos valores que toma de la funcion principal podra
+        //Retornar valores a la funcion que exige como parametro
+        elevacionCuadradaCallback(4,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback Separado 1");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+            elevacionCuadradaCallback(8,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback Separado 2");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+        elevacionCuadradaCallback(5,(valorPasado,resultado)=>//Pasa los valores de funcionRetornada aqui , a la funcion que exige como parametro la funcion
+        {
+            //En este caso     valorPasado = valor de "funcionRetornada"
+            //Y                resultado = valor*valor de "funcionRetornada"
+            console.info("Inicia Callback Separado 3");
+            console.info(`${valorPasado} * ${valorPasado} = ${resultado}`);
+        })
+        })
+        })
+        //Como se puede apreciar si los callback se ponen por separado entonces iniciara de abajo hacia arriba y esto porque?
+        //Pues porque se puso un setTimeout y por eso es muy importante usarlo ya que lo que hace es que se vuelva asincrono 
+        //Osease primero la pagina carga las funciones , despues de las funciones ahora si cargara el setTimeout que tiene la funcion 
+        //elevacionCuadradaCallback ya que necesita que "funcionRetornada" le retorne los valores a el segundo parametro de la funcion
+        //Y como esta dentro de un setTimeout con un tiempo randomizado entonces si el callback separado de abajo tiene menos tiempo y 
+        //Lo carga antes que el callback de arriba entonces entrara el de abajo y si no lo contrario 
+        //Por ello el callback lo que hace es controlar el flujo asincrono y volverlo sincrono bloqueante si asi se requiere y como se hace
+        //Pues poniendo dentro de la funcion que pide como parametro la funcion , esto hara que ejecute primero lo que tiene la funcion
+        //Y luego esperara a que termine para poder asi ejecutar la funcion que tiene dentro , se le obliga a esperar a javascript y para
+        //Eso sirven las callbacks , obligar a javascript esperar si asi se le requiere o no esperar 
+        console.info("Hola");
+        console.info("Hola");
+        console.info("Hola");
+        console.info("Hola");
+        console.info("Hola");
+        //En este caso con este ejercicio se hizo un paralelismo 
+        */
+       /*Sesion 32
+       //*************************************************************************************************************************
+       //Ahora lo que se vera seran las promesas las cuales fueron hechas para poder remplazar a las callbacks
+       //Ejemplo de una callback vs promesas
+       //Callback
+       function elevarCuadradoCallback(valor,funcionRetornada)//En el caso de las callback se necesita reiterar la misma funcion
+       {
+        if (typeof(valor)==="number") {
+            setTimeout(()=>
+            {
+                const valorElevado = (valor)=>{
+                    let resultado=valor * valor
+                    return resultado;
+                };
+                funcionRetornada(valor,valorElevado(valor));
+            },Math.random()*1000)
+        }
+        else console.error(`${valor} no es un numero`);
+       }
+       //Callbacks
+       //Callback 1
+       elevarCuadradoCallback(2,(valor,resultado)=>
+       {
+           console.info(`Callback 1:El resultado de ${valor} * ${valor} = ${resultado}`);
+           //Callback 2
+           elevarCuadradoCallback(3,(valor,resultado)=>
+                {
+           console.info(`Callback 2:El resultado de ${valor} * ${valor} = ${resultado}`);
+           //Callback 3
+           elevarCuadradoCallback(5,(valor,resultado)=>
+                    {
+           console.info(`Callback 3:El resultado de ${valor} * ${valor} = ${resultado}`);
+           
+                    })
+                })
+       });
+       //Promesa
+       function elevarCuadradoPromesa(valor) //En el caso de las promesas no necesitan reiterar su misma funcion
+       {
+            if (typeof(valor)==="number") {
+
+                return new Promise((resuelto,rechazado)=>
+                {
+                    setTimeout(()=>
+                    {
+                        let valorElevado = valor*valor;
+                        resuelto(valor);//Ojo importante resolve de promise solo puede retornar un valor , sea objeto o array o primitivo pero solo 1 no 2
+                    },Math.random()*1000)
+                })
+            }
+            else new Promise.reject(`Error el valor ${valor} no es un numero`);
+       }
+       //Llamando a la promesa
+       elevarCuadradoPromesa(4)
+       .then(
+           (valorTomado)=>
+           {
+            console.info(`El resultado de ${valorTomado} * ${valorTomado} = ${valorTomado * valorTomado}`);
+            return elevarCuadradoPromesa(5);
+           }
+       )
+       .then(
+        (valorTomado)=>
+           {
+            console.info(`El resultado de ${valorTomado} * ${valorTomado} = ${valorTomado * valorTomado}`);
+           }
+       )
+       .catch(error=>
+       {
+           console.error(`Hubo un error el cual fue\n${error}`);
+       })
+       //Es mas recomendable usar Promise ya que te hace ahorrar muchas lineas de codigo
+       //Los 2 pueden funcionar exactamente igual si se busca la manera o logica
+       //Los 2 sirven para manejar la asincronia
+       */
+
+
+
+
+
+      /*Sesion 33
+      //***************************************************************************************************************************
+      //Ahora lo que se vera en esta sesion seran las funciones asincronas las cuales son sumamente muy importantes ya que se complementan
+      //Con las promesas de manera muy buena simplificando el codigo
+      //Ejemplo
+      //Promesa
+      const sumaNumerosPromesa = (...valor)=> {
+          
+        return new Promise((aceptado,rechazado)=>
+        {
+            setTimeout(()=>
+            {
+                let resultado = 0;
+                for (const elemento of valor) {
+                    resultado+=elemento
+                }       
+                aceptado({
+                    valor,
+                    resultado
+                })
+            },Math.random()*1000)
+        })
+      }
+    //La funcion asincrona
+    
+    const funcionAsincrona = async ()=>
+    {
+        try {
+            let objeto = await sumaNumerosPromesa(2,1,3,52,4,2,46,72,46,1);
+            console.info(`La suma de todos los elementos = ${objeto.resultado}`);
+            objeto = await sumaNumerosPromesa(2,1,3,52,4,2,46,72,46,1,23,4,4,12,367,213,35,24,63,35,12,12);
+            console.info(`La suma de todos los elementos = ${objeto.resultado}`);
+            objeto = await sumaNumerosPromesa(2,1,3,52,4,2,46,72,46,1,35,213,561,234,6,243,6,243,5);
+            console.info(`La suma de todos los elementos = ${objeto.resultado}`);
+        } catch (error) {
+            console.error(`Se ocaciono un error el cual fue\n${error}`);
+        }
+    };
+    funcionAsincrona();
+    //Como se puede ver una funcion asincrona contiene la palabra reservada await la cual lo que hace es esperar a que se termine de cargar
+    //Algun elemento en este caso la funcion promesa que devuelve un objeto
+    //Con esto se puede ayudar a optimizar aun mas las callbacks de las promesas a un codigo mucho mas explicativo sin tener que usar
+    //El metodo then y catch 
+    */
+    </script>
+</head>
+<body>
+    <h1>Practica Nueva Javascript #7</h1>
+</body>
+</html>

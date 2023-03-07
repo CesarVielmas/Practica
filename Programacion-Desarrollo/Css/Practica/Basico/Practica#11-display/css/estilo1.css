@@ -1,0 +1,32 @@
+/*Ahora lo que se vera sera la propiedad display , la cual lo que hace es convertir una etiqueta de bloque en una de linea o viceversa , aunque tambien tiene el valor none el cual hace que cargue el contenido pero que no se muestre en la pagina*/
+.texto1,.texto2,.texto3{
+    background-color: blue;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+/*Ejemplo none, lo elimina de la pagina , pero no de su codigo , asi que solo lo oculta , pero igual la pagina lo carga*/
+.texto1{
+    display: none;
+}
+/*Ejemplo block, lo cual hace que una etiqueta de linea la convierta en una etiqueta de bloque tomando todas sus propiedades*/
+.ancla{
+    background-color: aqua;
+    display: block;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    width: 250px;
+    height: 100px;
+}
+/*Ejemplo inline, el cual lo que hace es que una etiqueta de tipo bloque la convierte a una de tipo linea*/
+.texto2{
+    display: inline;
+
+}
+/*Ejemplo inline-block, lo que hace es que la convierte en una etiqueta de tipo linea , pero obtiene los atributos de las etiquetas de tipo bloque y si funcionan*/
+.texto3{
+    display: inline-block;
+}

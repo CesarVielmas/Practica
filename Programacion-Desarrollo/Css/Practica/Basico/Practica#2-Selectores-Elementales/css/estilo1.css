@@ -1,0 +1,60 @@
+/*
+ Se veran los tipos de selectores que hay , para ello existen 2 los cuales son:
+ Selectores elementales 
+
+ Selectores agrupados
+
+ Estos por su lado tienen cada uno sus diferentes tipos de selectores , aqui se veran los mas solicitados
+*/
+
+/*Comienza creacion de regla*/
+/*Selector*/
+*{ /*Este seria un selector universal , pues engloba absolutamente todo*/
+/*  Atributo              Valor */
+    background-color: rgb(219, 94, 44);
+}/*Fin de creacion de regla*/
+
+/*Comienza creacion de regla*/
+/*Selector de etiqueta engloba todas las etiquetas h1 que haya*/
+h1{
+/*  Atributo     Valor*/
+    text-align: center;
+}/*Fin de creacion de regla*/
+
+/*Ejemplo Selector de id no es tan recomendable usar un selector de id pues el objetivo de css es que su codigo sea reutilizable y con id , solo se le puede asignar un id a una etiqueta html*/
+#SelectorId{
+    color: white;
+}
+/*Ejemplo Selector de clase , esta si es muy recomendable , pues se pueden repetir las clases a varias etiquetas y asi mismo reutilizar dicho codigo*/
+.SelectorClase{
+    color: beige;
+}
+/*Ahora los selectores de atributos
+    Para estos lo que se hace es usar los corchetes []
+    y dentro de ellos se pone el atributo
+    Ejemplo [href]
+    entonces ahi marcaria todas las etiquetas que tuvieran el atributo href 
+Ahora se veran algunas maneras de poder definirlo*/
+
+/*Se seleccionan todos los elementos que contengan el atributo href*/
+[href]{
+    color: brown;
+}
+/*Se seleccionan todos los elementos href que contengan "azul" al menos 1 vez en todo el texto de href*/
+[href*="Cafe"]{
+    color: brown;
+}
+/*Se seleccionan todos los elementos href que contengan "rojo" al principio de su texto*/
+[href^="rojo"]{
+    color: red;
+}
+/*Se seleccionan todos los elementos href que contengan "azul" al final del texto*/
+[href$="azul"]{
+    color: blue;
+}
+/*Se seleccionan todos los elementos href que contengan "color-" al principio del texto
+    el operador | le añade el guion a la palabra a buscar
+*/
+[href|="color"]{
+    color: black;
+}

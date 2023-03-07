@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    background:#F0DB4F;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+    margin-bottom: 5vh;
+    color: #323330;
+
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.headerTable td{
+    background-color:rgb(141, 20, 20);
+    text-align: center;
+    width:1%;
+    color: aliceblue;
+    border:thin solid rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table{
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bodyTable td{
+    background-color:rgb(12, 107, 12);
+    text-align: center;
+    width:1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    border:thin solid rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bodyTable button{
+    background-color:rgb(12, 107, 12);
+    text-align: center;
+    width: 100%;
+    height: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttonAdd,
+.buttonRemove{
+    width: 100px;
+    height: 70px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: thin solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    margin-top: 40px;
+}
+.buttonAdd{
+    
+    margin-right: 60%;
+    background-color: rgb(11, 185, 11);
+}
+.buttonRemove{
+    background-color: rgb(230, 23, 23);
+}

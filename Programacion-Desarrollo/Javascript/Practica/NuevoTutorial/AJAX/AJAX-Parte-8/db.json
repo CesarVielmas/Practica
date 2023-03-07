@@ -1,0 +1,58 @@
+{
+  "familiares": [
+    {
+      "id": 1,
+      "nombre": "Pablito",
+      "edad": "40",
+      "apellido": "Picapiedra"
+    },
+    {
+      "id": 2,
+      "nombre": "Pablo",
+      "edad": "45",
+      "apellido": "Gutierrez"
+    },
+    {
+      "id": 3,
+      "nombre": "Cesar",
+      "edad": "20",
+      "apellido": "Vielmas"
+    },
+    {
+      "id": "4",
+      "nombre": "Flor",
+      "edad": "18",
+      "apellido": "Saldaña"
+    }
+  ],
+  "clientes": [
+    {
+      "nombre": "Cesar",
+      "apellido": "Vielmas",
+      "cuota": "5500",
+      "id": 1
+    },
+    {
+      "nombre": "Maria",
+      "apellido": "Perez",
+      "cuota": "12,373",
+      "id": 2
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Vielmas",
+      "cuota": "12000",
+      "id": "3"
+    }
+  ],
+  "usuarios": [
+    {
+      "imagen": "https://media.istockphoto.com/id/1365223878/es/foto/hombre-atractivo-sinti%C3%A9ndose-alegre.jpg?b=1&s=170667a&w=0&k=20&c=bvl1G8jZOQ9M8maHjQm34YYGmINoZ-S8tVMFv6QKL0Y=",
+      "nombre": "Pedro",
+      "puesto": "Portafolitero",
+      "antiguedad": "4 años",
+      "sueldo": "20,000",
+      "id": 2
+    }
+  ]
+}

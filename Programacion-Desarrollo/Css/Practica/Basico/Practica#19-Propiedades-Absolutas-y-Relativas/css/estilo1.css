@@ -1,0 +1,86 @@
+/*Ahora lo que se vera seran las propiedades absolutas y las relativas, en una simple definicion las propiedades relativas, son aquellas propiedades que son tomadas desde el navegador , asi mismo haciendo que cambien constantemente y las propiedades absolutas son todas aquellas que no cambian su valor , ya que ya fueron definidas y no interactuan con el navegador
+Algunas Propiedades Absolutas:
+px = pixeles
+cm = cm
+inches = pulgadas
+etc
+Por lo general las propiedades absolutas no son las mas usadas ya que para una aplicacion que sea responsive se necesitan que sus propiedades sean relativos
+Algunas Propiedades Relativas
+rm = 
+ex = */
+/*Ejemplo Propiedades Absolutas*/
+/*rem = esta propiedad tomara los valores predeterminadas de 16px y lo multiplicara por cierto valor que se le de */
+.rem{
+    font-size: 3rem;/*16px x  3 */
+}
+.em{
+    padding: 2em 3em;/*El padding lo hara mediante el valor del font size , es una propiedad relativa */
+    font-size: 2rem;
+}
+/*em = este valor tomara los valores del contexto en el que se encuentre para poder hacer su multiplicacion igual que rem pero en este caso con el valor del contexto en el que este*/
+
+/*Ejemplo Propiedades Relativas*/
+
+/*% = calcula el porcentaje de la cantidad que se va a tomar del contenedor o del body en general , es muy eficaz y usable en aplicaciones web responsive , pues al cambiar el tamaño de algun contenedor o pagina seguira teniendo dicho valor pues toma el porcentaje de este mismo*/
+.porcentaje{
+    font-size: 70%;
+    width: 30%;
+    height: 80%;
+}
+.Contenedor{
+    width: 60%;
+    height: 70%;
+    background-color: burlywood;
+    margin-bottom: 20%;
+
+}
+.porcentaje2{
+    font-size: 20%;
+    width: 50%;
+    height: 40%;
+    background-color: crimson;
+
+}
+/*auto = calcula el 100% de el contexto en el que se encuentre ya que con "%" si se ponia el 100% se excedia el tamaño en donde se ponia y salia algo que con auto no*/
+/*Ejemplo problema*/
+.Navegador{
+    background-color: chartreuse;
+    height: 30%;
+    width: 100%;
+    margin-left: 20px;
+}
+/*Ejemplo arreglando problema con auto*/
+.Navegador{
+background-color: chartreuse;
+height: 30%;
+width: auto;
+margin-left: 20px;
+}
+/*El viewport , el viewport es todo lo visible que se encuentra en la pantalla osease el tamaño de ventana con el que se ve la pagina etc , esta es importante ya que es como % pero el porcentaje mide sobre el tamaño total de la pagina y viewport sobre el tamaño visible que se ve de la pagina 
+Para ello existen diferentes unidades de medida de viewport:
+vw= viewport with el ancho de la pagina visible
+vh = viewport height la altura de la pagina visible
+vmin = el tamaño mas pequeño entre viewport height y viewport width 
+vmax = el tamaño mas grande entre viewport height y viewport width
+Por ello para estas medidas utilizan porcentajes para poder calcular cuanto porcentaje quieren de el tamaño visible de la pagina en cuestion
+*/
+.vistaTotal{
+    background-color: brown;
+    height: 100vh;
+    width: 100vw;
+        font-size: 15vh;
+}
+/*Por ultimo tenemos el min-width y max-width o min-height y max-heigth estos sirven para limitar alguna cosa para que llegue a un minimo de tamaño y no siga disminuyendo o a un maximo de tamaño y que desde ahi no siga creciendo por ello es importante usarlos
+Ejemplo*/
+.maxMin{
+    background-color: darkcyan;
+    height: 30%;
+    min-height: 200px;
+    max-height: 500px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}

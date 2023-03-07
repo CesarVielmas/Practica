@@ -1,0 +1,61 @@
+/*Ahora lo que se vera seran las pseudoclases y pseudoelementos
+Empezando por pseudoclases , estas son muy importantes en css ya que gracias a ellas se pueden hacer diferentes animaciones bastante interesantes , algunas de las 
+
+pseudoclases pueden ser
+:hover = lo que hace es que cuando se este por encima de la etiqueta se activara
+
+:active = esto sirve mas que todo para los botones , que cuando se activan hace la siguiente animacion o funcion
+
+:target = lo que hace es que si el objeto en cuestion o etiqueta es tarjeteado entonces se activara
+
+Ahora los pseudoelementos , es bastante similar a las speudoclases solo que estos lo que hacen es adentrarse dentro de la etiqueta y crear elementos dentro de estas mismas
+algunos de los pseudoelementos mas utilizados son 
+
+::after = lo que hace es que se adentra despues de que comienze la etiqueta 
+
+::before = lo que hace es que se adentra antes de que comienze la etiqueta
+
+content = es importante usarlo obligatoriamente en los pseudoelementos para que se aplique lo que se desea
+
+Para ver mas pseudoelementos o pseudoclases consultar la documentacion de mdn la cual esta bien escrita y explicada
+*/
+.pseudoclase{
+    margin: 100px;
+    background-image: linear-gradient(royalblue,blue);
+    height: 40vh;
+    width: 60vw;
+}
+
+.pseudoclase__bottom{
+    display: block;
+    margin: 40px;
+    margin-left: 120px;
+    background-color: blueviolet;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    text-decoration: none;
+    height: 30%;
+    width: 50%;
+    padding: 6px;
+    text-align: center;
+    color: aliceblue;
+}
+.pseudoclase__bottom--1:active{
+    background-color: bisque;
+}
+.pseudoclase__bottom--2:hover{
+    background-color: aquamarine;
+}
+.pseudoclase--3:target{
+   background-image: linear-gradient(blue,blue);
+}
+
+.pseudoelemento::after{
+    content: "    Hola voy despues";
+}
+.pseudoelemento::before{
+    content: "  Hola voy antes   ";
+}

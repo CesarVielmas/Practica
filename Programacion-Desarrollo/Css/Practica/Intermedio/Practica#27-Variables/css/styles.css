@@ -1,0 +1,14 @@
+/*Ahora lo que se vera seran las variables en css y su diferente utilidad , por ello tambien la importancia de usarlas para empezar las variables son exactamente iguales a cualquier otra variable de algun otro lenguaje , pues pueden cambiar y son sensitive case , las variables en css para hacerlas globales deben de estar dentro del bloque :root el cual es la raiz del proyecto y para hacer una variable local , pues hiran dentro de los diferentes bloques que tiene css*/
+:root{
+    --color-texto:blue;/*Para declarar una variable al principio debe llevar "--" 2 guiones*/
+    --color-body:#333;
+    --background-color:#91A293;
+
+}   
+body{
+    background-color: var(--color-body);
+}
+.boton{
+    background-color: var(--background-color);
+    color:var(--color-texto,blue)/*Tambien var puede llevar una coma para indicar que si falla la variable , tenga por defecto el otro valor*/
+}

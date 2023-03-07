@@ -1,0 +1,62 @@
+/*Ahora lo que se vera seran los border-radius el cual es una propiedad muy importante con la que se podrian hacer infinidad de cosas para ello esta propiedad es un shortcut como lo son margine o border aqui se tienen los diferentes tipos de propiedades que contiene border-radius:
+    border-radius = modifica el radio del area del bloque siguiendo los mismos patrones de margin o padding
+        border-top-left-radius = modificara el lado izquierdo de la parte de arriba
+        border-top-right-radius = modificara el lado derecho de la parte de arriba
+        border-bottom-left-radius = modificara el lado izquierdo de la parte de abajo
+        border-bottom-right-radius = modificara el lado derecho de la parte de abajo*/
+
+/*Hacer esto con el selector universal es una buena practica para pegar el texto o divs o lo que sea a la pantalla de la pagina ya que por default tiene 8px de margen la pagina*/
+*{
+    margin: 0px;
+}
+/*Ejemplo desconstruido*/
+.Bloque1{
+    background-color: brown;
+    width: 500px;
+    height: 400px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 50px;
+}
+/*Ejemplo construido*/
+.Bloque2{
+    background-color: aqua;
+    width: 500px;
+    height: 400px;
+    border-radius: 40px 90px 30px 120px ;/*Logica = top-left, top-right, bottom-right , bottom-left*/
+    -webkit-border-radius: 40px 90px 30px 120px ;
+    -moz-border-radius: 40px 90px 30px 120px ;
+    -ms-border-radius: 40px 90px 30px 120px ;
+    -o-border-radius: 40px 90px 30px 120px ;
+}
+
+/*Ahora se veran los eclipses los cuales son directamente el tamaño que debe tener el circulo con las coordenadas (x,y) para formar el circulo o eclipse, esta por su parte no se divide en segmentos como las demas pues utiliza la misma estructura que se vio anteriormente con border-radius pero a diferencia de eso se usan 2 parametros para decir que es un eclipse , el primero es la x y el segundo la y para formar dicho circulo eliptico
+Ejemplo */
+
+/*Ejemplo desconstruido*/
+.Bloque3{
+    background-color: crimson;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left:30px;
+    border-top-left-radius: 70px 50px;
+    border-top-right-radius: 70px 50px;
+    border-bottom-left-radius: 300px 140px;
+    border-bottom-right-radius: 300px 140px;
+}
+/*Ejemplo construido*/
+.Bloque4{
+    background-color: darkblue;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-radius: 70px 70px 300px 300px/ 50px 50px 140px 140px;/*Se usan los parentesis para poner coordenadas x1 x2/ y1 y2 etc*/
+    -webkit-border-radius: 70px 70px 300px 300px/ 50px 50px 140px 140px;
+    -moz-border-radius: 70px 70px 300px 300px/ 50px 50px 140px 140px;
+    -ms-border-radius: 70px 70px 300px 300px/ 50px 50px 140px 140px;
+    -o-border-radius: 70px 70px 300px 300px/ 50px 50px 140px 140px;
+}

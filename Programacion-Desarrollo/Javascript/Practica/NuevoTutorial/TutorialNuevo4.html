@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+</head>
+<script>
+    /* Sesion 14
+     //**************************************************************************************
+    //Ahora lo que se vera sera los objetos literales
+    //Los objetos literales son una nueva forma mas simplificada de poder dar valores a las propiedades
+    //O metodos de un objeto 
+    //Ejemplo 
+    //Objeto no literal tomando propiedades ya existentes
+    let nombre = "Pedro",
+    apellido = "Juarez",
+    edad = 30,
+    estado = "Soltero";
+    const objetoNoLiteral = {
+        nombre:nombre,
+        apellido:apellido,
+        edad:edad,
+        frase:function()
+        {
+            console.log(`yo soy ${this.nombre} ${this.apellido} ingesumadre!!!`);
+        }
+    }
+    console.log(objetoNoLiteral);
+    objetoNoLiteral.frase();
+    //Ejemplo
+    //Objeto literal tomando propiedades ya existentes
+    const objetoLiteral = {
+        nombre,
+        apellido,
+        edad,
+        estado,//Como se aprecia las propiedades se simplifican pues ya son existentes
+        frase() //Esto cambia y se simplifica mejor en el objeto literal
+        {
+            console.log(`yo soy ${this.nombre} ${this.apellido} ingesumadre!!!`);
+        },
+        papa:"Pedrito"
+    }
+    console.log(objetoLiteral);
+    objetoLiteral.frase();
+    //Como se aprecia hacer un objeto literal es mucho mas sencillo y rapido que hacer un objeto no literal
+    */
+
+    /* Sesion 15
+   //*************************************************************************************************
+   //Ahora lo que se vera sera parametros rest y operador spread
+   //Estos 2 son demasiado importantes ya que son muy buenos para interactuar de manera efectiva con 
+   //Frameworks de paginas web de javascript
+   //Emepezando por el parametro rest este parametro lo que hace es que solo se puede usar en funciones
+   //Esta funcion podra tomar parametros ilimitados gracias a este parametro rest 
+   //Ejemplo
+   function funcionRest(variable1,variable2,...variablex)//Aqui se usa el parametro rest el cual es "...variablex" aunque puede tomar cualquier nombre siempre y cuando tenga los 3 puntos suspensivos 
+   {
+    multiplicacion = variable1 * variable2;//Se crea una variable multiplicacion que multiplicara los 2 primeros parametros
+     variablex.forEach(function (elementos)//Aqui como se aprecia variablex lo transformo en un arreglo tomando sus propiedades y metodos 
+     {
+      //multiplicacion se multiplica con el elemento infinito que es el array variablex de el parametro rest
+      multiplicacion*= elementos;//Se usa el metodo foreach el cual recive una funcion como parametro y en la funcion que es anonima como parametro recive los elementos de el array de el parametro rest
+      //Tambien se puede poner como " multiplicacion = multiplicacion * elementos; "
+     });    
+     return multiplicacion; //Retorna multiplicacion
+   }
+   console.log(funcionRest(1,2,3,4,5,6,7,8,9,10));
+   //Como se puede apreciar toma parametros infinitos la funcion ya que contiene el parametro rest
+   //Ahora lo siguiente es el operador spread el cual es similar a rest solo que este se usa para juntar x valores
+   //De un array 
+   //Ejemplo
+   const array1 = [1,2,3,4,5],
+   array2 = [6,7,8,9,0];
+
+   const arraySinSpread = [array1,array2],
+   arrayConSpread = [...array1,...array2];
+   console.log("array sin spread: "+arraySinSpread);
+   console.log("array con spread: "+arrayConSpread);
+   //Como se aprecia con spread lo que hace es dar los valores por separado a un arreglo de uno a otro
+   //De esta manera le da los valores cuales sea en vez de el arreglo como tal es muy util
+   */
+  
+   /* Sesion 16
+  //************************************************************************************************
+  //Ahora lo que se vera seran las arroy fuction las cuales son super utilizadas ya que
+  //Sirven demasiado para simplificar y llevan consigo una nueva forma de hacer funciones
+  //Ejemplo
+  //Funcion expresada
+  const funcion1 = function() //Se usa una funcion anonima para esto 
+  {
+    console.log("Hola")
+  };
+  //Como se puede apreciar se ejecuta el hola de la funcion expresada tomando de la funcion anonima
+  funcion1();
+  //Ahora con arrow function 
+  const funcion2 = () => {
+      console.log("Hola")
+  };
+  funcion2();
+  //Algo diferente de la arrow function que de la funcion normal expresada o no expresada es el contexto 
+  //En el que se enmarca para comprender esto se vera con un objeto
+  const objeto1 = { //Creacion del objeto con una funcion sin arrow function
+      nombre:"Cesar",
+      saludo()//tambien puede expresarse asi " saludo:function(){ codigo  } pero asi es mas sencillo el codigo "
+      {
+          console.log(`Hola mi nombre es ${this.nombre}`);
+      }
+  },
+  objeto2 = { //Objeto creado con una funcion de tipo arrow function
+      nombre:"Juan",
+      saludo:()=> //Algo importante aqui es que no se puede simplificar como en el anterior osease perderia el arrow function si se expresa asi " saludo (){  }" y si se trata de poner el arrow function da error
+      {
+          console.log(`Hola mi nombre es `);//No se puede tomar nombre pues lo que hace la arrow function es que sale del contexto del objeto y se va al objeto padre
+      }
+  };
+objeto1.saludo();
+objeto2.saludo();
+//Como se puede apreciar this con una funcion sin arrow function puede tomar la variale nombre pues toma el
+//Contexto actual donde este la funcion , sin embargo con this de una arrow function lo que hace es que
+//Sale del contexto actual y se va al contexto padre osease en este caso sale del objeto y se va a el objeto padre
+//En este caso es windows 
+//Las arrow function tambien pueden expresarse de una manera mas simplificada en ciertos casos
+//Ejemplos
+const funcion3 = nombrecito =>{ //En este caso se quitan corchetes cuando solo toma un parametro y se simplifica
+    console.log(`Mi nombre es ${nombrecito}`);    
+},
+funcion4 = (valor1,valor2)=> console.log(valor1+valor2),//En este otro caso se puede simplificar quitando los corchetes cuando solo es 1 linea de codigo
+funcion5 = valor => console.log(`valor ingresado:${valor}`);//Y este seria el caso mas simplificado de todos
+
+funcion3("Cesar");
+funcion4(1,7);
+funcion5(90);
+
+//Tambien cabe recordar que es muy parecido a la simplificacion del if pero no es lo mismo
+const parecido1 = ()=>
+{
+ console.log("Esta es una funcion expresada con arrow function")
+};
+// Son parecidas pero no son lo mismo
+const parecido2 = (true)? "Esta es una condicional remplazo del if": "Esta es una condicional remplazo del if";
+
+parecido1();
+console.log(parecido2);
+*/
+
+/*Sesion 17
+//*****************************************************************************************************
+//Ahora lo que se vera sera algo demasiado importante lo cual es los prototipos como son y que son
+//Los prototipos son como las clases de cualquier otro lenguaje las cuales sirven para crear instancias
+//Y ahorrar codigo como las clases lo que se vera son las funciones constructoras y su funcion
+//Ejemplo
+//Objetos literales
+const objeto1 = {
+    nombre:"Cesar",
+    saludo(apellido)
+    {
+        console.log(this.nombre,"",apellido);
+    }
+},
+objeto2 = {
+    nombre:"Juan",
+    saludo(apellido)
+    {
+        console.log(this.nombre,"",apellido);
+    }
+};
+objeto1.saludo("Alejandro");
+objeto2.saludo("Vielmas");
+//Como se puede apreciar hacer esto no esta automatizado y no es practico para nadie , para ello existen
+//los prototipos los cuales como las clases crean instancias de esos objetos para poder hacer lo mismo
+//Pero con diferente valor y por ello se usan las funciones constructoras para hacer prototipos
+//Ejemplo
+console.log("Con una funcion constructora y creacion de un prototipo");
+function Persona(nombre) //Ejemplo de funcion constructora que requiere de un parametro
+{
+    this.nombre = nombre;//Propiedad siempre debe llevar this para crear metodos o propiedades
+    // this.saludo = function(apellido)//Metodo
+    // {
+    //    console.log(this.nombre,"",apellido)
+    // };
+
+}
+//Ahora algo de lo unico malo de la funcion constructora que funciona como una clase , es que los metodos
+//Los repite en cada instancia que se haga y gasta mucha memoria en eso por lo cual se hace de esta manera
+//Para añadir un metodo nuevo  a el prototipo o clase
+//Ejemplo
+//Siempre se deben poner los metodos de una funcion constructora o clase fuera 
+Persona.prototype.saludo = function(apellido)
+{
+    console.log(this.nombre,"",apellido)
+}
+//Haciendo eso ya no se necesitara hacer 2 objetos diferentes y gastar memoria en vano
+//Instancia del prototipo Persona el cual obtiene sus propiedades y metodos
+const cesar = new Persona("Cesar"),
+juan = new Persona("Juan");
+//Ahora de la instancia se crea el objeto con el nombre ya dado y se le pide su metodo saludo y saludo
+//A su vez pide de parametro el apellido
+cesar.saludo("Alejandro");
+juan.saludo("Vielmas");
+console.log(cesar);
+console.log(juan);
+*/
+
+/*Sesion 18
+//***************************************************************************************************
+//Ahora lo que se vera sera la herencia y su funcionalidad y su sintaxis en javascript CON PROTOTIPOS
+//Primero empezando por la creacion de un prototipo por lo cual se usara una funcion constructora
+function Personas(altura,peso)
+{
+    this.altura = altura;
+    this.peso = peso;
+
+}
+//Se le añaden los metodos para ahorrar memoria por fuera
+Personas.prototype.saludo = function()
+{
+    console.log(`Peso ${this.peso} y mido ${this.altura}`);
+}
+//Se crea una instancia solo para ver el prototipo
+const persona = new Personas(1.75,70);
+//Para ver el prototipo
+console.log(persona);
+//Ahora la herencia de el prototipo de personas a mexicano
+function Mexicanos(altura,peso,nacionalidad)
+{
+    this.super = Personas;//Tomando los parametros de la clase a la que va a heredar
+    this.super(altura,peso);//Ahora aqui lo que hace es que pasa los parametros que se le dio a la instancia "mexicano" a la clase Personas o prototipo para que funcionen sus metodos tomando dichos parametros
+    this.nacionalidad = nacionalidad;
+}
+Mexicanos.prototype = new Personas();//Aqui hace la heredacion de personas a mexicanos para tomar todas sus caracteristicas
+//Se crea la instancia para ver el nuevo prototipo que hereda de otro
+const mexicano = new Mexicanos(1.64,82,"Mexicana");
+//Viendo lo que contiene el prototipo
+console.log(mexicano);
+mexicano.saludo();
+//Para añadir y acabando tambien se pueden sobreescribir los metodos o propiedades para la clase a la que hereda
+//Ejemplo
+Mexicanos.prototype.saludo = function()
+{
+    console.log(`Peso ${this.peso} y mido ${this.altura} ademas soy de nacionalidad$ ${this.nacionalidad}`);
+}
+mexicano.saludo();
+*/
+
+/*Sesion 19         <  >
+//******************************************************************************************************
+//Ahora lo que se veran seran las clases en javascript
+//Las clases en javascript son bastante similares o casi iguales a las de otros lenguajes de programacion
+//Orientados a objetos, la unica diferencia es que javascript se basa en objetos por prototipos y en
+//Los otros lenguajes se basa en objetos mediante clases
+//Creacion de una clase en javascript vs un prototipo
+//Creacion clase 
+class Ciudadano
+{
+    constructor(nombre,salario,curp){
+        this.curp = curp;
+        this.salario = salario;
+        this.nombre = nombre;
+    }
+    deuda() 
+    {
+        console.log(`Tengo una deuda de ${(this.salario-(this.salario/2))} pesos`);
+    }
+
+} 
+const pepe = new Ciudadano("Pepe Cruz",18000,"NOPU21PO3ZXXXHNLLL1");
+pepe.deuda();
+//Ahora un prototipo
+function Persona(nombre,salario,curp) 
+{
+    this.nombre = nombre;
+    this.salario = salario;
+    this.curp = curp;
+
+}
+//Propiedades fuera del prototipo
+Persona.prototype.deuda = function()  {
+    console.log(`Tengo una deuda de ${(this.salario-(this.salario/2))} pesos`);
+}
+const mauricio = new Persona("Mauricio Escobar",20000,"NPOHSASD124ZFA23");
+mauricio.deuda();
+//Viendo las instancias
+console.log(pepe);
+console.log(mauricio);
+//Como se puede apreciar hacer un prototipo a diferencia de una clase es mas batalloso
+//Por ello implementaron las clases en javascript , pero javascript se basa de prototipos
+//Por lo que las clases implicitamente las convierte a prototipos el interprete del navegador
+//Ahora la diferencia de heredacion en clases y prototipos
+class Pobre extends Ciudadano
+{
+    constructor(nombre,salario,curp,pais)
+    {
+        super(nombre,salario,curp);//Lo que hace super es que pasa los parametros necesarios a la clase que hereda
+        this.pais = pais;
+    }
+    //Sobreescribiendo los metodos
+    deuda()
+    {
+        console.log(`Tengo una deuda de ${(this.salario-(this.salario/2))} pesos y vivo en ${this.pais}`);       
+    }
+    //Creando otro metodo
+    estado ()
+    {
+        console.log(`Maldita sea odio ${this.pais} y soy pobre`);
+    }
+
+}
+console.log("-----------------------------------------");
+const pablo = new Pobre("Pablo Perez",4000,"SPASDK342PXZK53P","Mexico");
+pablo.deuda();
+pablo.estado();
+//Ahora con prototipos
+function SuperPobre(nombre,salario,curp,pais) {
+    this.pais = pais;//Propiedades
+    this.super = Persona;//Creacion de variable para pasarle los datos que necesite el prototipo heredado
+    this.super(nombre,salario,curp);//Pasandole los datos
+}
+//Heredando de persona a super pobre
+SuperPobre.prototype = Persona;
+//Sobreescribiendo el metodo
+SuperPobre.prototype.deuda = function () 
+{
+    console.log(`Tengo una deuda de ${(this.salario-(this.salario/2))} pesos y vivo en ${this.pais}`);
+}
+//Nuevo metodo para el prototipo
+SuperPobre.prototype.estado = function () {
+    console.log(`Maldita sea odio ${this.pais} y soy pobre`);
+}
+const sandra = new SuperPobre("Sandra Monserrath",3000,"SLDAP235PADK53APSDL","Honduras");
+sandra.deuda();
+sandra.estado();
+//Ahora viendo las instancias creadas
+console.log("---------------------instancias----------------------");
+console.log(pepe);
+console.log(mauricio);
+console.log(pablo);
+console.log(sandra);
+*/
+
+
+
+/*Sesion 20
+//************************************************************************************
+//Ahora lo que se vera sera los metodos estaticos getters y setters en javascript
+//Los metodos estaticos como en otros lenguajes de programacion funcionan para lo mismo
+//Su funcion es poder usar dichos metodos fuera de una clase o prototipo
+//Ejemplo
+class Casa
+{
+    constructor()
+    {
+
+    }
+    static ventanasCasa()
+    {
+        console.log("Es una simple ventana que te ayuda a ver hacia afuera");
+
+    }
+}
+//Como se aprecia no se necesito instanciar la clase para poder usar su metodo
+Casa.ventanasCasa();
+//Metodos getter y setter 
+//Estos como en otro lenguajes ce prograamcion funcionan exactamente igual y tienen casi la
+//Misma sintaxis , el getter sirve para ver el valor de alguna variable o varias variables
+//De una clase y el setter sirve para definir el valor de las propiedades de las clases
+//getter para ver los valores y setter para darle un valor
+//Ejemplo
+class Ejemplo
+{
+    constructor()
+    {
+        //Como se puede ver no se ocupa dar como parametro al constructor de la clase
+        this.edad = null;
+    }
+    //Ver edad
+    get getEdad()
+    {
+        return this.edad;
+    }
+    //Darle valor a la edad
+    set setEdad(edad)
+    {
+        this.edad = edad;
+    }
+}
+//Instancia
+const jejemplo = new Ejemplo();
+jejemplo.setEdad = 20;//Dando valor con set
+console.log(jejemplo.getEdad);//Viendo valor con get
+*/
+
+/*Sesion 21
+//*************************************************************************************
+//Ahora lo que se vera , sera todo sobre el objeto console
+//El objeto console contiene muchos metodos y se veran algunos y su funcionamiento
+//1 console .log , lo que hace es mostrar en la consola alguna variable texto etc
+console.log("Ejemplo1");
+let valor1 = 2;
+console.log("Ejemplo2 %i",valor1);
+//2 console.tabl, lo que hace es ordenar de manera ordenada en una tabla un objeto array etc
+let valor2 = [0,1,2,3,4,5,6];
+console.table(valor2);
+//3 console.dir , lo que hace es que todo lo que se encuentre en sus parametros lo transforma en un objeto javascript
+console.dir(document);
+//4 console.info, hace lo mismo que console.log pero con puro texto
+console.info("Ejemplo4");
+//5 console.error, lo que hace es que muestra un mensaje en consola como si fuera un error
+console.error("Ejemplo5");
+//6 console.warn, lo que hace es que muestra un mensaje de advertencia en consola
+console.warn("Ejemplo6");
+//7 console.clear, lo que hace es que borra todo lo que este antes en consola
+console.clear();
+//8 console.groupCollapsed, lo que hace es que muestra un mensaje con varios incisos 
+console.groupCollapsed("Ejemplo7");
+console.log("Ejemplo8.1");
+console.log("Ejemplo8.2");
+console.groupEnd();
+//9 console.count, lo que hace es contar cuantos console hay dentro de un bloque de codigo
+console.count();
+//10 console.time, lo que hace es contar el tiempo que tarda la consola el hacer algo
+let i = 100000;
+console.time("Tiempo:");
+while (i >100)
+{
+    i--;
+}
+console.timeEnd("Tiempo:")
+*/
+   </script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <script>
+        /* Sesion 9
+        //**************************************************************************
+        //Ahora lo que se vera seran las condicionales o estructuras de control
+        //Empezando por el if else de todos los lenguajes de programacion
+        //Ejemplo              <  >
+        //If else comun y normal de todos los lenguajes
+         let inteligencia = 120;
+        if (inteligencia === 100) 
+        {
+            console.log("Tiene una inteligencia promedio");    
+        }
+        else
+        {
+            console.log("No tiene una inteligencia promedio");
+        }
+        //If else anidados
+        //El if else anidado comun de casi todos los lenguajes
+        console.log("If else anidados\n");
+        if(inteligencia === 100)
+        {
+            console.log("Tiene una inteligencia promedio")
+        }
+        else if(inteligencia>100 && inteligencia < 110)
+        {
+            console.log("Tiene una inteligencia superior al promedio");
+        }
+        else if(inteligencia>110 && inteligencia < 130)
+        {
+            console.log("Tiene una inteligencia muy superior al promedio");
+        }
+        else if(inteligencia < 100)
+        {
+            console.log("Tiene una inteligencia menor que el promedio");
+        }
+        else
+        {
+            console.log("Usted es un genio");
+        }
+        //Ahora los operadores ternarios que esto muy importante para los lenguajes como javascript ,python y php
+        //Son usados con frecuencia para remplazar el flujo de control de un if else de 1 linea 
+        //Son muy utiles y muy utilizados ademas que se guardan en una variable 
+        //Ejemplo
+        //En este caso se guardan en variables o constantes y con el " ? " lo que se indica es que si es verdadero
+        //Se ejecutara solo la siguiente linea de comandos siguiente y se ignora el " : " el cual ese se 
+        //Ejecuta si es falso tomando las caracteristicas de un if else pero de manera reducida y que solo se
+        //Puede ejecutar una sola linea
+        console.log("Operador ternario");
+        const ternario = (inteligencia === 100) 
+        ? "Tiene una inteligencia promedio" //Se ejecutara si es verdadero
+        :"No tiene una inteligencia promedio"; //Se ejecutara si es falso 
+        console.log(ternario); //Se manda a llamar al ternario
+        //El siguiente es el switch el cual ya tambien se conoce de otros lenguajes y es igual a los demas
+        //Lenguajes
+        console.log("Switch");
+        switch (inteligencia) 
+        {
+            case 100:
+                console.log("Inteligencia promedio");
+                break;
+            case 110:
+                console.log("Inteligencia por encima del promedio");
+                break;
+            case 120:
+                console.log("Inteligencia muy por encima del promedio");
+                break;
+            default:
+            case 130:
+                console.log("Es un genio");
+                break;
+                console.log("Inteligencia fuera del rango");
+                break;
+        }
+        */
+
+
+       /* Sesion 10
+       //*********************************************************************************************
+       //Ahora lo que se vera son las estructuras repetitivas 
+       //Lo primero sera el ciclo while el cual sigue siendo exactamente igual que en otros lenguajes
+       //Ejemplo                <  >
+       let contador1 = 0;
+       while (contador1  < 10 ) {
+           console.log("numero while: "+contador1);
+           contador1++;
+       }
+       //Ahora el siguiente es el do while y funciona igual que tambien los demas lenguajes de programacion
+       //El do while es lo mismo que while pero se ejecutara al menos 1 vez lo que hay en su interior
+       //Ejemplo
+       do 
+       {
+           console.log("Do while: "+contador1);
+       } while (contador1  < 10);
+       //Caso que en while no funciona y no entra ni una vez
+       while (contador1  < 10) 
+       {
+           console.log("While");
+        }
+        //Ahora el ciclo for el cual funciona exactamente igual que en los demas lenguajes de programacion
+        //El ciclo for es una forma bastante mas optimizada de while 
+        //Ejemplo
+        for (let contador2 = 0; contador2 < 10; contador2++) 
+        {
+            console.log("numero for: "+contador2);    
+        }
+        //Ahora lo nuevo de javascript y lo que fue implementado en el egmascript del 2015 es el " for in " 
+        //Y el " for of " el cual son muy muy utilizados en la actualidad y son el remplazo de while , do while
+        //Y de los ciclos for
+        //Ejemplo "for in"
+        //Primero se debe tener un objeto al cual se le desee extraer los elementos para el "for in"
+        //Objeto ejemplo
+        const objeto1 = {
+            edad:20,
+            nombre:"Cesar",
+            apellido:"Vielmas",
+            materias:["Español","Matematicas","Ciencias"],
+            casado:false
+        }
+        //Y ahora lo que hace el for in es que cada valor del objeto va 1 por 1 y lo guarda en la variable
+        //elementoObjeto y luego hace lo que el ciclo cuantas veces sean los elementos que tenga el objeto
+        for (const elementoObjeto in objeto1) 
+        {
+            console.log(`elemento = ${elementoObjeto} \nvalor = ${objeto1[elementoObjeto]}`);     
+        }
+        //"for of" lo que hace es exactamente lo mismo que "for in " solo que a este se le puede dar cualquier
+        //Objeto que sea iterable por ejemplo , un array, un string etc , todo lo que sea iterable
+        for (const interador of objeto1.materias) 
+        {
+            console.log(interador);//En este caso se le dio el array guardado en el objeto y se guardan los valores en el interador
+        }
+        */
+        
+
+        /* Sesion 11
+        //*******************************************************************************************
+        //Ahora lo que se vera seran los manejos de errores en javascript
+        //Empezando por el "try catch" el cual funciona como cualquier otro lenguaje de programacion
+        //Este tiene la finalidad de evaluar el codigo y asi mismo si encuentra algun error detectarlo
+        //Y ejecutar otra opcion para el codigo afectado
+        //Ejemplo            <  >
+        try { //Try lo que hace es intentar ejecutar el codigo o evaluarlo y si tiene errores pasara al catch y si no ignora el catch
+            console.log("Este es el try");
+            const letra = "10";
+            letra = 20; // Error
+            console.log("Esto no se ejecutara pues se efectuo un error arriba");
+        } catch (error) //Catch lo que hace es tomar el error que se efectue en try y guardarlo en la variable asignada
+        {
+            console.log(`el error que sucedio en try fue: ${error}`);//Aqui se imprime en consola el error que le sucedio al try
+        }
+        //Hay algo mas opcional el cual es "finally" Este se ejecutara si o si entre al catch o no entre se usa rara vez
+        finally
+        {
+        console.log("Este es finally el cual se ejecutara si o si siempre");
+        }
+        //Hay otra cosa el cual es throw el cual hara un error a proposito para el programa y controlarlo de mejor manera
+        //Ejemplo
+        try 
+        {
+            let variable = "hola";//Variable mal puesta
+           if (isNaN(variable))//isNaN verifica si es un numero o no , si no es un numero manda verdadero y si si un false
+           {
+            throw new Error("No es un numero");//Aqui se hace un error a proposito con throw y lo manda directo al catch
+           }
+           else
+           {
+            console.log("Es un numero");//Si no tuviera errores haria esto
+           }
+           
+        } catch (error) 
+        {
+            console.log(`Ocurrio un error y fue que ${error}`);//Toma el error que fue personalizado en throw y lo manda a catch
+        }
+        finally
+        {
+            console.log("Y este es finally");
+        }
+        */
+
+        /* Sesion 12
+        //******************************************************************************************
+        //Ahora lo que se vera sera break y continue
+        //Primero empezando por break este se usa mucho para salir de una secuencia logica o de cualquier
+        //Tipo se sale de el secuenciador padre y no del hijo si se tiene en cuenta una anidacion , si es
+        //Simple solo se sale de el componente o bloque
+        //Ejemplo
+        let contador = 0;
+        while (contador  < 10) 
+        {
+            contador++;
+            if (contador === 6) {
+                break;//Se sale del while al llegar contador al numero 6
+            }
+            console.log("contador: "+contador);
+
+        }
+        //Ahora el continue , es muy similar a el break solo que lo que hace es que a la secuencia padre se devuelve al principio
+        //Ejemplo
+        contador = 0;
+        while(contador < 10)
+        {
+            contador++;
+            if (contador ===6) {
+                continue; //Lo que hace es que ignora todo lo demas que siga del continue y vuelve a iniciar el while
+            }
+            console.log("contador: "+contador);
+            
+        }
+        */
+
+        
+        /* Sesion 13
+       //********************************************************************************************
+       //Ahora lo que se vera es algo muy importante y tambien muy usado en javascript y en sus frameworks
+       //La cual es la destructuracion , la destructuracion es asignar por a variables por separado los valores
+       //Ya sea de un objeto de un array etc , en diferentes variables
+       //Ejemplo
+       //Sin destructuracion
+       const array1 = ["1",2,true,"3"];
+       let variable1 = array1[0],
+       variable2 = array1[1],
+       variable3 = array1[2],
+       variable4 = array1[3];
+       console.log("Sin destructuracion");
+       console.log(variable1,variable2,variable3,variable4);
+       //con destructuracion
+       const [variable5,variable6,variable7,variable8] = array1;
+       console.log("Con destructuracion");
+       console.log(variable5,variable6,variable7,variable8);
+       //Esto facilita demasiado a la hora de asignar los valores de manera rapida y eficaz
+       //Ahora con un objeto
+       //Sin destructuracion
+       const objeto1 = {
+           nombre:"Cesar",
+           apellido:"Vielmas",
+           edad:20
+       }
+       let nombreObjeto = objeto1.nombre,
+       apellidoObjeto = objeto1.apellido,
+       edadObjeto = objeto1.edad;
+       console.log("Sin destructuracion");
+       console.log(nombreObjeto,apellidoObjeto,edadObjeto);
+       //Con destructuracion
+       const {nombre,edad,apellido} = objeto1;//Muy importante usar "{}" pues se trata de un objeto 
+       //Ademas de usar los mismos nombres que tiene dentro del objeto ya que lo que hace a diferencia del array
+       //Destructurado es buscar el nombre que se le da dentro del objeto y tomar su valor por ello deben 
+       //Contener el mismo nombre de las variables dentro del objeto
+       console.log("Con destructuracion");
+       console.log(nombre,apellido,edad);
+       */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

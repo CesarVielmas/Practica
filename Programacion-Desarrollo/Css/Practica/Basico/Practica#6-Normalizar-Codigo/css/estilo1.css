@@ -1,0 +1,8 @@
+/*Ahora lo que se vera sera la normalizacion y el autoprefixer o prefijos de propiedades
+  Para empezar hay que empezar con la normalizacion , la normalizacion en css es muy muy importante y casi obligatorio pues hay diferentes navegadores en pc o en celular los cuales tienen valores por defecto los cuales pueden verse en la consola de el navegador y al dejar algo sin haberlo tocado se vera diferente en un dispositivo o navegador que en otro , por lo cual existe la normalizacion , la cual hay diferentes paginas que suben su codigo css para normalizar todo el codigo predeterminado de los navegadores , pero el que es mas recomendado es de este sitio: https://necolas.github.io/normalize.css/8.0.1/normalize.css , el cual ya viene el codigo por defecto y que se debe usar en todas als paginas que incluyan css para evitar dichas modificaciones
+  
+  Ahora el siguiente es el autoprefixer o los prefijos de propiedades , esto tambien son demasiado importantes pues ellos se necesitan para  evitar que algunos navegadores que aun no se han actualizado con la version mas reciente de css pueda interpretar su codigo , para ello se usa para convertir codigo css un poco mas moderno que los navegadores no pueden interpretar porque es muy nuevo y no lo han implementado , existen varias formas para usar un autoprefixer pero la mejor es mediante un programa que lo autocomplete , aunque tambien puede usarse esta pagina que lo utiliza : https://autoprefixer.github.io/ algunos programas para autofixer puede ser precoder o la extension en vscode la cual esa se utilizara*/
+
+  
+
+

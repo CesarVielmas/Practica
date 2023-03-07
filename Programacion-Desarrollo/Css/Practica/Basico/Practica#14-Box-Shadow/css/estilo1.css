@@ -1,0 +1,44 @@
+/*Ahora lo que se vera sera el box shadow el cual es una propiedad muy util para hacer diferentes tipos de diseños interesantes en css , este box shadow no tiene limita en implementarlo , osease se podrian poner 1000 box shadow a una misma etiqueta de bloque y podria seguir asi infinitamente
+box shadow tiene diferentes elementos para sus valores los cuales son:
+ offset-x como primer elemento = desplazamiento de la sombra en x
+ offset-y como segundo elemento = desplazamiento de la sombra en y
+ blur-radius como tercer elemento = desenfoque de la sombra creada
+ spread-radius como cuarto elemento = la cantidad de expansion que tiene la sombra creada
+ color como quinto elemento = el color que tendra la sombra creada
+ inset elemento opcional que va primero = hace que la sombra sea por dentro de la etiqueta de bloque
+ 
+ Ahora visto esto tambien es importante saber que al usar insert que es un elemento opcional para la sombra , los valores se alteran un poco pero es solo cuestion de usarlo para entenderlo
+ 
+ Ejemplos*/
+ *{
+     box-sizing:border-box;
+     margin:0px;
+ }
+ .Bloque1,
+ .Bloque2,
+ .Bloque3{
+     background-color: chocolate;
+     height: 300px;
+     width: 300px;
+     margin-left: 30px;
+     margin-bottom: 40px;
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+}
+/*Ejemplo Bloque 1*/
+.Bloque1{
+    margin-top: 50px;
+    box-shadow:inset 10px 10px 15px 15px blueviolet,inset -10px -10px 15px 15px blueviolet;
+}
+
+/*Ejemplo Bloque 2*/
+.Bloque2{
+    box-shadow: 20px 20px 0px 0px black , 40px 40px 0px 0px aquamarine, 60px 60px 0px 0px burlywood;
+}
+.Bloque3{
+    margin-top: 70px;
+    box-shadow: inset -25px -25px 0px 0px aquamarine , inset 30px 30px 0px 0px royalblue ;
+}

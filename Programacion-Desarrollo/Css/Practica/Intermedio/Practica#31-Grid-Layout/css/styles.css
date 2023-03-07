@@ -1,0 +1,60 @@
+/*Ahora lo que se vera sera la funcionalidad y opciones que tiene los gridbox y griditems
+Grid es como un display flex , solo que este es un poco el remplazo o mejora de este mismo , pues lo que hace es poder asignar espacios y hacer una cuadricula dentro de un bloque para poderse asignarse a cada griditem la cual es muy util para esto mismo algunas de las propiedades que da grid son:
+grid-template-colums = lo que hace es crear columnas dentro del padre donde iran los griditems
+
+fr = es una nueva medida para grid lo cual lo que hace es que toma todo el espacio que contiene el padre y lo divide si es necesario dependiendo de cuantas columnas o filas se creen
+
+grid-template-rows = lo mismo que grid-template-colums pero ahora con las rows o filas , para asi mismo ser creadas en el bloque padre
+
+grid-auto-colums = lo que hace es asignar el espacio predeterminado para el contenido dentro de las columnas
+
+grid-auto-rows = lo mismo que grid-auto-colums pero ahora con las filas
+
+grid-template-areas = esta es una funcion muy buena y automatizadora , sencilla para usarse , lo que hace es que se crea la plantilla que se desea para la cantidad de filas o columnas imitando a como quedara el grid en el padre
+
+grid-area = este lo que hace es para los griditems pues con este mismo se le asigna el grid-area especificado en el grid-template-areas para cada item
+
+row-gap = lo que hace es dar espacio a cada fila creada 
+
+column-gap = lo que hace es dar espacio en cada columna creada
+*/
+
+.container{
+    border: 2px solid black;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 60vh;
+    display: grid;/*Aqui se vuelve grid el padre haciendose un gridbox*/
+
+    /*Se hizo comentario pues interfiere con el grid-template-area*
+    grid-template-columns: 1fr 1fr 1fr;/*Lo que hace es crear 3 columnas tomando el espacio completamente dividiendoselo*/
+
+    /*Se hizo comentario pues interfiere con el grid-template-area*
+    grid-template-rows: 1fr 1fr 1fr;/*hace exactamente lo mismo que template columns pero ahora con las filas en este caso 3 filas*/
+
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    /*Se crea una tabla de 3 filas y 3 columnas*/
+    grid-template-areas: 
+    "elemento1   elemento1   elemento2"
+    "elemento1   elemento1   elemento2"
+    "elemento3   elemento3   elemento2"
+    ;
+}
+.container__text--text1{
+    grid-area: elemento1;
+    background-color: aqua;
+}
+.container__text--text2{
+    grid-area: elemento2;
+    background-color: blueviolet;
+}
+.container__text--text3{
+    grid-area: elemento3;
+    background-color: brown;
+}

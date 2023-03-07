@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.bloque1{
+    background-color:  #f0db4f;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    
+}
+.bloque1 h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    
+}
+@keyframes animacion {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .4;
+    }
+    60%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.carrusel{
+    position: relative;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.botones{
+    position: absolute;
+    top: 40%;
+    height: 15%;
+    width: 18%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:45%;
+    -webkit-border-radius:45%;
+    -moz-border-radius:45%;
+    -ms-border-radius:45%;
+    -o-border-radius:45%;
+    border: 1px solid black;
+}
+.botonAtras{
+    transform: scaleX(-1);
+    background-image:url(https://cdn-icons-png.flaticon.com/512/54/54366.png);
+    background-size: 70%;
+    left: auto;
+    left: 10px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    z-index: 2;
+}
+.botonAdelante{
+    background-image:url(https://cdn-icons-png.flaticon.com/512/54/54366.png);
+    background-size: 70%;
+    right: auto;
+    right: 10px;
+    z-index: 2;
+}
+.botones:hover{
+    border: 3px solid blue;
+    cursor: pointer;
+}
+.imagen{
+    animation-name: animacion;
+    animation-duration: .5s;
+    height: 100%;
+    width: 100%;
+}

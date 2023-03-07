@@ -1,0 +1,45 @@
+@{
+
+}
+@{/*Aqui se asigna que modelos o que namespace usara la pagina que detectara dicha pagina*/}
+@using Validaciones.Models
+@model Validacionesxd
+<!---Se crea un container la cual tendra el formulario -->
+<div class="Container">
+    <!---Se crea un form donde se guardara todo el formulario con medios de si se podria reutilizar tambien hay que asignarle su controlador y su accion con su metodo el cual es post ya que mostrara solo los datos-->
+    <form asp-action="Validacionxd" asp-controller="Formulario" method="post">
+        <!---Aqui se hace otro div para poner la primera parte la cual es el nombre se le da un diseño con la class-->
+    <div class="form-group col-md-6">
+        <!--Nombre de este apartado del formulario-->
+        <label>Nombre</label>
+        <!---Se le da la entrada o ingreso de datos respectivo la cual se le asigna de que type es y tambien el asp el cual que parte de la validacion va a tomar en su caso es nombre y ya la class es por mero diseño--->
+        <input type="text" asp-for="Nombre" class="form-control"/>
+        <!---Aqui es donde se mostrara el mensaje al usuario del error que cometio para que lo resuelva tomando la validacion ahora con asp-validation de nombre y como diseño el class--->
+        <span asp-validation-for="Nombre"  class="badge bg-black"> </span>
+    </div>
+    <!--Todo esto que sigue es igual solamente que tomando sus respectivas validaciones ya asignadas--->
+    <div class="form-group col-md-6">
+        <label>Apellidos</label>
+        <input  type="text" asp-for="Apellido" class="form-control"/>
+        <span asp-validation-for="Apellido" class="badge bg-black"> </span>
+    </div>
+     <div class="form-group col-md-6">
+        <label>Edad</label>
+        <input asp-for="Edad" class="form-control"/>
+        <span asp-validation-for="Edad" class="badge bg-black"> </span>
+    </div>
+     <div class="form-group col-md-6">
+        <label>CURP</label>
+        <input  type="text" asp-for="CURP" class="form-control"/>
+        <span asp-validation-for="CURP" class="badge bg-black"> </span>
+    </div>
+     <div class="form-group col-md-6">
+        <label>Correo</label>
+        <input  type="text" asp-for="Correo" class="form-control"/>
+        <span asp-validation-for="Correo" class="badge bg-black"> </span>
+    </div>
+    <div class="row">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+    </form>
+</div>

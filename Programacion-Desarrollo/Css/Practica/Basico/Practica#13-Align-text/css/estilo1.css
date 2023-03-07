@@ -1,0 +1,52 @@
+/*Ahora lo que se vera sera el atributo text-align el cual es bastante importante para alinear CONTENIDO y que solo funciona para elementos de BLOQUE con los inline no funcionan ni tampoco con los elementos inline-block
+Esta propiedad contiene diferentes valores , pero se veran algunos de ellos ahora, como center, top, left, right etc*/
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Bloque1,
+.Bloque2,
+.Bloque3,
+.Bloque4{
+    background-color: aqua;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    height: 300px;
+    width: 300px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/*Alinear un texto, este es el mas facil de todo pues con la etiqueta p o cualquiera de bloque como el texto es su contenido se puede alinear facilmente*/
+.Bloque1 p {
+    text-align:center;
+    padding-top: 20px;
+}
+/*Alinear un bloque,Para alinear un bloque no se puede con text align , pues lo que tenga bordes , no lo puede alinear y esa es una de sus reglas , sin embargo el contenido dentro de un bloque lo puede alinear*/
+.Bloque2 {
+    text-align: center;
+}
+/*Alinear etiquetas lineales , esto es sencillo , no es complicado , pues como dice la sintaxis con text align no se puede alinear textos lineales por lo cual con la propiedad display se debe convertir en uno de tipo bloque para que funcione*/
+.Bloque3 a{
+    display: block;
+    text-align: center;
+}
+/*Alinear imagenes, este es el mas dificil para alinear, pero tiene varias opciones para poder alinearse, como una imagen es de tipo inline-block significa que al utilizar text-align no va a afectar a la imagen y no la alineara 
+opcion1: poner la imagen en una etiqueta de bloque y ahora si utilizar text-align , ahi si funcionara
+opcion2: utilizar margin-left:auto; y margin-right:auto; ya que lo pondria justo en medio a la imagen ya que es consiederada un bloque tambien*/
+/*Opcion 1*/
+.Bloque4{
+    text-align: center;
+}
+/*Opcion 2*/
+.ImagenAfuera{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

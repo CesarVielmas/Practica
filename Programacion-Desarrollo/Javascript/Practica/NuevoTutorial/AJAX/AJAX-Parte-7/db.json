@@ -1,0 +1,48 @@
+{
+  "familiares": [
+    {
+      "id": 1,
+      "nombre": "Pablito",
+      "edad": "40",
+      "apellido": "Picapiedra"
+    },
+    {
+      "id": 2,
+      "nombre": "Pablo",
+      "edad": "45",
+      "apellido": "Gutierrez"
+    },
+    {
+      "id": 3,
+      "nombre": "Cesar",
+      "edad": "20",
+      "apellido": "Vielmas"
+    },
+    {
+      "id": "4",
+      "nombre": "Flor",
+      "edad": "18",
+      "apellido": "Saldaña"
+    }
+  ],
+  "clientes": [
+    {
+      "nombre": "Cesar",
+      "apellido": "Vielmas",
+      "cuota": "5500",
+      "id": 1
+    },
+    {
+      "nombre": "Maria",
+      "apellido": "Perez",
+      "cuota": "12,373",
+      "id": 2
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Vielmas",
+      "cuota": "12000",
+      "id": "3"
+    }
+  ]
+}

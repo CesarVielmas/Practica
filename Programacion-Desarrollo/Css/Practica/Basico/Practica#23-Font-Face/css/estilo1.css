@@ -1,0 +1,10 @@
+/*Ahora lo que se vera sera el font face el cual sirve para importar alguna fuente y que no tengamos que recurrir a un servidor para ello se importa una fuente y se coloca con @facefont para darle su nombre para llamarla y su url para decirle en que lugar se encuentra la fuente en concreto, es muy recomendable usar el formato de el texto en tipo WOFF o WOFF2 para ahorrar memoria y tiempo al usuario*/
+@font-face {
+    font-family: "Fuente Ejemplo";
+    src:local("Fuente"), url("../fonts/BlestiveScript_PERSONAL_USE_ONLY.otf");
+    /*En este caso local sirve para buscar dentro de la computadora de el usuario haber si encuentra el dicho nombre de la fuente si no , descargara la fuente mediante la url osease de donde se encuentra */
+}
+.Fuente{
+    font-family: "Fuente Ejemplo";
+}
+/*Y como se puede apreciar la fuente se uso con exito , esto es muy bueno y tiene muchas ventajas a la hora de poner varios tipos de fuente y ahorrar tiempo de el servidor */

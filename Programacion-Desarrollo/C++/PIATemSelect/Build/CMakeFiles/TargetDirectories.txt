@@ -1,0 +1,14 @@
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/install/strip.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/install/local.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/install.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/list_install_components.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/rebuild_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/edit_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/CMakeFiles/PIA.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/install/strip.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/install.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/list_install_components.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/rebuild_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/edit_cache.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/install/local.dir
+/home/cesarvielmas/Programacion-Desarrollo/C++/PIATemSelect/Build/LibXLS/CMakeFiles/OpenXLSX.dir

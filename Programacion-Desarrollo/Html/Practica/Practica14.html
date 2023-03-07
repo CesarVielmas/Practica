@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 14</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <!--Ahora lo que se vera seran los formularios , algo muy muy escencial para html y javascript , este mismo tiene como finalidad poder enviar informacion a alguna otra pagina o pararlo con javascript y tomar sus inputs y despues de esto hacer lo correspondiente con la informacion-->
+        <!--Para esto tenemos diferentes etiquetas para poder crearlo y mandar informacion-->
+        <!--Ejemplo-->
+        <form>
+            <!--El label lo que hace es solo una informacion o texto que dice que es lo que debe ingresar-->
+            <label>Introduce tu nombre</label>
+            <!--El input como su nombre lo dice es un espacio donde se pondra la informacion que se pida-->
+            <input>
+            <!--El button lo que hace es enviar dicha informacion del input o hacer cualquier otra accion que se programe sobre este-->
+            <button>Soy un boton</button>
+        </form>
+        <br>
+        <!--Ahora ya habido visto esto se vera como implementar un label que seleccione al input cuando sea seleccionado-->
+        <!--Ejemplo-->
+        <form>
+            <!--Como se puede apreciar la propiedad for lo que hace es que un input que contenga un id que su nombre sea igual al del for de la etiqueta label entonces al dar click en el label automaticamente lo mandara al input-->
+            <label for="nombre">Nombre</label>
+            <input id="nombre">
+            <button>Enviar</button>
+        </form>
+        <br>
+        <!--Ahora lo que se vera seran las diferentes propiedades de los input, osease las diferentes entradas que puede tener al recibir valores-->
+        <!--Ejemplo-->
+        <form>
+
+          <label for="input">Ingrese lo que se le pide</label>
+          <!--input de tipo texto este recibira puro texto-->  
+         <input type="text" id="input">
+         <!--input de tipo button , este tipo lo que hace es que al ser presionado no mandara el formulario o lo que contenga a algun otro lado , si no que sirve para que con javascript se haga alguna operacion para interactuar con este mismo-->
+         <br>
+         <input type="button">
+         <!--input de tipo submit , este tipo de input hace exactamente lo mismo que button-->
+         <br>
+         <input type="submit">
+         <!--input de tipo date,este como su nombre lo dice es para mandar fechas lo cual pide año, mes y dia-->
+         <br>
+         <input type="date">
+         <!--El siguiente es el input de time el cual toma la hora-->
+         <br>
+         <input type="time">
+         <!--input week este lo que hace es tomar la semana de un año-->
+         <br>
+         <input type="week">
+         <!--input month este lo que hace es tomar el mes de un año-->
+         <br>
+         <input type="month">
+         <!--El siguiente es el input datetime-local el cual en chorome es muy usado pero en firefox no tiene soporte , este lo que hace es tomar el año, mes , dia y hora-->
+         <br>
+         <input type="datetime-local">
+         <!--Empiezan inputs para el celular-->
+         <!--input tel , este sirve para poner algun numero telefonico , en pc no se aprecia pero en celular si se aprecia muy bien-->
+         <br>
+         <input type="tel">
+         <!--input password , este sirve para poder ingresar contraseñas , lo cual lo que hace el navegador es ocultar lo que se esta escribiendo aunque no es seguro del todo-->
+         <br>
+         <input type="password">
+         <!--input search , este tambien no tiene mucha diferencia a un text , pero sirve apra buscar , en celular se aprecia mejor-->
+         <br>
+         <input type="search">
+         <!--input email , este tiene como finalidad poner un email, en pc se sigue apreciando como si fuera un text , pero en celular se ve un poco diferente pues recomienda emails-->
+         <br>
+        <input type="email">
+        <!--input url , este tambien en pc se ve como cualquier otro input text , pero en celular recomienda urls para poder ingresar-->
+        <br>
+        <input type="url">
+        <!--terminan inputs para el celular-->
+        <!--input range , este tiene como finalidad darle un rango y tomarlo tambien tiene propiedades, las cuales son , min, que significa el minimo rango que puede poner , max , el cual significa el rango maximo que puede ingresar y step el cual indica de cuanto en cuanto ira moviendo el usuario el rango-->
+        <br>
+        <input type="range" step="3" min="1" max="25">
+        <!--input number , este es similar al input text , pero solo acepta puros numeros lo que recibira-->
+        <br>
+        <input type="number">
+        <!--input color, este es importante , lo que hace es que pide al usuario que mueva algun color y al momento de ser enviado enviara un elemento rgb con el color movido por el usuario-->
+        <br>
+        <input type="color">
+        <!--input text , este es facil , es un input donde se ingresara puro texto y aunque se ingrese numeros lo tomara todo como texto-->
+        <br>
+        <input type="text">
+        <!--input reset, este lo que hace es resetear todos los valores que ya fueron puestos en los input y dejarlos a 0 -->
+        <br>
+        <input type="reset">
+        <!--input radio , este lo que hace es de una lista predeterminada de elementos seleccionar alguno , casi siempre viene con demas input radio y labels-->
+        <br>
+        <!--Es importante tambien darle el elemento value y el elemento name para que no se repitan, value para enviar un valor en su informacion y el mismo name para todos , para no seleccioanr todos a la vez y solo 1-->
+        <label for="radio1">input radio 1</label>
+        <input type="radio" id="radio1" name="radio" value="radio1">
+
+        <label for="radio2">input radio 2</label>
+        <input type="radio" id="radio2" name="radio" value="radio2">
+
+        <label for="radio3">input radio 3</label>
+        <input type="radio" id="radio3" name="radio" value="radio3">
+        <!--input checkbox,este es muy similar a input radio solo que este , pueden seleccionarse o marcar varios, para hacer enfasis en que se tiene esos 2 checkbox etc-->
+        <label for="ceckbox1">checkbox 1</label>
+        <input type="checkbox" value="checkbox1">
+
+        <label for="ceckbox2">checkbox 2</label>
+        <input type="checkbox" value="checkbox2">
+
+        <label for="ceckbox3">checkbox 3</label>
+        <input type="checkbox" value="checkbox3">
+        <!--Para ver mas tipos de input se pueden apreciar y ver dentro de la documentacion de mdn -->
+    </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

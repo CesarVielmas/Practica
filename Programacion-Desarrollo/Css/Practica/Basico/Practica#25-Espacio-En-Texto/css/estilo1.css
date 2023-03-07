@@ -1,0 +1,20 @@
+/*Ahora lo que se vera seran algunas de las maneras de dar espacio a las palabras y uno que otro atributo interesante para los textos
+word-spacing = este da espacio a las palabras dado el valor que se le de
+line-height = este lo que hace es hacer mas ancho o menos ancho lo que abarcan el texto
+letter-spacing = este lo que hace es dar mas o menos espacio en cada una de las palabras de un texto
+writting-mode = lo que hace es que da varias opciones para acomodar de diferentes maneras el texto en pantalla
+*/
+.texto1{
+    word-spacing: 10px;
+}
+.texto2{
+    line-height: 50px;
+}
+.texto3{
+    letter-spacing: 6px;
+}
+.texto4{
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}

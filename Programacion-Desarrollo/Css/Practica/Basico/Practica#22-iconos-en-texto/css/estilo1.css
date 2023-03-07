@@ -1,0 +1,6 @@
+/*Ahora lo que se vera sera como convertir los iconos en texto y que funcionen sus propiedades dentro de estos , para ello se necesita tomar iconos de algun servidor web y asi mismo modificarlo como las fuentes en los textos*/
+.icono{
+    font-size: 320px;
+    color: brown;
+}
+/*Como se ve esto tiene de diferencia a parte de las imagenes descargadas por svg el cual no puede ser tomado como texto , en cambio este si */

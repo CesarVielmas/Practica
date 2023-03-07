@@ -1,0 +1,40 @@
+/*Ahora lo que se vera sera la position relative y como funciona position
+position es un atributo que contiene cada elemento de el html , para ello todos por defecto contienen el position static el cual lo que hace es que no se pueda mover dicha etiqueta de bloque o de linea, por ello existen diferentes position , como el position relative el cual es el que se vera , para ello el positive relative sirve para mover un bloque de etiqueta o de linea dependiendo hacia donde quiera el usuario , sin embargo al usar left o top , ya no funcionara bottom y right y viceversa 
+Ejemplo*/
+.Bloque1,
+.Bloque2,
+.Bloque3{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    position: relative;/*Aqui se les asigna que sera de posicion relativa*/
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.Bloque1,
+.Bloque2{
+    margin-top: 50px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    outline: 50px solid black;
+    outline-offset: -150px;
+}
+.Bloque2{
+    bottom: 350px;/*Ya que es un position relative se puede mover*/
+    left: 350px;
+}
+.Bloque3{
+    background-color: burlywood;
+    border-radius: 120px 120px 50px 50px/ 120px 120px 50px 50px;
+    -webkit-border-radius: 120px 120px 50px 50px/ 120px 120px 50px 50px;
+    -moz-border-radius: 120px 120px 50px 50px/ 120px 120px 50px 50px;
+    -ms-border-radius: 120px 120px 50px 50px/ 120px 120px 50px 50px;
+    -o-border-radius: 120px 120px 50px 50px/ 120px 120px 50px 50px;
+    box-shadow: inset 0px 50px 30px black;
+    bottom: 400px;
+    left:180px;
+    
+}

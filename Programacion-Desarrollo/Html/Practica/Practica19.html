@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 19</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <!--Lo que se vera sera como hacer que una imagen sea responsive , osease que pueda cambiar en html-->
+        <!--Para ello se usa la misma etiqueta img pero con un atributo interesante el cual es srcset el cual añade mayor funcionalidad responsive para mobiles y asi mismo reducir el tamaño de descarga para entrar a la pagina-->
+        <!--Ejemplo-->
+        <!--Se pone cada ruta por separado con una coma y se le dice al navegador dando un espacio en cual "x" se va a activar cierta imagen por ejemplo imagenpc.png se activara cuando sea 1x lo cual es la de la mayoria de ordenadores para ver los x de cada uno buscar en internet-->
+        <img srcset="assets/images/ImagenPc.png 1x,assets/images/ImagenCelular2x.png 2x,assets/images/ImagenCelular3x 3x" alt="Imagen">
+        <!--Para ver los resultados darle zoom in o zoom out de las imagenes-->
+        <!--Tambien hay otra forma de hacerlos la cual es con la etiqueta picture y source , lo que hace picture es poner una imagen exactamente igual que image pero picture tiene la comodidad de poseer mas caractersiticas que la etiqueta img , por lo cual se usa mucho mas frecuente la etiqueta picture con source-->
+        <br>
+        <picture>
+            <!--Con source lo que hace es cargar la imagen se le puede dar un srcset igual que img tambien , tambien tiene el atributo media el cual lo que hace es que cuando se cumpla media entonces se activara la imagen de source y si no el img-->
+            <source srcset="assets/images/ImagenPc.png" media="(max-width:1200px)" alt="Imagen PC">
+            <!--La etiqueta img es obligatorio como respaldo en picture-->
+            <img src="assets/images/ImagenCelular2x.png" alt="Imagen Celular">
+        </picture>
+        <!--Ademas de que no se necesita recargar la pagina para que funcione-->
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*Ahora lo que se vera seran 2 tipos de position , el position fixed y el position sticky el cual viene para remplazar al position fixed
+Empezando por el position fixed, este a su vez es como el position absolute , pero sin embargo sirve mucho para menus , pues al estar dentro de la etiqueta html se quedara ahi para siempre y no se movera absolutamente para nada
+Con un ejemplo queda mas claro*/
+
+*{
+    margin: 0px;
+}
+/*Position fixed | Documental Perros*/
+.Fixed{
+    position: fixed;
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+   
+}
+.Perros h2{
+    padding-top: 100px;
+}
+/*Position sticky | Documental Gatos*/
+.Gatos h2{
+    padding-top: 50px;
+}
+.Sticky{
+    position: sticky;
+    width: 100%;
+    background-color: aqua;
+    top: 0px;/*Es importante el top en los ticky ya que sera su posicion al entrar a este mismo*/
+}
+.Gatos h2 {
+    position: sticky;
+    width: 100%;
+    background-color: aqua;
+    top: 0px;/*Es importante el top en los ticky ya que sera su posicion al entrar a este mismo*/
+}
+/*Como se puede apreciar sticky es mejor que Fixed ya que pueden incluirse 1 o otro contenido de encabezado dependiendo del scroll o tamaño de dicho objeto y fixed es un solo contenido que se mantendra ahi y no se movera*/

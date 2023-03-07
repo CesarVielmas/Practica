@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    background:#F0DB4F;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+    margin-bottom: 5vh;
+    color: #323330;
+   
+}
+.icono{
+    height: 10%;
+    width: 10%;
+    margin-right: 40%;
+}
+.title a{
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}

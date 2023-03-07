@@ -1,0 +1,26 @@
+/*Ahora lo que se vera sera la herencia en css , esta importante pues la herencia ocurre dentro de html hay algunas etiquetas que eredan de otras y otras que no heredan y tienen su estilo propio , es facil indentificarlos pues los que heredan cambian al momento de cambiar el elemento del que heredo y los que no , no cambian
+Ejemplo*/
+.texto1{
+    color: blueviolet;
+    font-size: 21px;
+}
+/*Como se aprecia span hereda de la etiqueta de donde se encuentra , en este caso dentro de p , por ello toma todas las propiedades que tiene*/
+
+/*Para quitar la herencia y que no tenga el formato del que hereda si no sus valores iniciales se hace con la propiedad initial
+Ejemplo*/
+.span1{
+    color: initial;/*Aqui se le dice que regrese a su estado inicial y que no herede de nadie*/
+    color: aqua;/*Estando en su estado inicial y como no hereda de nadie se le pueden dar atributos diferentes y este los tomara ignorando la heredacion*/
+}
+
+/*Tambien existen etiquetas en html que no heredan , para ello se tiene la propiedad inherit la cual lo que hace es que cualquier propiedad que la tenga la heredara a fuerza
+Ejemplo*/
+
+.texto2{
+    color: brown;
+    font-size: 20px;
+}
+[href*="#"]{
+    color: inherit;/*Como se puede ver aqui le dice que el color lo herede de su padre o de donde se encuentre*/
+    /*Importante , cuando se hereda una propiedad entonces tambien heredara las demas si no se describen sus atributos dentro de css*/
+}

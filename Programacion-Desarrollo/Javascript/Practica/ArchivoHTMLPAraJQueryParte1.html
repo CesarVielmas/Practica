@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="JQuery.js"></script>
+    <script>
+        //Esta es la llamada a JQuery lo que esta haciendo es que el documento osease la pagina
+        //Cargara primero antes que el JQuery , ya que algunas funciones llaman a componentes de la pagina
+        //Y si se quiere hacer eso entonces necesita primero cargarlo , ya que el ciclo de ejecucion es de arriba
+        //Ah abajo
+        $(document).ready(function()
+        {
+            //Despues de hacer la llamada aqui ira todo el codigo de javascript
+            //Para que lo ejecute
+            //Algo muy importante en JQuery es el DOM(Por su traudccion "Document Object Model"), este mismo
+            //Se necesita tenerlo bien en claro para poder obtener objetos de los archivos html aqui se vera
+            //Un ejemplo simple pero para mayor informacion de lo que es DOM ver en mi chat de messenger
+            //La foto de DOM  buscando DOM en buscar de messenger
+            //Ejemplo
+            //Aqui lo que se hizo es que se tomo todas las etiquetas html llamadas "body" que en este caso y
+            //Siempre habra solo un body y se oculto con el metodo hide() y el metodo segundo de hide
+            //Fue fadeIn que esto lo que hizo o hace es despues de ocultarlo , mostarlo en pantalla lentamente
+            //Durante 5000 milisegundos osease 5 segundos , ya que solo maneja milisegundos 
+            //Aqui se uso un DOM pues se mando a llamar al objeto body o todas las etiquetas body 
+            //Aunque podria ser todas las etiquetas "p" etc , para llamar por id se usa $("#body") por ejemplo
+            //Y por clase se usa $(".body") exactamente que css
+            //A esto se le llama funciones encadenadas , ya que JQuery ofrece eso , lo simplifica algo que
+            //Javascript nativo no puede hacer abajo del ejemplo de javascript
+            $("body").hide().fadeIn(5000);
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Hola</p>
+</body>
+
+<script>
+    /*
+    //Texto en javascript solamente para ocultar , lo que JQuery con solo 2 lineas de codigo oculta y 
+    //Hace aparecerlo y en javascript tomaria cada funcion por separado haciendo asi muchas mas lineas
+    //De codigo y menos legebilidad
+    //Tomando las etiquetas "p" del html
+
+    var texto = document.getElementsByTagName("p");
+
+    //Codigo javascript para ocultar
+    
+    texto.style.visibility ="hidden";
+
+    */
+</script>
+</html>

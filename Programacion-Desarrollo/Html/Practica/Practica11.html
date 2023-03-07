@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 11</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <!--Ahora lo que se vera seran las tablas y su estructura para poder hacer y estructurar bien una tabla o codigo-->
+        <!--Empezando por inicializar la tabla la cual es con la etiqueta table-->
+        <table>
+            <!--Esta etiqueta caption tambien es opcional y es para poner el titulo de la tabla en cuestion-->
+            <caption>
+                <p>METHOD QUEST</p>
+            </caption>
+            <!--Por ultimo tenemos la etiqueta colgroup la cual lo que hace es juntar las columnas , por ejemplo nombre es una columna que contiene los nombres "Cesar" y "Pablo" el cual abarca 2 pablo entonces al no hacer un colgroup la fila nombre sera 1 , la fila objetos sera otro y asi sustantivamente , cuando se hace un colgroup y se usa la etiqueta col , lo que hace es juntar columnas entonces si se usa un col ahora nombre y objetos se podria juntar a una sola columna ya que tambien maneja atributos para juntarlas si no pues solo serviria para contarlas-->
+            <colgroup>
+                <!--Cuenta la primera columna , en este caso html no le da un buen uso como tal , pero en css esto es importante-->
+                <!--En este caso se junto la columna nombre y objetos en una sola con el atributo span que dice que se selecciono 2-->
+                <col span="2">
+                <!--Y este col solo sin span significa que solo tomo una y como el anterior tomo 2 este col toma la tercera fila-->
+                <col>
+            </colgroup>
+            <!--Esta etiqueta thead es para poner el encabezado que contiene la tabla osease la primera fila de una tabla-->
+            <thead>
+                
+                <tr>
+                    <!--La etiqueta th se usa para poner cada td del elemento tr de thead , esta es obligatoria cuando se esta dentro de thead tambien es importante aclarar que cuando se hace esto se encapsula los elementos de tbody de cada tr a cada th pues es su encabezado-->
+                    <th>Nombre</th>
+                    <th>Objetos</th>
+                    <th>Caracteristicas</th>
+                </tr>
+            </thead>
+            <!--El tbody es opcional cuando no se tiene ningun thead pero es obligatorio cuando se tiene un thead y dentro ira todo el codigo que contiene dentro la tabla-->
+            <tbody>
+                <!--Empezando por tr el cual es una columna generada-->
+                <!--Fila 1-->
+                <tr>
+                    <!--dentor de cada tr debe ir la etiqueta td pues lo que hace es que esa columna generada la parte dependiendo de la cantidad de td que tenga-->
+                    <td>Cesar</td>
+                    <td>Palo</td>
+                    <td>Un palo inservible</td>
+                </tr>
+                <!--Fila 2-->
+                <tr>
+                    <!--Algo que tambien se tocara son los atributos los cuales son importantes hay 2 importantes los cuales son rowspan y colspan , el rowspan lo que hace es que le dice a un elemento cuantas filas ocupar predeterminadamente ocupa 1 pero se puede alterar este valor-->
+                    <!--Ejemplo-->
+                    <td rowspan="2">Pablo</td>
+                    <td>Pala</td>
+                    <td>Un pala para cavar</td>
+                </tr>
+
+                 <!--Fila 3-->
+                 <tr>
+                    <!--Como Pablo ocupa 2 filas entonces deberia borrarse nombre pues ya esta ocupando ese lugar-->
+                    <td>Palanca</td>
+                    <td>Un palanca para activar algo</td>
+                </tr>
+            </tbody>
+            <!--la etiqueta tfoot es opcional independientemente si se usa tbody o thead o cualquier otro elemento y como su nombre lo dice encapsula el pie de la tabla o el ultimo elemento de esta-->
+            <tfoot>
+                <tr>
+                    <!--El siguiente es el colspan el cual salta columnas dependiendo de cuantas se quieren saltar por ejemplo en este caso se necesitan que ocupe 2 para que pueda quedar al final con css-->
+                    <td colspan="3">Derechos reservados METHOD QUEST @2003</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

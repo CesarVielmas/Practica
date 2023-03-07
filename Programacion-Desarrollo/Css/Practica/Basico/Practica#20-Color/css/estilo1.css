@@ -1,0 +1,33 @@
+/*Ahora lo que se vera seran los colores en css , pues es una cosa muy muy importante y que tienen peso para el diseño de una pagina 
+Para ello los colores mas frecuentes y mas utilizados que deja por predeterminado css se encuentran en: https://en.wikipedia.org/wiki/Web_colors 
+aunque tambien cabe aclarar existe el valor transparent el cual hace que sea invisible*/
+.caja1{
+    background-color: transparent;
+    height: 40%;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+/*El siguiente es usando el modo tradicional el cual es el rgb que ya se conoce , pues con el se puede hacer un color personalizado poniendo valores respectivos a cada valor del rgb es importante aclarar deben ser valores del 0 al 255*/
+.caja2{
+    background-color: rgb(201, 223,219);
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+/*El siguiente es la transparencia en css , esta se puede incluir dentro de los valores rgb o rgba el cuales el que la incluye , se vera un ejemplo con ambos*/
+.caja3{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(82 32 124 /0.5);/*Usando rgb y dandole una transparencia del 0.5*/
+    background-color: rgba(82,32,124,0.5);/*Usando rgba y dondole una transparencia del 0.5*/
+    margin-bottom: 50px;
+}
+/*Por ultimo se encuentran los colores usando el formato hsl , el cual es recomendable usarlo algunas veces este sistema tiene como primer valor el valor de el color , el segundo valor la sombra y el tercero la iluminacion funciona muy parecido al rgb ademas de tener la transpariencia , existe hsl y hsla */
+.caja4{
+    height: 300px;
+    width: 100%;
+    background-color: hsl(54 24% 48%/ 0.345);/*Lo mismo pero con hsl*/
+    background-color: hsla(54, 24%, 48%, 0.345);/*Lo mismo pero con hsla*/
+    margin-bottom: 50px;
+}

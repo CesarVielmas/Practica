@@ -1,0 +1,49 @@
+/*Ahora lo que se vera es el z-index el cual lo que hace es que cuando se tienen elementos otro por encima de otro  se quisiera que a lo mejor ese elemento no este encima del otro y ahi es donde actua el z-index , la unica excepcion del z-index es que un padre nunca podra estar por encima del hijo , a menos que el hijo sea negativo se veran ambos ejemplos*/
+
+/*Ejemplo 1| sin hijos y padres*/
+.Bloque1,
+.Bloque2{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    position:relative;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border-radius: 160px / 100px;
+    -webkit-border-radius: 160px / 100px;
+    -moz-border-radius: 160px / 100px;
+    -ms-border-radius: 160px / 100px;
+    -o-border-radius: 160px / 100px;
+}
+.Bloque1{
+    background-color: aqua;
+    margin-top: 50px;
+    top: 320px;
+    z-index: 1;/*El valor por defecto de cada etiqueta html es de 0,entonces al darle como valor 1 ya supera a todos los bloques y lo pone por encima*/
+}
+/*Ejemplo 2| Padres y hijos*/
+/*Padre,Como se dijo en la teoria el padre jamas podra estar por encima del hijo , sin embargo el hijo si puede estar por debajo del padre al darle un valor negativo*/
+.Bloque3-1,
+.Bloque3-2{
+    height: 200px;
+    width: 300px;
+    border-radius: 50px 40px 120px 20px/90px 82px 23px 49px;
+    -webkit-border-radius: 50px 40px 120px 20px/90px 82px 23px 49px;
+    -moz-border-radius: 50px 40px 120px 20px/90px 82px 23px 49px;
+    -ms-border-radius: 50px 40px 120px 20px/90px 82px 23px 49px;
+    -o-border-radius: 50px 40px 120px 20px/90px 82px 23px 49px;
+    margin-bottom: 50px;
+    margin-left:50px;
+    position: absolute;/*Es importante darles que tipo de position sera*/
+}
+/*Padre*/
+.Bloque3-1{
+    background-color: coral;
+    z-index: auto;/*Es como si no se pusiera nada , toma como valor 0 osease el predeterminado*/
+
+}
+/*Hijo*/
+.Bloque3-2{
+    background-color: crimson;
+    z-index: -1;/*Valor menor al predeterminado , entonces esto haria que el bloque hijo se pusiera debajo del padre*/
+}

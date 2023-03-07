@@ -1,0 +1,77 @@
+/*Ahora lo que se vera seran las diferentes maneras de hacer una animacion con animation y con keyframes esto es muy bueno y algo sencillo de hacer , sirve mucho apra animaciones , sin embargo para hacer animaciones y nada mas , no hacer animaciones donde interactua muy directamente el usuario
+las diferentes propiedades que tiene animation son la siguientes
+
+animation-name = es aqui donde ira el nombre de la animacion creada con keyform para que tome dicha animacion
+
+animation-duration = es la duracion que tendra la animacion desde su entrada a su salida
+
+animation-timing-function = esta lo que hace es la diferente rapidez que tendra al inicio o al final dependiendo de lo que se desee por defecto es linear 
+
+animation-iretaion-count = esta es la cantidad de veces que se repetira la animacion , pudiendo hacerse infinita , aunque por defecto es 1
+
+animation-direction = es la direccion que tomara la animacion , por defecto es de el inicio al final pero puede ser cambiado o alternado
+
+animation-fill-mode = este es la posicion en la quedara la animacion cuando termine , pudiendo cambiarlo
+
+animation-delay = este es el tiempo en el que tardara para que se ejecute la animacion antes de que inicie
+
+animation-play-state = esta es importante pues lo que hace es el estado actual de la animacion por defecto es running pero puede pausarse justo cuando se esta animando , o no dependiendo
+*/
+.contenedor{
+    height:200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin: 70px;
+}
+
+.contenedor{
+    animation-name: animacion;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;     
+}
+/*keyframe es para hacer la animacion y tomar dicho nombre con animation-name*/
+@keyframes animacion {
+    /*Puede usarse from , to para indicar inicio y fin de la animacion pero es mucho mas recomendable usar porcentajes*/
+    0%{
+        background-color: aqua;
+    }
+    33%{
+        transition: 3s;
+        background-color: black;
+        -webkit-transition: 3s;
+        -moz-transition: 3s;
+        -ms-transition: 3s;
+        -o-transition: 3s;
+}
+    50%{
+        transition: 2s;
+        background-color: brown;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+}
+    80%{
+        transition: 2s;
+        background-color: darkmagenta;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+}
+    100%{
+        transition: 2s;
+        background-color: cornsilk;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="JQuery.js"></script>
+    <script>
+        //Ahora lo que se vera son los diferentes efectos que hay , ya se vieron algunos como show , hide, toggle, fadein,fadeout, pero aun faltan mas 
+        //Se veran fadeToggle,slideDown,slideout y slideToggle
+        //Ejemplo usandolos
+        $(document).ready(function(){
+            //UsandofadeToggle el cual hace el fadeIn y el fadeOut con sus clicks
+            $("#fadeToggle").click(function(){
+                $("#imagen1").fadeToggle(4000)
+            });
+            //Usando SlideDown este lo que hace es esconder una imagen haciendola hacia abajo
+            $("#SlideDown").click(function(){
+                $("#imagen2").slideDown(4000)
+            });
+            //Usando SlideUp este lo que hace hace es esconder una imagen pero ahora haciendola hacia arriba
+            $("#SlideUp").click(function(){
+                $("#imagen3").slideUp(4000)
+            });
+            //Usando SlideToggle este hace el SlideDown y el SlideUp con sus clicks
+            $("#SlideToggle").click(function(){
+                $("#imagen4").slideToggle(4000)
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <img src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294656830_1964143177111015_1919668660163441272_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=jcsxme4wfSoAX-g7YVD&_nc_ht=scontent.fntr5-1.fna&oh=00_AT-EBTshZ1x2nRZgJpnubz69QxyMAUW04OiNjttvNoNJrw&oe=62DC94B5" alt="" width="300px" height="300px" id="imagen1">
+    <img src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294656830_1964143177111015_1919668660163441272_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=jcsxme4wfSoAX-g7YVD&_nc_ht=scontent.fntr5-1.fna&oh=00_AT-EBTshZ1x2nRZgJpnubz69QxyMAUW04OiNjttvNoNJrw&oe=62DC94B5" alt="" width="300px" height="300px" id="imagen2">
+    <img src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294656830_1964143177111015_1919668660163441272_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=jcsxme4wfSoAX-g7YVD&_nc_ht=scontent.fntr5-1.fna&oh=00_AT-EBTshZ1x2nRZgJpnubz69QxyMAUW04OiNjttvNoNJrw&oe=62DC94B5" alt="" width="300px" height="300px" id="imagen3">
+    <img src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/294656830_1964143177111015_1919668660163441272_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=jcsxme4wfSoAX-g7YVD&_nc_ht=scontent.fntr5-1.fna&oh=00_AT-EBTshZ1x2nRZgJpnubz69QxyMAUW04OiNjttvNoNJrw&oe=62DC94B5" alt="" width="300px" height="300px" id="imagen4">
+    <button id="fadeToggle">fadeToggle</button> 
+    <button id="SlideDown">SlideDown</button>
+    <button id="SlideUp">SlideUp</button>
+    <button id="SlideToggle">SlideToggle</button>
+
+</body>
+</html>

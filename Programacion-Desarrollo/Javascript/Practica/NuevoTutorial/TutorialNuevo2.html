@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <script>
+        /* Sesion 6
+        //Ahora lo que se vera son las funciones algo demasiado importante para cualquier lenguaje
+        //De programacion que utilize orientacion en objetos
+        //Ejemplo
+        //Funcion sin parametro
+        function funcionSinParametros()
+        {
+            console.log("Se utilizo una funcion sin parametro");
+        }
+        //utilizacion de la funcion
+        funcionSinParametros();
+        //Funcion que pide parametros
+        function funcionConParametros(nombre,edad)
+        {
+            console.log(`Esta es una funcion que pidio parametros el nombre el cual es: ${nombre} y la edad la cual es: ${edad}`);
+        }
+        //utilizacion de la funcion que pide parametros
+        funcionConParametros("agustin",30);
+        //Lo nuevo de javascript desde la eggmaScript del 2015 es que se puede definir valores
+        //predeterminados a las funciones que piden parametros
+        //Ejemplo
+        function funcionConParametrosNueva(nombre="desconocido",edad=0)
+        {
+            console.log(`Esta es una funcion que pidio parametros el nombre el cual es: ${nombre} y la edad la cual es: ${edad}`);
+        }
+        //utilizacion de la funcion que pide parametros sin darselos
+        funcionConParametrosNueva();
+        //Es muy util usar esta nueva funcion con la que le puedes asignar valores predeterminados a los parametros
+        //Ahora la siguiente es la funcion que retorna valores la cual puede pedir valores o no y que puede retornar o no
+        //Ejemplo
+        function funcionQueRetorna()
+        {
+            return "Hola";
+        }
+        //Se puede guardar en una variable o se puede imprimir en un console log
+        let valorFuncion = funcionQueRetorna();
+        console.log(`Valor de la variable que retorna el valor = ${valorFuncion} \nvalor sin obtenerla de la variable = ${funcionQueRetorna()}`);
+        //Ahora los 3 juntos
+        function funcionConjunta(valor1= 0,valor2 = 0,valor3 = 0)
+        {
+            let sumaTodos = valor1 + valor2 + valor3;
+            return sumaTodos;
+        }
+        let valorConjunto = funcionConjunta(1,5,7);
+        console.log(`valor1 = ${valorConjunto} \n valor2 = ${funcionConjunta()}`);
+        //Ahora una cosa super importante son las funciones expresivas y las no expresivas
+        //Funciones no expresivas
+        function noExpresiva()
+        {
+            return "no expresiva";
+        }
+        //Funciones expresiva
+        const siExpresiva = function(){
+            return "si expresiva";
+        }
+        let siExpresiva2 = function(){
+            return "si expresiva2";
+        }
+        //las diferencias son en que al momento de ejecutar el codigo es mucho mas conveniente utilizar las 
+        //Funciones expresivas pues te obligan a ordenarlo de manera correcta ya que como la variable var 
+        //ordena las funciones hasta arriba y ignora cualquier error de codigo como llamar a una funcion que
+        //Se supone no deberia estar declarada
+        //Ejemplo
+        //No expresiva
+        noExpresivaIncorrecta();//El compilador puede ejecutar esto aunque aun la funcion no este declarada
+        //Por el motivo que mueve la funcion hacia arriba del todo y es incorrecto
+        function noExpresivaIncorrecta()
+        {
+            console.log("esto es incorrecto");
+        }
+
+        //Si expresiva
+        let siExpresivaCorrecta = function()
+        {
+            console.log("Esto es correcto");
+        }
+        //Es obligatorio en la si expresiva poner la declaracion arriba de la utilizacion ya que 
+        //Aqui no mueve la funcion de donde es y es la que mas se usa
+        siExpresivaCorrecta();
+        */
+
+
+
+
+        /* Sesion 7
+       //***********************************************************************************************
+       //Ahora lo que se vera son los arrays en javascript
+       //Empezando por las diferentes declaraciones de los arreglos
+       let arreglo1 = ["1",2,true,false];
+       const arreglo2 = [1,2,3,"hola"];
+       const arreglo3 = Array.of(1,2,3,true,false);
+       const arreglo4 = new Array(1,2,3,true,false);
+       //Tambien se puede hacer un arreglo que contenga otro arreglo por si mismo
+       //Ejemplo
+       const arreglo5 = Array.of(1,2,3,[1,2,3,[1,2,3]]);
+       //Aqui se imprimira con el console log y seguira el orden dependiendo de donde se encuentre el arreglo
+       console.log(arreglo5[3][3][0]);//En este caso es la posicion 3 del primer arreglo dodne esta el segundo arrelgo y luego se fue a la 3 posicion para el siguiente arreglo y se tomo el numero 1 de la posicion 0 de el uultimo arreglo
+       //Metodos de los arreglos (Algunos)
+       //Para llenar un arreglo completamente
+       const arreglo6 = Array(10).fill(1);
+       console.log(arreglo6);
+       //Para obtener la longitud de un arreglo
+       console.log(arreglo6.length);
+       //Para añadir un nuevo elemento a el arreglo al final
+        arreglo6.push(0);
+        console.log(arreglo6);
+       //Para eliminar el ultimo elemento de un array
+       arreglo5.pop();
+       console.log(arreglo5);
+       //El foreach de los arrays la cual ejecuta una funcion
+       //lo que hace es que ejecuta algo dentro de sus parentesis la cantidad de veces que sea igual a sus
+       //Elementos de el array en este caso tiene 11 elementos y lo ejecutara 11 veces 
+       //Se usa mucho con funciones ya que toma el valor de cada elemento en la primera posicion de los parametros
+       //De la funcion y el segundo hueco de parametros obtiene el id o numero de la posicion de el elemento
+       //Aqui un ejemplo
+       arreglo6.forEach(function(elemento,id)
+       {
+        console.log(`el elemento numero ${id} es = ${elemento}`);
+       });
+
+       */
+
+
+       /* Sesion 8 
+       //******************************************************************************************
+       //Ahora lo que se veran son los objetos en javascript
+       //Los objetos son bastante similares a los de otros lenguajes al crear un objeto o una clase
+       //Pero lo que lo diferencia es su manera de crear uno ya que es muy diferente la manera en la que
+       //Se crea un objeto
+       //Ejemplo
+        //creacion de manera diferente de el objeto 1 el cual contiene una funcion y propiedades
+       const objeto1 = new Object();
+       //creacion de un objeto mas facil
+       const objeto2 = {
+       nombre:"pepe",//Propiedad
+       Apellido:"aguilar",//Propiedad
+       edad:30,//Propiedad
+       casado:true,//Propiedad
+       saludo: function()//Metodo funcion
+       {
+           console.log(`Hola soy ${this.nombre}`); //Se usa this para obtener el nombre con el template string
+       },
+       series: ["tortugas perras","la guacamole"],//Propiedad Array
+       conocimientos:{  //Propiedad Objeto
+           javascript: "Intermedios",
+           cPlusPlus: "Intermedio Avanzado",
+           cSharp:"Avanzado",
+           java: "intermedio"
+       }
+       }
+       //Llamando a las propiedades del objeto 2
+       //Llamando a las propiedades por tipo array
+       console.log(objeto2["casado"]);
+       console.log(objeto2["conocimientos"]["java"]);
+       console.log(objeto2["series"][0]);
+       //Llamando a las propiedades por tipo punto
+       console.log(objeto2.casado);
+       console.log(objeto2.conocimientos.javascript);
+       console.log(objeto2.series[0]);
+       //Llamando a ls metodos de el objeto 2
+       //LLamandolo por tipo array
+       objeto2["saludo"]();
+       //Llamandolo por tipo punto
+       objeto2.saludo();
+       //Algunos metodos de los objetos
+       //keys se usa para ver cada uno de las propiedades y funciones de un objeto
+       console.log(Object.keys(objeto2));
+       //values se usa para ver cada uno de los valores de las propiedades o metodos de un objeto
+       console.log(Object.values(objeto2));
+       //hasOwnProperty se usa para ver si esta el nombre de una propiedad o funcion en un objeto
+       //Si esta se manda un true y si no esta se manda un false
+       console.log(objeto2.hasOwnProperty("Casa"));
+       console.log(objeto2.hasOwnProperty("nombre"));
+       //o tambien puede escribirse como
+       console.log(objeto2["hasOwnProperty"]("Casa"));
+       console.log(objeto2["hasOwnProperty"]("nombre"));
+       */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

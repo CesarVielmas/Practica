@@ -1,0 +1,41 @@
+ /*Ahora lo que se vera seran las transiciones y transformaciones , las cuales son muy utiles para hacer animacionesEmpezando por las transiciones , esta es un shorhand la cual contiene las siguientes propiedades
+ transition-delay = esta propiedad le dice que tanta espera se tendra que hacer para que la animacion actue
+
+ transition-duration = esta propiedad lo que hace es cuanto tardara la animacion en dar cierta propiedad a la etiqueta
+ 
+ transition-property =esta propiedad lo que hace es decir que propiedades de css se podran hacer transiciones esta por defecto contiene un all pero lo recomendable para ahorrar recursos es decirle las propiedades con las que usaremos animacionesahora 
+ 
+ siguen las transformacioens , las cuales tienen como objetivo modificar el ancho ,altura,posicion y hasta hacer animaciones con rotacion etc , a continuacion se veran algunas de las transformaciones 
+
+ transform-origin = esta lo que hace es decir en que punto de aparicion sera la transformacion
+
+ transform = toma bastantes propiedades las cuales pueden ser vistas en la documentacion de mdn y lso valores cambian tomando gd , rd , pero el mejor es tr el cual demuestra que es una vuelta
+ */
+ .contenedor{
+    height:200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin: 70px;
+}
+.contenedor1{
+    transition-delay: 5s ;
+    transition-duration: 10s;
+    transition-property: background-color;
+    background-color: brown;
+}
+
+.contenedor2{
+    transform-origin:auto ;
+    transition-delay: 10s;
+    transition-duration: 10s;
+    transform: rotateX(32gd);
+    -webkit-transform: rotateX(32gd);
+    -moz-transform: rotateX(32gd);
+    -ms-transform: rotateX(32gd);
+    -o-transform: rotateX(32gd);
+}

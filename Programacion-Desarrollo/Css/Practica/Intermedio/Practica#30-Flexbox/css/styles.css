@@ -1,0 +1,48 @@
+/*Ahora lo que se vera sera el display de tipo flex y su utilidad
+el display de tipo flex es diferente al de sus contrapartes pues añade muchas otras caracteristicas a sus elementos hijos y al elemento padre como tal , al elemento padre se le llama flexbox y a los flex hijos se les llama flex items aqui se veran alguna de las funcionalidad de flex 
+
+funcionalidades de flexbox
+flex-direction = es la direccion en como se acomodaran los items por defecto es en una columna , pero si se modifica tambien tiene column para ponerlos separados como bloques o columnas o column-reverse que seria ordenarlos al reves del menor al mayor etc
+
+flex-warp = esto lo que hace es agrupar o acomodar con espacios, tiene varios valores pero por defecto viene nowrap 
+
+flex-grow =Lo que hace es hacer que los flex items ocupen el espacio restante , puede ser de manera equitativa o no , esta propiedad debe ir dentro de los elementos que son flexitems
+
+flex-shrink=Lo que hace es parecid a flex-grow solo que ahora los vuelve mas pequeños , por defecto este tiene el valor de 1 ya que los objetos se hacen pequeños gracias a esto y ignoran las propiedades height y width por lo mismo
+
+flex-basis = lo que hace es que cambia los tamaños de alto o ancho dependiendo de la flex-direction , para row cambiara el ancho y para column cambiara el alto
+
+align-items = lo que hace es alinear los flex items para que se alineen diferente a lo que tiene por defecto 
+
+align-self = lo que hace es igual que align-items pero esto es solamente a un flexitem en especial
+
+justify-content = lo que hace es acomodar los diferentes flexitems en las esquinas o partes superiores etc dependiendo de lo que se desee
+*/
+.container{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid black;
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(rgb(231,53,32,0.5),rgb(231,40,25,0.1));
+    border-radius: 40px 30px 60px 50px;
+    -webkit-border-radius: 40px 30px 60px 50px;
+    -moz-border-radius: 40px 30px 60px 50px;
+    -ms-border-radius: 40px 30px 60px 50px;
+    -o-border-radius: 40px 30px 60px 50px;
+    padding: 10px;
+    flex-direction: row;/*La direccion hacia donde y como se van a alinear los items por default es row y column es que se alinearan en columnas*/
+    flex-wrap:wrap;/*flex-wrap para decirles si deben de estar conjuntos o no*/
+    align-items: flex-end;/*align-items para alinear todos los flexitems*/
+}
+.container__text{
+    color: aliceblue;
+    border: 2px solid brown;
+    /*flex-grow: 1;*/
+    flex-basis: 100px;/*Para cambiar el ancho o altura dependiendo de la flex-direction*/
+}
+.container__text--little{
+    align-self: flex-start;/*align-self para alinear un solo flex-item diferente a los demas*/
+}

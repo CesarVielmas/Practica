@@ -1,0 +1,56 @@
+/*Lo que se vera ahora seran un poco mas de estilos para los bloques*/
+/*Primero empezando por la propiedad border la cual se dividie en:
+    border-width = el tamaño que tendra el borde
+        border-top-width = el tamaño que tendra que la parte de arriba del borde
+        border-bottom-width= el tamaño que tendra la parte de abajo del borde
+        border-rigth-width= el tamaño que tendra la parte de la derecha del borde
+        border-left-width = el tamaño que tendra la parte izquierda del borde
+    border-style
+        border-top-style = el estilo que tendra la parte de arriba del borde
+        border-bottom-style = el estilo que tendra la parte de abajo del borde
+        border-rigth-style= el estilo que tendra la parte derecha del borde
+        border-left-style= el estilo que tendra la parte izquierda del borde
+    border-color
+        border-top-color = el color que tendra la parte de arriba del borde
+        border-bottom-color = el color que tendra la parte de abajo del borde
+        border-rigth-color = el color que tendra la parte derecha del borde
+        border-left-color = el color que tendra la parte izquierda del borde
+    Y como se sabe las partes que son simplificadas obtiene cada uno de los 4 o 3 valores que toman y que se declara su valor mediante las manecillas del reloj
+    */
+
+/*Ejemplo 1 usuandolo separado*/
+.Bloque1 p{   
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /*Tamaño*/
+    border-top-width: 300px;
+    border-bottom-width: 100px;
+    border-left-width: 80px;
+    border-right-width: 100px;
+    /*Estilos*/
+    border-top-style:groove;
+    border-bottom-style: double;
+    border-left-style:ridge;
+    border-right-style: solid;
+    /*Color*/
+    border-top-color: aqua;
+    border-bottom-color:brown;
+    border-left-color: coral;
+    border-right-color:blueviolet;
+}
+/*Ejemplo 2 reduciendolo*/
+.Bloque2 p{
+    background-color: blue;
+    border-width: 300px 100px 80px;
+    border-style: groove solid double ridge;
+    border-color: aqua blueviolet brown coral;
+
+}
+/*Por ultimo existe una propiedad para los bloques la cual se llama box-sizing que lo que hace es calcular mediante un ancho y alto predefinidos , el volumen del padding y asi mismo conservar ese mismo ancho y alto*/
+
+/*Ejemplo*/
+.Bloque1{
+    box-sizing: border-box;/*Lo que hace es transforma el padding o margin en el tamaño que se el dio en width y height*/
+    box-sizing: content-box;/*Lo que hace es transformar el width y height a el tamaño que contiene dentro , el padding y lo que contenga el bloque(No es muy usado)*/
+}

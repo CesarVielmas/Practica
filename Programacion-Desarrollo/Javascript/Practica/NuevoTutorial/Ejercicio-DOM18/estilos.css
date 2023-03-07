@@ -1,0 +1,75 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.bloque1{
+    background-color:  #f0db4f;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    
+}
+.bloque1 h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    
+}
+.formulario{
+    position: absolute;
+    top: 130px;
+    text-align: center;
+    width: 80%;
+    height: 70%;
+    left: 10vw;
+    z-index: -1;
+}
+.texto{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:3vw;
+}
+.formulario input{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: thin solid rgb(170, 0, 0);
+}
+.formulario .comentarios{
+    height: 150px;
+}
+.formulario button{
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #860000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    border: 0px solid transparent;
+}
+.formulario .validado{
+    border: thin solid rgb(0, 83, 0);
+}
+.formulario .validadoBoton{
+    background-color:rgb(0, 83, 0) ;
+}
+.textoNoValido{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:2vw;
+    color: white;
+    height: 30px;
+    width: 100%;
+    background-color: #860000;
+    padding-top: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px 10px rgb(87, 3, 3);
+    
+}

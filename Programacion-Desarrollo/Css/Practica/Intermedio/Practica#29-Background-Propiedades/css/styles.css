@@ -1,0 +1,29 @@
+/*Ahora lo que se vera seran las diferentes propiedades que tiene la propiedad background por lo cual es muy importante y muy usada pues su funcionalidad es muy buena
+
+background-image = aqui puede contener una imagen como fondo de dicho bloque , con el valor funcional url() se le puede asignar una url de algun sitio web o de algun archivo que se encuentre en la pagina
+
+background-repeat = esta lo que hace es que si la imagen es muy pequeña entonces repite o no repite la imagen en el espacio dado , pues ahi se le puede poner si se repita o no, por default lo tiene como repetir
+
+background-position = esta lo que hace es alinear la imagen de fondo en diferentes posiciones , ya sea en pixeles o porcentajes o center, right etc
+
+background-size = esta lo que hace es que modifica el tamaño de la imagen volviendola mas pequeña o mas grande o dependiendo de lo que se desee el mas recomendado es cover
+
+background-repeat = esta lo que hace es repetir o no repetir el fondo de la imagen dependiendo si es muy grande o no, tambien contiene los parametros repeat-x o repeat-y que lo que hace es que hace que se repitan solo en y o solo en x 
+*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.img{
+    height: 200px;
+    width: 300px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgb(23,45,25,0.44),rgb(42,67,12,0.6)),url(https://play-lh.googleusercontent.com/s7SUyvveKqEgpwVz74VDeQWGGhob_Vyj9_ubJGwUPvAXpPe4xAJeZ0l3pF2F7njB_NYM);
+    /*Es importante aclarar que con linear-gradient se le puede dar 2 valores para hacer una gradiente de esos 2 colores y asi mismo contraponerlo a la imagen en cuestion , dependiendo de la opacidad y dependiendo el orden para contraponerlo*/
+
+    background-position: center;/*Se asigno una posicion central en el bloque de el fondo*/
+    background-size:cover;/*cover lo que hace  es que pone la imagen completa sin dejar escapar nada de ella*/
+    background-repeat: no-repeat;/*Hace que no repita la imagen si esta es de tamaño mayor al del bloque*/
+}

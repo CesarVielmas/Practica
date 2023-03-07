@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 16</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <!--Ahora lo que se vera seran algunas otras etiquetas importantes en formularios-->
+        <form >
+            <!--fieldset sirve para ordenar el fragemento de ese codigo de el formulario , visualmente encierra lo que este dentro , en un cuadrado aunque se puede modificar y servir para css y javascript , pero en general sirve para ordenar codigo-->
+            <fieldset>
+                <!--La etiqueta legend la cual debe usarse entro de solo fieldset sirve para darle un nombre o un titulo al fieldset que encierra todo lo demas-->
+                <legend>Datos Importantes</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text">
+
+            </fieldset>
+            <!--Ahora otra etiqueta importante en los formularios es input file , la cual sirve para enviar algun archivo y asi mismo hacer cualquier otra cosa con este en javascript o darle diseño en css-->
+            <!--Ejemplo-->
+            <label for="archivo">Ingrese su archivo</label>
+            <input type="file" id="archivo">
+            <br>
+            <!--Ahora otra etiqueta que a veces se usa es meter , este lo que hace es hacer una barra de tipo progreso la cual contiene atributos y una buena dinamica-->
+            <!--Ejemplo-->
+            <label for="html">Html:</label>
+            <!--tiene atributos el cual tien value , que es valor dado que analiza y llena la barra, el atributo min , el cual dice cual es el valor minimo que puede aceptar, max , el cual dice cual es el valor maximo que puede aceptar , low el cual pintara la barra de un color si se tiene desde un cierto numero dado hacia abajo, high ,el cual pintara la barra de un color cuando se tenga un valor ya dado o superior y optimum el cual pintara la ralla de un color , para decir que es optimo o es el intermedio-->
+            <meter value="55" min="0" max="100" low="40" high="80" optimum="60"></meter>
+            <br>
+            <!--Ahora la etiqueta progress la cual es casi lo mismo que meter solo que solo señala cuanto falta y el progreso de este mismi-->
+            <!--Ejemplo-->
+            <label for="Css">Css</label>
+            <progress value="20" max="100"></progress>
+            <br>
+            <!--Ahora una etiqueta muy importante y que se utiliza mucho , la cual es textarea ,la cual sirve para poner texto en un area considerable y tomara este texto para enviarse como valor-->
+            <!--Ejemplo-->
+            <label for="opinion">Escriba su opinion</label>
+            <!--Como se puede apreciar tiene atributos , los mas importantes cols y rows el cual es el tamaño predeterminado que tendra, aunque todas las etiquetas pueden editarse con css-->
+            <textarea  id="opinion" cols="30" rows="10"></textarea>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+aprendder a usar los diferentes librerias o plugins con JQuery o otras librerias de javascript

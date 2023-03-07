@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9 </title>
+    <script>
+          /*Sesion 39
+       //*********************************************************************************************************************************
+       //Ahora lo que se vera seran los generadores los cuales son muy importantes en javascript y son muy usados
+       //Los generadores son funciones que pueden ser iterables , asi mismo retornando valores y en otro solo imprimiendo valores
+       //Para llamar a un generador o funcion iterable se le debe poner un asterisco a su declaracion
+       //Ejemplo
+       function* generadorEjemplo()
+       {
+           console.info("Nombres Comunes:");
+           yield "Jorge";
+           console.info("Jorge");
+           yield "Gustavo";
+           console.info("Gustavo");
+           yield "Cesar";
+           console.info("Cesar");
+
+       }
+       //Con la palabra reservada de los generadores llamada yield se le dice que retornara el valor que esta dentro de este y que
+       //Hasta que lo retorne pasara al siguiente por lo cual se vuelve iterable
+       for (const elementoGenerador of generadorEjemplo()) {
+        console.info(`Elemento Retornado = ${elementoGenerador}`);
+       }
+       //Como se puede ver es iterable y el valor que retorna es el yield
+       //Estos generadores son muy utiles y se pueden hacer muchas cosas con esas como por ejemplo promesas
+       //Ejemplo funcionalidad
+       //Funcion que ejecutara
+       const elevarNumero = (numero,cantidadVeces)=>
+       {
+        let contador = 0,resultado= numero;
+        if (cantidadVeces===1) {
+            contador = cantidadVeces;
+        }
+        while(cantidadVeces-1>contador)
+        {
+            resultado*=numero;
+            contador++
+        }
+        setTimeout(()=>
+        {
+            console.info(`resultado de ${numero} elevado a la ${cantidadVeces} = ${resultado}`);
+            
+        },Math.random()*1000)
+        return resultado;
+       }
+       //generador
+       const generadorElevarNumero = function* ()
+       {
+        console.info("Generador:");
+        yield  elevarNumero(1,1);
+        yield  elevarNumero(2,3);
+        yield  elevarNumero(3,5);
+        yield  elevarNumero(4,2);
+        yield  elevarNumero(5,6);
+        yield  elevarNumero(6,3);
+        yield  elevarNumero(7,4);
+        yield  elevarNumero(8,1);
+        yield  elevarNumero(9,3);
+        console.info("Fin Generador");
+       };
+       const elementos = [...generadorElevarNumero()]
+       console.info(elementos);
+       */
+
+       /*Sesion 40
+       //Ahora lo que se vera es algo muy interesante y hasta muy importante para los objetos en javascript y son los proxys
+       //Los proxys sirven mucho para modificar un objeto o no , dependiendo de las validaciones , estos mismos tienen 2 partes fundamentales
+       //Los objetos que tomaran y los handlers o manejadores que los objetos son las propiedades de donde se basara y el handler o manejador
+       //La logica y validaciones para estos mismos
+       //Ejemplo
+       //Creacion de objeto
+       const persona = {
+           nombre:"",
+           apellido:"",
+           soltero:null,
+           edad:null,
+           estatura:null
+       }
+       //Creacion de el handler o manejador
+       const handlerPersona = 
+       {
+           set(objeto,propiedad,valor)//Los handlers o manejadores tienen el parametro set , del cual tomara los valores del objeto que tome proxy
+           {
+            if (propiedad === "apellido") {
+                if (typeof(valor) === "string") {
+                    objeto[propiedad] = valor;
+                }
+                else return console.error("El apellido debe ser un texto");
+            }
+            if (propiedad === "nombre") {
+                if (typeof(valor) === "string") {
+                    objeto[propiedad] = valor;
+                }
+                else return console.error("El nombre debe ser un texto");
+            }
+            if (propiedad === "soltero") {
+                if (typeof(valor) === "boolean") {
+                    objeto[propiedad] = valor;
+                }
+                else return console.error("El estado civil debe ser un boleano");
+            }
+            if (propiedad === "edad") {
+                if (typeof(valor) === "number") {
+                    objeto[propiedad] = valor;
+                }
+                else return console.error("La edad debe ser un numero");
+            }
+            if (propiedad === "estatura") {
+                if (typeof(valor) === "number") {
+                    objeto[propiedad] = valor;
+                }
+                else return console.error("La estatura debe ser un numero");
+            }
+           }
+       }
+       //Creacion del proxy
+       const proxyPersona = new Proxy(persona,handlerPersona);
+       //El proxy toma el objeto y su respectivo manejador para controlar la logica
+       //Checando que funcione el proxy y su handler
+       proxyPersona.apellido = 23;
+       proxyPersona.apellido = "Vielmas";
+       proxyPersona.nombre = 22;
+       proxyPersona.nombre = "Cesar";
+       proxyPersona.edad = "20";
+       proxyPersona.edad = 20;
+       proxyPersona.estatura = "1.75cm";
+       proxyPersona.estatura = 1.75;
+       proxyPersona.soltero = "Casado";
+       proxyPersona.soltero = true;
+       console.info(persona);
+       */
+
+       /*Sesion 41
+       //****************************************************************************************************************************
+       //Ahora lo que se vera seran los objetos dinamicos , los cuales son muy importantes para hacer diferentes cantidades de cosas
+       //Es muy sencillo saber como funcionan ya que no implementan una cosa nueva con ver queda claro
+       //Ejemplo
+       let idDinamico =Math.round(Math.random()*1000)
+       const objetoDinamico = {
+           [`id_${idDinamico}`]:"Valor Ejemplo"//Para hacer una propiedad dinamica debe llevar corchetes [] 
+       }
+       console.info(objetoDinamico);
+       //Ahora implementando la dinamica pero mediante un arreglo
+       const arregloEjemplo = ["Cesar","Juan","Flor","Rubi","Carlos"];
+       arregloEjemplo.forEach((valor,index)=>
+       {
+        objetoDinamico[`nombre_${index}`] = `Persona importante ${index} = ${valor}`;
+
+       })
+       console.info(objetoDinamico);
+       //Y asi podrian añadirse propiedades y valores dinamicamente en los objetos
+       */
+
+
+       /*Sesion 42
+       //*****************************************************************************************************************************
+       //Ahora lo que se vera seran los metodos call, apply y bind los cuales son importantes entenderlos ya que usan "this" para facilitar
+       //Contextos y para pasar de uno a otro
+       //Ejemplo
+       const objeto1 = 
+       {
+        nombre:"Cesar",
+        lugar:"Mexico",
+        edad:20,
+        saludo:function(){
+            console.info(`Hola ${this.nombre} vienes de ${this.lugar} y tienes ${this.edad} años`) 
+                }
+       }
+       const objeto2 = {
+        nombre:"Flor",
+        lugar:"Noruega",
+        edad:19,
+        saludo:objeto1.saludo.bind(objeto1),//se le paso el contexto de objeto1 lo cual hace que al tomar la funcion como dice this tome las propiedades del scope de objeto1
+        saludoObjeto2:objeto1.saludo//Y aqui toma las propiedades de this del objeto 2 ya que en automatico se encuentra en el scope de objeto2
+       }
+       console.info("Con bind")
+       objeto2.saludo();
+       console.info("Sin bind")
+       objeto2.saludoObjeto2();    
+       //Como se puede apreciar bind lo que hace es pasar el contexto actual a otro y asi obtener sus propiedades o lo que sea que este
+       //Este en el contexto actual
+       //Ahora sigue el metodo call y apply
+       function saludoEjemplo(){
+            console.info(`Hola ${this.nombre} vienes de ${this.lugar} y tienes ${this.edad} años`) 
+        }
+        function saludoEjemplo2(nombre,lugar,edad){
+            console.info(`Hola ${nombre} vienes de ${lugar} y tienes ${edad} años y vives en ${this.ciudad}`) 
+        }
+        saludoEjemplo.call(objeto1);
+        //Son casi lo mismo que bind pero la diferencia de call y apply es que al pasar parametros a una funcion uno usa un array y otro parentesis
+        const objeto3 = new Object({
+            ciudad:"Austraulia"
+        })
+        //Ejemplo diferencia entre call y apply
+        saludoEjemplo2.call(objeto3,"Rubi","Canada",23);//El metodo call para mandar parametros a una funcion o objeto debe ser por comillas ya que es un parametro REST
+        saludoEjemplo2.apply(objeto3,["Carlos","E.U",21]);//El metodo applysin enbargo para mandar parametros debe ser por medio de un array
+        */
+
+        /*Sesion 43
+        //*******************************************************************************************************************************
+        //Ahora lo que se vera es el objeto JSON y su importancia para javascript
+        //JSON es un formato de objetos en lenguaje javascript para pasar informacion de un lado a otro de un sitio web a otro
+        //Por ello es muy importante considerarlo y tenerlo en cuenta
+        //Ejemplo
+        const objetoConvertidor = {
+            nombre:"Cesar Alejandro",
+            apellido:"Vielmas Salais",
+            edad:20,
+            correo:"vielmassalais023@gmail.com"
+        }
+        //Con el metodo .stringify lo que hace es verificar si el objeto mandado o cualquier elemento puesto en su parametro es correcto para
+        //Convertirlo a formato JSON y si es asi entonces lo convierte y arroja el resultado
+        //Ejemplo
+        const textoJsonArrojado = JSON.stringify(objetoConvertidor);//Arrojara el objeto pero en formato valido JSON
+        //Con el metodo .parse lo que hace es verificar si el formato JSON es correcto para ser convertido a un objeto en javascript
+        //Y si es asi entonces arroja un objeto de tipo javascript
+        //Ejemplo
+        const objetoArrojadoValido = JSON.parse(textoJsonArrojado); //Arrojara el formato valido JSON pero en un objeto de javascript
+        //Ver resultados
+        console.info(objetoArrojadoValido);
+        console.info(textoJsonArrojado);
+        //Se puede ver el archivo Json en la carpeta de esta sesion para ver que no hay ningun error de sintaxis
+        */
+    </script>
+</head>
+<body>
+    <h1>Practica #9</h1>
+</body>
+</html>

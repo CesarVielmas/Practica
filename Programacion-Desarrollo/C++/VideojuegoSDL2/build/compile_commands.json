@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/VideojuegoSDL2.dir/src/main.cpp.o -c /home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/src/main.cpp",
+  "file": "/home/cesarvielmas/Programacion-Desarrollo/C++/VideojuegoSDL2/src/main.cpp"
+}
+]

@@ -1,0 +1,46 @@
+/*Ahora se hablara de como funciona css y lo importante que es la especificidad
+ La especificidad es el valor por defecto que tienen los atributos clases etiquetas etc
+ Unos con mayor valor que otro y esto tiene una afluencia directa en css , pues si tiene un valor mas superior o mayor que otro,entonces no podra sobrescribirse con su estilo cascada hasta que sea un valor con mayor especificidad
+ Tabla valores especificidad
+ Especificidad            valor
+ etiquetas                001
+ clases                   010
+ id                       100
+ 
+ Aunque existe un atributo que se llama !important el cual no debe usarse por ningun motivo , pues es una muy mala practica usarlo
+ 
+ Ejemplo*/
+
+ /*
+
+ #texto1{ valor de 100
+    color: burlywood;
+}
+
+ p{ valor de 001
+     color: blueviolet;
+ }
+ .texto1{ valor de 010
+     color: brown;
+ }
+ 
+ entonces como id tiene un valor mayor que los demas no podra ser modificado hasta que llegue algo que contenga un valor de especificidad mayor
+ */
+ 
+ /*
+ p{
+     color: aqua !important;
+ }
+
+ .texto1{
+     color: blue;
+ }
+ Ejemplo de mala practica de programacion usando !important el cual rompe la especificidad y hasta que no se use otro !important no podra ser cambiado su valor
+
+ */
+
+ /*Por lo cual es 100% recomendable usar clases pues es el valor intermedio y ademas se puede reutilizar
+    Ejemplo buena practica en especificidad*/
+.texto1{
+        color: blue;    
+}

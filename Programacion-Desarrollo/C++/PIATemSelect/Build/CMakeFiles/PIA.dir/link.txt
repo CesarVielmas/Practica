@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/PIA.dir/ProgramaCompleto.cpp.o  -o output/PIA  output/libOpenXLSX.a 

@@ -1,0 +1,1 @@
+los archivos se encuentran en la carpeta donde se genera el php ya que utiliza php para poder hacer el ejercicio
