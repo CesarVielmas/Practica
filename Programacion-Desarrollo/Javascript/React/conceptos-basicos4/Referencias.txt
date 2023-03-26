@@ -1,0 +1,1 @@
+Ahora para las referencias se puede ver dentro de la carpeta components con su respectivo nombre de archivo para mas informacion 

@@ -1,0 +1,1 @@
+Para ver lo que es el principio de estas practicas ver en el apartado de src de source de el programador el archivo principal que genera por defecto create-react-app app.js

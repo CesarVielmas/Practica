@@ -1,0 +1,11 @@
+{
+  "empleados": [
+    {
+      "nombre": " Flor Lapizlazuli",
+      "area": "Empleado",
+      "sueldo": "50000",
+      "contratado": true,
+      "id": 1
+    }
+  ]
+}

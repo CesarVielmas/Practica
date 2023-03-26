@@ -1,0 +1,1 @@
+Ahora se usara el use state para poder usar los hooks , estos se podra ver mas en el archivo respectivo en components

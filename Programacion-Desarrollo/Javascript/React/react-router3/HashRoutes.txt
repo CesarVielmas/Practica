@@ -1,0 +1,1 @@
+Las hash routes fueron creadas para que al momento de mandar al servidor la aplicacion no haya errores con las direcciones o con las diagonales de la url , esto si no se tiene bien compuesto el backend se pueden encotrar sus dichos archivos en components y rutas donde se usa el hashRoutes para utilizar el hash en cada ruta

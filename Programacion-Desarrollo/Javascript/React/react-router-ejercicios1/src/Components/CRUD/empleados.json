@@ -1,0 +1,39 @@
+{
+  "empleados": [
+    {
+      "nombre": " Cesar Alejandro",
+      "area": "Abogado",
+      "sueldo": "40000",
+      "contratado": true,
+      "id": 1
+    },
+    {
+      "nombre": " Flor",
+      "area": "Abogado",
+      "sueldo": "50000",
+      "contratado": true,
+      "id": 2
+    },
+    {
+      "nombre": " Cesar Alejandro",
+      "area": "Empleado",
+      "sueldo": "50000",
+      "contratado": true,
+      "id": 3
+    },
+    {
+      "nombre": " Flor Lapizlazuli",
+      "area": "Empleado",
+      "sueldo": "40000",
+      "contratado": true,
+      "id": 4
+    },
+    {
+      "nombre": " alk",
+      "area": " ",
+      "sueldo": "91028",
+      "contratado": false,
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Es importante usar el provider el cual sera obtenido mediante store, este provider lo que hara es que a todos sus children les heredara lo que necesite para que funcione redux dentro de dichos componentes

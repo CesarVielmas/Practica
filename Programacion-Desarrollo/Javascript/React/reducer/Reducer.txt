@@ -1,0 +1,1 @@
+Ahora lo que se vera sera el Reducer , el cual es muy similar a Redux pero esto ya lo tiene incluido React para sustituir useState en situaciones mas complejas,se puede encontrar su explicacion en su correspondiente carpeta de components 

@@ -1,0 +1,1 @@
+en store obtendra redux los reducers y lo que hara store sera , que cada que algo cambie en los reducers , detectarlo y asi mismo volver a renderizar o hacer alguna accion en especifico , sin embargo store siempre estara al tanto de cualquier cambio que hara y asi mismo hara ciertas acciones dependiendo de los cambios

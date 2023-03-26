@@ -1,0 +1,1 @@
+Ahora lo que se vera seran los eventos en React y para ello es necesario ver su respectivo componente donde se explica mas y se hacen uso de estos

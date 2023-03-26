@@ -1,0 +1,1 @@
+En los reducers iran todas las funciones reductoras como con useReducer, sin embargo en redux , se necesita 1 archio index el cual junte cada uno de los reducers creados para que la libreria pueda tomar accion sobre estos

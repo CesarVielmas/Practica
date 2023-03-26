@@ -1,0 +1,1 @@
+Los template son solo plantillas para hacer una cierta aplicacion y con npx y react hay varias que se pueden ver en su sitio oficial

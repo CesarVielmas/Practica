@@ -1,0 +1,1 @@
+Para ver la comunicacion de los componentes ver el arhivo que se encuentra en la carpeta componentes con este mismo nombre de comunicacion entre componentes

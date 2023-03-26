@@ -1,0 +1,1 @@
+Para ver el renderizado condicional ver en la carpeta components y dentro el archivo renderizadoCondicional el cual tiene todo

@@ -1,0 +1,1 @@
+Para ver lo que se hizo en este nuevo tutorial se debe ingresar a la carpeta src y ver la carpeta components

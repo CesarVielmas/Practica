@@ -1,0 +1,1 @@
+Tambien se puede ver l renderizacion de elementos en los componentes, para ello se podra ver en la carpeta de componentes en el archivo respectivo llamado renderizacionElementos

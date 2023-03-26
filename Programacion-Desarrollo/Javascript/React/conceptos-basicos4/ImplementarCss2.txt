@@ -1,0 +1,1 @@
+Esta es la segunda parte de como implementar Css a el proyecto en React el cual se encuentra a dicho archivo en la carpeta components y se uso la libreria styled Components el cual para ver su instalacion para el proyecto ver la pagina https://styled-components.com/docs/basics#installation

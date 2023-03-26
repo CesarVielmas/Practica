@@ -1,0 +1,1 @@
+Para ver como funciona el ajax con las apis y con los hooks ver en la respectiva carpeta de components en el respectivo archivo para mas 

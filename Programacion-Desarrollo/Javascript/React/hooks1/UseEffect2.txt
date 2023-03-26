@@ -1,0 +1,1 @@
+Para ver la siguiente parte de useEffect , ver el otro archivo de la carpeta components el cual dara explicacion a el ultimo ciclo de vida faltante

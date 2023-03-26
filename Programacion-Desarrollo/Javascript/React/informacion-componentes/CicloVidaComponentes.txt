@@ -1,0 +1,1 @@
+Para ver el ciclo de vida de los componentes ver la carpeta componentes con su respectivo archivo

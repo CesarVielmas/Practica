@@ -1,0 +1,1 @@
+lo que se vera aqui son Cruds usando las diferentes herramientas de javascript para poder hacer dichos cruds

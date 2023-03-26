@@ -1,0 +1,25 @@
+{
+    "perritos":[
+        {
+          "id": 1,
+          "nombre":"Candy",
+          "raza":"Shih-Poo"
+        },
+        {
+            "id": 2,
+            "nombre":"Rodolfo",
+            "raza":"French-Poddle"
+        },
+        {
+            "id": 3,
+            "nombre":"Maury",
+            "raza":"Chihuahua"
+         },
+        {
+           "id": 4,
+           "nombre":"Estrella",
+           "raza":"Shitzu"
+        }
+       
+    ]
+}

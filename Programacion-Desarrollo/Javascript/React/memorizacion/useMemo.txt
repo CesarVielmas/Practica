@@ -1,0 +1,1 @@
+el useMemo se puede ver dentro de la carpeta components en Basico 3 donde se puede ver lo que tiene relacionado a este mismo 

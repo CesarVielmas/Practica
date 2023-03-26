@@ -1,0 +1,1 @@
+En este ejercicio se hara el mismo carrito de compras que usando useReduce , sin embargo sera con Redux y se vera su funcionalidad

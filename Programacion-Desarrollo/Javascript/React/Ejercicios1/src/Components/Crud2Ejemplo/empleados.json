@@ -1,0 +1,32 @@
+{
+  "empleados": [
+    {
+      "id": 2,
+      "nombre": "Juan Checo el chueco",
+      "area": "Asistente",
+      "sueldo": "100",
+      "contratado": true
+    },
+    {
+      "id": 3,
+      "nombre": "Juan Checo Perez Guzman",
+      "area": "Derechos Humanos",
+      "sueldo": 2000,
+      "contratado": true
+    },
+    {
+      "id": 4,
+      "nombre": "Juan Checo Perez Guzman",
+      "area": "Derechos Humanos",
+      "sueldo": 2000,
+      "contratado": true
+    },
+    {
+      "nombre": " Cesar Vielmas",
+      "area": "Empleado",
+      "sueldo": "70000",
+      "contratado": true,
+      "id": 5
+    }
+  ]
+}

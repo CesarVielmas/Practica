@@ -1,0 +1,1 @@
+Ahora lo que se vera seran los forumularios en JSX y como implementarlos correctamente en React en components y su archivo correspondiente

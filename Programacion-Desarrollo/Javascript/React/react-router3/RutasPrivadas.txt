@@ -1,0 +1,1 @@
+Para las rutas privadas se pueden encontrar en su respectivo archivo en components y privateRoute , ademas de que en rutas se modifico con dicho hashRoute para poder hacer las rutas 

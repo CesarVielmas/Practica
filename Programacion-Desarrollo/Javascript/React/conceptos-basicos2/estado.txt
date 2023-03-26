@@ -1,0 +1,1 @@
+El estado se podra observar en los archivos de los componentes llamado estado 

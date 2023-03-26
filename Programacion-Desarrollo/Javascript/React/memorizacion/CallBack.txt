@@ -1,0 +1,1 @@
+para las useCallBack que son hechas para pasar funciones y que se renderize solo por ciertos factores se pueden encontar en la carpeta de Basico2 en components para ver mas a detalle estas funciones

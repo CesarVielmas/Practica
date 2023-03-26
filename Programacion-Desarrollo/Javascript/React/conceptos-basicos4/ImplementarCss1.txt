@@ -1,0 +1,1 @@
+Ahora se vera como implementar css para eso se debe buscar en components el archivo con su mismo nombre el cual viene toda la informacion necesaria sobre esto

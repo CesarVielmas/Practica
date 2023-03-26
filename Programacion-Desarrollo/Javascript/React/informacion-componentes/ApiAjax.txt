@@ -1,0 +1,1 @@
+Para ver como hacer una peticion ajax es necesario ver el archivo en components el cual es donde se encuentra para hacer la peticion

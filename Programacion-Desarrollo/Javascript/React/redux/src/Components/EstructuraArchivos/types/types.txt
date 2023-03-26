@@ -1,0 +1,1 @@
+en types es bastante similar a los types de useReducer sin embargo ahora todos los types estaran juntos en un mismo archivo y cada type osease cada objeto de tipo type estara con su nombre dependiendo de la necesidad del proyecto , contadores:CONTADOR,Crud:CRUDAPI,etc etc

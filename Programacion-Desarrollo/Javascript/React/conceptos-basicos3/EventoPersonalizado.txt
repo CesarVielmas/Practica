@@ -1,0 +1,1 @@
+Ahora para ver mas sobre los eventos ver el archivo que se encuentra en components llamado EventosPersonalizados para ver lo otro de eventos

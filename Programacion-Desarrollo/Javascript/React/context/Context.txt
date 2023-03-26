@@ -1,0 +1,1 @@
+ahora lo que se vera seran 2 paginas que haran exactamente lo mismo , pero con la diferencia de que 1 esta hecha con la API de context para facilitar el trabajo y otra no , para ver sus diferencias y como facilita todo mucho

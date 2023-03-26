@@ -1,0 +1,1 @@
+En esta parte se vera como debe ser la estructura de los archivos al usar reducer para tener bien organizado el codigo

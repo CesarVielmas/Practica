@@ -1,0 +1,18 @@
+{
+  "empleados": [
+    {
+      "nombre": " Cesar Vielmas",
+      "area": "Empleado",
+      "sueldo": "70000",
+      "contratado": true,
+      "id": 3
+    },
+    {
+      "nombre": " Cesar Alejandro",
+      "area": "Abogado",
+      "sueldo": "30000",
+      "contratado": true,
+      "id": 4
+    }
+  ]
+}

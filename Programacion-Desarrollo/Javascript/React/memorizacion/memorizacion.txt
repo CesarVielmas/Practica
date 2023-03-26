@@ -1,0 +1,1 @@
+La memorizacion es bastante factible en algunos casos especificos , por lo cual en components se encontrara dicho archivo con su respectivo nombre para ver mas sobre la memorizacion

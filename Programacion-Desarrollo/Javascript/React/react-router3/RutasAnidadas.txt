@@ -1,0 +1,1 @@
+Para ver las rutas anidadas con react-router desde la version 5 en adelante osease la 6, se puede ver en su respectivo archivo en components
