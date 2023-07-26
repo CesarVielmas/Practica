@@ -1,0 +1,1 @@
+Para el binding es una relacion importante entre los elementos html de el componente y las propiedades declaradas en la clase , las cuales son modificadas cuando la variable de clase cambie su valor 

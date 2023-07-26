@@ -1,0 +1,11 @@
+@model CursosEntitys.Models.Producto;
+
+<h2>Producto a modificar</h2>
+<form asp-controller="CursosApp" asp-action="EditarCompleto">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="text" name="Descripcion" value="@Model.Descripcion"/>
+    <input type="text" name="Precio" value="@Model.Precio"/>
+    <input type="number" name="CategoriaId" value="@Model.CategoriaId"/>
+    <input type="number" name="ProveedorId" value="@Model.ProveedorId"/>
+    <button type="submit">Editar</button>
+</form>

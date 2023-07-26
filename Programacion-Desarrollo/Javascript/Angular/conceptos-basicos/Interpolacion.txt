@@ -1,0 +1,1 @@
+La interpolacion es bastante similar a React , se pueden interpolar valores , tomados directamente desde la clase del componente , asi mismo , con esos valores se pueden hacer diferentes cosas como el operador ternario , recorrer un array , hacer operaciones basicas , etc , para ver esto ver su respectiva carpeta

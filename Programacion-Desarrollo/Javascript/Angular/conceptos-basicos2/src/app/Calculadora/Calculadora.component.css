@@ -1,0 +1,15 @@
+button{
+    border-radius: 5%;
+    border: thin solid black;
+    background-color: aqua;
+    width: 15vw;
+    height: 5vh;
+
+}
+table{
+    text-align: center;
+}
+td{
+    color: crimson;
+    font-size: 20px;
+}

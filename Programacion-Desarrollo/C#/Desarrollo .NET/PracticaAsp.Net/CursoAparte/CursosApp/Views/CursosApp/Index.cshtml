@@ -1,0 +1,25 @@
+@using CursosEntitys.Models;
+@model List<Producto>;
+
+<h1>Datos</h1>
+@foreach (var item in Model)
+{
+    <h3>Producto:@item.Descripcion</h3>
+    <h3>Categoria:@item.Categoria.Descripcion</h3>
+    <h3>Proveedor:@item.Proveedore.Nombre</h3>
+    <form asp-controller="CursosApp" asp-action="Editar">
+        <input type="hidden" name="Id" value="@item.Id" />
+        <button type="submit">Editar Producto</button>
+    </form>
+    <form asp-controller="CursosApp" asp-action="Eliminar">
+        <input type="hidden" name="Id" value="@item.Id" />
+        <button type="submit">Eliminar Producto</button>
+    </form>
+}
+<hr/>
+<h2>Crear Producto</h2>
+<form method="post" asp-action="CrearDato">
+    <input type="text" name="Descripcion" placeholder="Descripcion...."/>
+    <input type="number" name="Precio" placeholder="Precio..."/>
+    <button type="submit">Crear</button>
+</form>

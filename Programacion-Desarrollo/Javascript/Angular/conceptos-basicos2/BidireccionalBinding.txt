@@ -1,0 +1,1 @@
+Con el Bidireccional binding lo que se vera es como hacer un binding bidireccional , de el componente al htm y del html al componente y como simplificar ambos de una manera sencilla con una funcionalidad que aporta Angular

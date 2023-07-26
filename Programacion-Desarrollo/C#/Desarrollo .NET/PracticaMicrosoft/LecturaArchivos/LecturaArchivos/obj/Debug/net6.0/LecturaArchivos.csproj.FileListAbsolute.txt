@@ -1,0 +1,15 @@
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\bin\Debug\net6.0\LecturaArchivos.exe
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\bin\Debug\net6.0\LecturaArchivos.deps.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\bin\Debug\net6.0\LecturaArchivos.runtimeconfig.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\bin\Debug\net6.0\LecturaArchivos.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\bin\Debug\net6.0\LecturaArchivos.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.csproj.AssemblyReference.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.AssemblyInfoInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.AssemblyInfo.cs
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.csproj.CoreCompileInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\refint\LecturaArchivos.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\LecturaArchivos.genruntimeconfig.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaMicrosoft\LecturaArchivos\LecturaArchivos\obj\Debug\net6.0\ref\LecturaArchivos.dll

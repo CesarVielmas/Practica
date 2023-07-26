@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosEntitys", "CursosEntitys\CursosEntitys.csproj", "{A56375C2-C53A-4834-9A55-E1432106B6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosData", "CursosData\CursosData.csproj", "{CE5DAB08-2747-481F-AD2B-8FC38A715640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosApp", "CursosApp\CursosApp.csproj", "{73C6DAB0-7946-477D-A91D-38AA98340004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56375C2-C53A-4834-9A55-E1432106B6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56375C2-C53A-4834-9A55-E1432106B6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56375C2-C53A-4834-9A55-E1432106B6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56375C2-C53A-4834-9A55-E1432106B6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5DAB08-2747-481F-AD2B-8FC38A715640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5DAB08-2747-481F-AD2B-8FC38A715640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5DAB08-2747-481F-AD2B-8FC38A715640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5DAB08-2747-481F-AD2B-8FC38A715640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C6DAB0-7946-477D-A91D-38AA98340004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C6DAB0-7946-477D-A91D-38AA98340004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C6DAB0-7946-477D-A91D-38AA98340004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C6DAB0-7946-477D-A91D-38AA98340004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+Ahora lo que se vera aqui seran sobre los filtros hacia las excepciones y como controlarlas , dependiendo del error esto puede servir mucho para llevar un orden en los errores y en los proyectos donde pueda estar el error 

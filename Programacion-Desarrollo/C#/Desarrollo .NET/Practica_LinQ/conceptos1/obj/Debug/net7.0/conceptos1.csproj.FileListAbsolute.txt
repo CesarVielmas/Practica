@@ -1,0 +1,15 @@
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\bin\Debug\net7.0\conceptos1.exe
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\bin\Debug\net7.0\conceptos1.deps.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\bin\Debug\net7.0\conceptos1.runtimeconfig.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\bin\Debug\net7.0\conceptos1.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\bin\Debug\net7.0\conceptos1.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.csproj.AssemblyReference.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.AssemblyInfoInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.AssemblyInfo.cs
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.csproj.CoreCompileInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\refint\conceptos1.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\conceptos1.genruntimeconfig.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\Practica_LinQ\conceptos1\obj\Debug\net7.0\ref\conceptos1.dll

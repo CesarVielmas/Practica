@@ -1,0 +1,1 @@
+Para esta practica lo que se vera sera sobre los layouts , los layouts son las super page donde se renderiza contenido si o si , o donde se tiene como pagina que no cambiara y donde se hara el @RenderBody en Razor , por lo cual se vera eso y las sections ademas de como cambiar el Layout para alguna pagina en especifico y tambien como dar como predeterminado algun Layout

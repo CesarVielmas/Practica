@@ -1,0 +1,1 @@
+Las paginas de error asi como en React es cuando el Route no encuentra una pagina o un link de pagina y entonces mandara una pagina de error lo cual es lo que hacemos nosotros , para ver como poner la pagina de error mirar en app module

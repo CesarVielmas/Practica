@@ -1,0 +1,6 @@
+cantidad,fecha,id,nombre,precio,tipo
+120,1/6/23,1,Tornillo,10,Herramienta
+25,1/6/23,2,Martillo,45,Herramienta
+27,1/6/23,3,Destornillador,35,Herramienta
+34,1/6/23,4,Llave Inglesa,60,Herramienta
+34,1/6/23,5,Manguera,120,Utilidad

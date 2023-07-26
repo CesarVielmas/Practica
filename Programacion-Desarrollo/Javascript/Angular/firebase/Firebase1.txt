@@ -1,0 +1,1 @@
+Para empezar con firebase primero se necesita saber para que son las herramientas que nos da firebase , por lo cual sabiendo eso se usara el database realtime y no la base de datos firestore , por temas de convencion

@@ -1,0 +1,23 @@
+<h2>Directiva ngIf</h2>
+<p>Mandar a true</p>
+<input type="checkbox" (change)="setBooleano(true)" />
+<p>Mandar a false</p>
+<input type="checkbox" (change)="setBooleano(false)" />
+
+<p *ngIf="valorBooleano; else elseBlock then thenBlock" >Mando a true</p>
+
+<!--para poder usar el else es necesario usar el ng-template el cual es fundamental para poder obtener el elseBlock-->
+<ng-template #elseBlock>
+    <p>Mando a false</p>
+</ng-template>
+<!--El ngIf tambien contiene el then , el cual se ejecuta cuando es verdadero y que sigue el ciclo-->
+<ng-template #thenBlock>
+    <p>Se ejecuta cuando es verdadero y sigue el programa</p>
+</ng-template>
+<!--Es importante aclarar que solo se puede ejecutar un ng-template si es false , para el else o si es verdadero para el then , el cual remplazara el uno al otro etc-->
+
+<h2>Directiva ngFor</h2>
+<!--Para el ngFor este debe de ir dentro de la etiqueta que se desea que se repita x cantidad de interaciones dependiendo del array o objeto , este da una variable la cual es los valore que obtiene al iterar el objeto o array dependiendo su tamaño , como el forEach-->
+<ul>
+    <li *ngFor="let numero of numeros">{{numero}}</li>
+</ul>

@@ -1,0 +1,12 @@
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\bin\Debug\net7.0\CursosEntitys.deps.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\bin\Debug\net7.0\CursosEntitys.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\bin\Debug\net7.0\CursosEntitys.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.csproj.AssemblyReference.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.AssemblyInfoInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.AssemblyInfo.cs
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.csproj.CoreCompileInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\refint\CursosEntitys.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\CursosEntitys.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosEntitys\obj\Debug\net7.0\ref\CursosEntitys.dll

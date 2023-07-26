@@ -1,0 +1,1 @@
+Los DTO asi como se explico en el archivo base .txt , se le dice que recibira ciertos datos para que el usuario solo los ingrese ne vez de enviarle el modelo o entidad complet y que lo pueda rellenar

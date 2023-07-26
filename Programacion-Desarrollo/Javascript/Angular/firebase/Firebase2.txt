@@ -1,0 +1,1 @@
+Como se vio anteriormente en el module ira todo lo relacionado a http , ademas de su service para hacer el post o put o get para obtener dicha informacion  , esta funciona igual que cualquier otro lenguaje para hacer eliminacion o recuperacion de datos de una base de datos

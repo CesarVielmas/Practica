@@ -1,0 +1,1 @@
+Ahora lo que se vera , seran las relaciones y como relacionar tablas en .net , para ello se utilizara la migracion para crear dichas tablas en la base de datos, la relacion se hara de una manera muy comun, para ver mas a detalle revisar los controladores , modelos y vistas , para recordar

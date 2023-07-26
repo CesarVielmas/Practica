@@ -1,0 +1,12 @@
+<h1>Uso de directiva parte 2</h1>
+<p>Uso de ngStyle para dar estilos depenediendo de algun factor en especifico</p>
+<input type="text" [(ngModel)] = "nombre" />
+<p>Se resaltara en rojo cuando el nombre sea Cesar</p>
+<!--Para ngStyle lo que hace es que se pueden hacer condicionales para asignar un valor u otro a un estilo o varios estilos , en este caso si son varios es mucho mas recomendable usar ngClass-->
+<p [ngStyle]="{color:nombre==='Cesar'?'red':'black'}">{{nombre}}</p>
+<br/>
+<p>Uso de ngClass para dar estilos depenediendo de algun factor en especifico</p>
+<input type="text" [(ngModel)] = "nombre2" />
+<p>Se resaltara en rojo cuando el nombre sea Juan</p>
+<!--Como se puede ver ngClass pide como primer parametro el nombre de la clase y como segundo parametro la condicion que debe cumplirse para que la clase e active y se ponga en el elemento-->
+<p [ngClass]="{'activo':nombre2==='Juan'}">{{nombre2}}</p>

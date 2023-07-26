@@ -1,0 +1,1 @@
+Para levantar el servidor de angular es necesario usar el comando ng serve --open el cual levantara el servidor  y para cerrar el servidor  es con control C como en React

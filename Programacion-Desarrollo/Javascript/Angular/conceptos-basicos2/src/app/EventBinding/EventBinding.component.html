@@ -1,0 +1,6 @@
+<p>Uso de el Binding con el objeto Event</p>
+<!--Para pasar el evento es necesario usar "$event" pues ahi mismo se encuentra el evento-->
+<input type="radio" name="radioInput" value="Activado" (change)="setValor($event)" />
+<br/>
+<input type="radio" name="radioInput" value="Desactivado" (change)="setValor($event)"/>
+<p>{{valor}}</p>

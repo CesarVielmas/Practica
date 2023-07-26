@@ -1,0 +1,1 @@
+Para el paso de datos mediante las rutas es importante decirle a dicha ruta que obtendra dato , asi como en React con "/:" los 2 puntos y nombre de la propiedad que se mandara , ejemplo "/:id" para que lo pueda recibir el dato y asi mismo pueda hacer dicha accion , para ver mas sobre esto ver el apartado de parametros

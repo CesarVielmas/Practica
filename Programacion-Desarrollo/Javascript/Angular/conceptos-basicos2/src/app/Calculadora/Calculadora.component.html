@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <td>Numeros</td>
+            <td>Operaciones</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+            <button (click)="setNumeros(1)">1</button>
+            <button (click)="setNumeros(2)">2</button>
+            <button (click)="setNumeros(3)">3</button>
+            <button (click)="setNumeros(4)">4</button>
+            <button (click)="setNumeros(5)">5</button>
+            <button (click)="setNumeros(6)">6</button>
+            <button (click)="setNumeros(7)">7</button>
+            <button (click)="setNumeros(8)">8</button>
+            <button (click)="setNumeros(9)">9</button>
+            <button (click)="setNumeros(0)">0</button>
+            </td>
+            <td>
+            <button (click)='setOperaciones("+")'>+</button>
+            <button (click)='setOperaciones("-")'>-</button>
+            <button (click)='setOperaciones("*")'>*</button>
+            <button (click)='setOperaciones("/")'>/</button>
+            <button (click)='setTodo()'>Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>{{(operacion === "")?numeros:operacion}}</td>
+            <td>Resultado:{{resultado}}</td>
+        </tr>
+    </tbody>
+</table>

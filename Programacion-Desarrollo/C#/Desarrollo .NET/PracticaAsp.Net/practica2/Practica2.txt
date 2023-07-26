@@ -1,0 +1,1 @@
+Ahora lo que se vera , seran los diferentes pasos de parametros desde la ruta al controlador , desde el modelo al controlar, desde el controlador a la vista y etc lo dicho para poder interactuar de mejor manera con los parametros

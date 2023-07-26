@@ -1,0 +1,7 @@
+@model practica2.Models.DatosVistaModel; //se especifica mejor el modelo y solo aceptara objetos que sean de dicho modelo , esa seria la forma elegante
+@{
+    //Manera no elegante o no recomendada
+    //var datos = ViewBag.datos as DatosVistaModel;
+    //Utilizar dichos "datos" el cual guardada en dicha variable usando el ViewBag o el ViewData y utilizarlo en la vista
+}
+<h1>Datos: Nombre = @Model.Nombre, Apellido = @Model.Apellido, Edad = @Model.Edad</h1>

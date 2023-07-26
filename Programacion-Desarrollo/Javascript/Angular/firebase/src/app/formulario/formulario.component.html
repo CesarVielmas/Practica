@@ -1,0 +1,6 @@
+<h1>Enviar datos a firebase</h1>
+
+    <input type="text" [(ngModel)]="nombre"/>
+    <input type="email" [(ngModel)]="correo"/>
+    <input type="password" [(ngModel)]="contrasenia"/>
+    <input type="submit" value="Enviar Informacion" (click)="enviarDatos(nombre,correo,contrasenia)"/>

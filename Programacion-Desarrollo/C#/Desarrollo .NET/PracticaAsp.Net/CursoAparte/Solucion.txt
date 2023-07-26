@@ -1,0 +1,8 @@
+La solucion como se puede apreciar , es una manera para poder guardar varios proyectos y que estos mismos esten enlazados, asi como en visual studio, por lo cual se crearon 2 bibliotecas de clases que estan referenceadas en el proyecto y un proyecto mvc para poder trabajar con el , esto para tener mejor organizado las cosas
+
+comandos para las soluciones
+-dotnet new sln -n "nombre de la solucion" //Para crear una solucion 
+-dotnet new classlib -n "nombre de la biblioteca de clase" //Para crear una biblioteca de clase
+-dotnet new mvc -n "nombre de la aplicacion mvc" //Para crear un proyecto mvc
+-dotnet sln add "nombre del proyecto"/"nombre de su .csproj" //Para poder añadir un proyecto a la solucion 
+-dotnet add "nombre del proyecto"/"nombre de su .csproj" reference "nombre del proyecto que hara referencia"/"nombre de su .csproj" //Esto es para que un proyecto referencie de otro y obtenga sus datos o clases etc

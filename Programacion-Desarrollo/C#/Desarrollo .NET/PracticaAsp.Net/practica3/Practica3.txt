@@ -1,0 +1,1 @@
+en esta practica se utilizara lo que se vio en la practica 1 y 2 para realizar un ejercicio de practica con .net y razor para ello en el csproj se añadiran las dependencias de newtonJson para descerealizar los objetos JSON en .net 

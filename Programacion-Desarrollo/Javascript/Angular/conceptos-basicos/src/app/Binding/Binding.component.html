@@ -1,0 +1,8 @@
+<p>Viendo el binding mediante 2 botones</p>
+<br>
+<!--Para hacer el binding a una propiedad de algun objeto html debe de ir entre corchetes[] y se debe igualar al nombre de la propiedad la cual tomara su valor-->
+<input type="checkbox" [checked]="propertyChecked" />
+<br/>
+<button (click)="setChecked(true)">Chekear</button>
+<br/>
+<button (click)="setChecked(false)">DesChekear</button>

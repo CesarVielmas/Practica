@@ -1,0 +1,1 @@
+en este caso se usa react como frontend para poder recibir la informacion o datos desde la web API de .net para poder realizar dicho ejemplo

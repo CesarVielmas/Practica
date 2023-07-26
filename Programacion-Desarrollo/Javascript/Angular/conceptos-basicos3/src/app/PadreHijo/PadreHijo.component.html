@@ -1,0 +1,7 @@
+<label>Ingrese un dato para el hijo</label>
+<input type="text" [(ngModel)]="input"  />
+
+<button (click)="enviar(input)">Enviar al hijo</button>
+<br/>
+<!--Como se puede apreciar se le debe asignar un nombre , especificamente el nombre de la variable que se inicializo con input en el component del hijo el cual obtendra dicho valor despues se le asigna entre comillas el valor el cual obtendra del componente padre y asi seria la comunicacion padre a hijo-->
+<Hijo-Component [informacion] ="array" />

@@ -1,0 +1,1 @@
+Ya por ultimo se tienen a las cookies y los guardianes , los guardianes se pueden apreciar para mostrar o no mostrar una ruta dependiendo de algun aspecto o sentido y las cookies es como el local storage de javascript pero estas se deben instalar con npx install cookies oh buscar como instalarlas para ver un guardian ver su respectivo archivo

@@ -1,0 +1,1 @@
+Ahora tambien se vera como es el traspaso de informacion desde el hijo al padre , en su respectiva carpeta

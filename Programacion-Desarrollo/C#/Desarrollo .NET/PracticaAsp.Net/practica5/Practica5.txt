@@ -1,0 +1,5 @@
+En este caso lo que se hara sera migracion y obtencion de datos mediante la base de datos , para ello es importante el contexto de la base de datos y el connection string el cual se encuentra en el appsettings
+
+comandos para hacer la migracion:
+-dotnet ef migrations add "nombre de la migracion" --project "nombre proyecto" //Para crear una migracion es ese comando
+-dotnet ef database update --project "nombre proyecto" //Para actualizar la base de datos y que dichos datos creen las tablas

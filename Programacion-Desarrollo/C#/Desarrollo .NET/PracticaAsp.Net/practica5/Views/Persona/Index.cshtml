@@ -1,0 +1,8 @@
+@model List<practica5.Models.Persona>;
+
+@foreach (var item in Model)
+{
+    <h1>Nombre : @item.Nombre</h1>
+    <h1>Apellido : @item.Apellido</h1>
+    <h1>Edad : @item.Edad</h1>
+}

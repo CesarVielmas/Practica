@@ -1,0 +1,1 @@
+La migracion consiste en que el propio lenguaje o programa se base en los modelos para crear dichas tablas y que las tables se creen en la base de datos , a esto se le conoce como migracion

@@ -1,0 +1,1 @@
+Lo que se vera en event binding sera como obtener el objeto que da las etiquetas del html y como esto viene a ayudar a hacer mejoras o obtenciones de valor mediante ese evento

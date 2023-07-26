@@ -1,0 +1,3 @@
+En esta practica se hara un CRUD para poder hacerlo mediante un proyecto de react , hacer una web api desde .net para que el view o las vistas sean el proyecto de react , juntando react y .net , por lo cual sera un proyecto de ejemplo CRUD viendo todo lo que se vio en las practicas , migraciones , controladores , acciones , el dbContext para la base de datos en mySql y etc, tambien se añadiran validaciones a los modelos , ya que anteriormente no se habian visto 
+
+otra cosa importante , es que se deben añadir los paquetes necesarios , como entityFrameworkCore , PomeloEntityFrameworkCore , entityFrameworkCore Tools y entityFrameworkCore Design

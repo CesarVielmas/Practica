@@ -1,0 +1,1 @@
+Creacion del controlador para mostrar los datos en este caso en la vista , correspondientemente en mvc para mostrarlo en la vista , para ello se usara un controlador de vista y no un controlador de web api

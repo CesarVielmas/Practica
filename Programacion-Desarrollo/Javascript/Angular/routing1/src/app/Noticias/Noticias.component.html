@@ -1,0 +1,4 @@
+<h1>Noticias</h1>
+<input type="text" [(ngModel)]="parametro" />
+<!--Con router Link se puede redirigir a otro componente el cual es un remplazo para navigate y queryParams puede ser asi o pasandole el parametro desde la funcion con navigate , para cualquier duda buscar como pasar queryParams mediante routeLink y navigate-->
+<button (click)="enviarInfo(parametro)" [routerLink]="['/parametro']" [queryParams]="{datos:parametro}">Enviar</button>

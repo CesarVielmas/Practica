@@ -1,0 +1,10 @@
+<p>Mostar el uso de los binding bidireccional</p>
+<p>Primera forma</p>
+<p>Introduce un texto</p>
+<input type="text" (change)="setValor($event)" [value]="valor" />
+<p>Texto: {{valor}}</p>
+<br/>
+<p>Segunda forma</p>
+<!--Para hacerlo con ngModel es necesario importar en los modules FormsModule en imports , ng model lo que hace es que el input toma como value el valor que se le asigne y ademas de eso el evento que modifique su value en el input se le pasara el valor  a lo que fue asignado un poco como fue la primera forma , pero super simplificado y que ngModel se encarga de todo eso-->
+<input type="text" [(ngModel)]="valor2" />
+<p>Texto: {{valor2}}</p>

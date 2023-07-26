@@ -1,0 +1,15 @@
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\bin\Debug\net7.0\CursosData.deps.json
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\bin\Debug\net7.0\CursosData.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\bin\Debug\net7.0\CursosData.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\bin\Debug\net7.0\CursosEntitys.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\bin\Debug\net7.0\CursosEntitys.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.csproj.AssemblyReference.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.AssemblyInfoInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.AssemblyInfo.cs
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.csproj.CoreCompileInputs.cache
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.csproj.CopyComplete
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\refint\CursosData.dll
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\CursosData.pdb
+C:\Users\Cesar Vielmas\Downloads\Programacion\Programacion-Desarrollo\C#\Desarrollo .NET\PracticaAsp.Net\CursoAparte\CursosData\obj\Debug\net7.0\ref\CursosData.dll

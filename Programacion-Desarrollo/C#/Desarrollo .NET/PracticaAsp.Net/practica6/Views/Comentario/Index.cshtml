@@ -1,0 +1,17 @@
+@model List<practica6.Models.Publicacion>;
+
+<h1>Comentarios</h1>
+@foreach (var item in Model)
+{
+    @foreach(var item2 in item.Comentarios)
+    {
+        <h2>@item2.Nombre: @item2.Fecha</h2>
+        <h3>@item2.Texto</h3>
+    }
+    <hr/>
+    <form method="post" asp-controller="Comentario" asp-action="Postear">
+        <input type="hidden" name="PublicacionId" value="@item.Id"/>
+        <input type="text" name="Texto"/>
+        <button type="submit">Publicar Comentario</button>
+    </form>
+}

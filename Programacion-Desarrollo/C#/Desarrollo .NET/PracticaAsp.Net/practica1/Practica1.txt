@@ -1,0 +1,4 @@
+lo que se vera en esta practica sera lo basico de los proyectos mvc , cada proyecto mvc contiene su controlador ,su vista y su modelo , para ello en cada respectiva carpeta se vera que es lo que hace por defecto cada una cuando su proyecto es creado
+
+
+en practica1.csproj "{parametros al desarrollar la aplicacion , como que version de .net usa , si los using deben ser explicitos etc etc}"

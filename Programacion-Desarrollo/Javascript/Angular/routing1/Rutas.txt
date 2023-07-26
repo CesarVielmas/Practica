@@ -1,0 +1,1 @@
+Ahora se vera el uso de las rutas y como estas pueden ser implementadas desde el componente principal dentro de sus modules para poder hacer de manera correcta las rutas

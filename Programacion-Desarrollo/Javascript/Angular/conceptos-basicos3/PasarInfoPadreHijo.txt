@@ -1,0 +1,1 @@
+Ahora se vera como pasar informacion desde un padre a un hijo para que asi de esta manera obtenga sus valores y pueda utilizarlos se puede ver mas informacion en su respectiva carpeta

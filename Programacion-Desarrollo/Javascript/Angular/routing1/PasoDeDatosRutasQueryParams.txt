@@ -1,0 +1,1 @@
+hay otra manera para poder mandar datos desde la ruta las cuales son las queryParams , estas tienen la misma funcionalidad que los params pero se envia como media Query para ver mas sobre esto ver en parametros

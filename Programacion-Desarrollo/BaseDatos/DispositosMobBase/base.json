@@ -1,0 +1,77 @@
+{
+  "productos": [
+    {
+      "cantidad": 25,
+      "fecha": "1/6/23",
+      "id": 2,
+      "nombre": "Martillo",
+      "precio": 45,
+      "tipo": "Herramienta "
+    },
+    {
+      "cantidad": 27,
+      "fecha": "1/6/23",
+      "id": 3,
+      "nombre": "Destornillador",
+      "precio": 35,
+      "tipo": "Herramienta "
+    },
+    {
+      "cantidad": 34,
+      "fecha": "1/6/23",
+      "id": 5,
+      "nombre": "Manguera",
+      "precio": 120,
+      "tipo": "Utilidad "
+    },
+    {
+      "cantidad": 50,
+      "fecha": "04/20/20",
+      "id": 10,
+      "nombre": "llave hidráulica ",
+      "precio": 5000,
+      "tipo": "herramienta"
+    }
+  ],
+  "regCompras": [
+    {
+      "id": 2,
+      "nombre": "Martillo",
+      "precio": 45,
+      "tipo": "Herramienta ",
+      "cantidad": 25,
+      "fecha": "1/6/23"
+    },
+    {
+      "id": 4,
+      "nombre": "Llave Inglesa",
+      "precio": 60,
+      "tipo": "Herramienta ",
+      "cantidad": 34,
+      "fecha": "1/6/23"
+    }
+  ],
+  "compras": [
+    {
+      "compra": [
+        {
+          "cantidad": 120,
+          "fecha": "1/6/23",
+          "id": 1,
+          "nombre": "Tornillo",
+          "precio": 10,
+          "tipo": "Herramienta "
+        },
+        {
+          "cantidad": 25,
+          "fecha": "1/6/23",
+          "id": 2,
+          "nombre": "Martillo",
+          "precio": 45,
+          "tipo": "Herramienta "
+        }
+      ],
+      "idCompra": 2
+    }
+  ]
+}

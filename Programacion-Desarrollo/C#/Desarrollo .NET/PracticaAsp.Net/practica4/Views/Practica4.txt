@@ -1,0 +1,1 @@
+En el archivo de _ViewStart por convencion para los layouts se usa "_" para indicar que es un nuevo layout el cual se usara dentro del proyecto en el ViewStart viene el Layout por defecto el cual es _Layout.cshtml el cual tiene su render body

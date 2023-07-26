@@ -1,0 +1,10 @@
+@model List<practica6.Models.Publicacion>;
+
+@foreach (var item in Model)
+{
+    <h1>Publicacion</h1>
+    <h2>@item.Titulo</h2>
+    <h3>@item.Texto</h3>
+    <hr/>
+    @await Html.PartialAsync("../Comentario/Index");
+}

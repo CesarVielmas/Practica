@@ -1,0 +1,4 @@
+Ahora se vera lo que son los servicios y para ello se vera en su carpeta correspondiente y como funcionan
+Informacion: para crear un servicio de forma automatica usar el comando ng generate service (nombre del servicio) o (ng g s (nombre del servicio) ) sin embargo si es de forma manual tambien puede ser , nota no olvidarse de ponerlo en app module en providers para que detecte el servicio
+
+Que es: los servicios son una manera de utilizar una pieza de codigo para simplificar bastante mas la sintaxis , son reutilizables en cualquier parte del programa y ademas puedes añadir infinitos servicios a la pagina cuantos sean requerido
